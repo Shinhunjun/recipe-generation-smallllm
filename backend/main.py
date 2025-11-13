@@ -52,14 +52,14 @@ async def startup_event():
     """Initialize model and database on server start"""
     global model_service, db
 
-    print("🚀 Initializing PantryPilot API...")
+    print("🚀 Initializing RecipeGen-LLM API...")
 
-    # Load model - V3 checkpoint 5500 (66.7% dietary constraint accuracy, best working checkpoint)
-    model_path = "mlx-community/Phi-3-mini-4k-instruct-4bit"
-    adapter_path = Path(__file__).parent.parent / "models" / "phi3-recipe-lora-v3"
+    # Load Llama 3B model with Lambda-trained LoRA adapter
+    model_path = "meta-llama/Llama-3.2-3B-Instruct"
+    adapter_path = Path(__file__).parent.parent / "models" / "llama3b_lambda_lora"
 
-    print(f"📍 Adapter path: {adapter_path}")
-    print(f"📍 Using V3 Checkpoint 5500 (66.7% dietary constraint accuracy - best working checkpoint)")
+    print(f"📍 Base model: {model_path}")
+    print(f"📍 LoRA adapter: {adapter_path}")
     model_service = ModelService(model_path, str(adapter_path))
     print("✅ Model loaded")
 
