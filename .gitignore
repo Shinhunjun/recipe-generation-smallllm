@@ -24,18 +24,13 @@ venv/
 env/
 ENV/
 
-# Model files (too large for Git)
-models/
-*.safetensors
-*.bin
-*.pth
-*.ckpt
 
-# Data files (too large for Git)
+
+# Data files (too large for Git - download from Google Drive)
+models/
 data_pipeline/data/
-*.jsonl
-*.json
-!**/config/*.json
+evaluation/reports/*.json
+
 !package.json
 !package-lock.json
 

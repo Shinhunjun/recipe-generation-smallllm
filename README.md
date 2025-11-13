@@ -236,13 +236,56 @@ git clone https://github.com/Shinhunjun/recipe-generation-smallllm.git
 cd recipe-generation-smallllm
 ```
 
-### 2. Start MongoDB
+### 2. Download Model and Data Files
+
+**Important**: The trained model and training data are not included in the Git repository due to file size. Download them from Google Drive:
+
+📦 **Model Files** (52 MB):
+- Download: [llama3b_lambda_lora.zip](https://drive.google.com/file/d/1gPWh_ap_OLzseJui477wcmtwjNVOa0XA/view?usp=drive_link)
+- Extract to: `models/`
+
+```bash
+# After downloading, extract:
+unzip llama3b_lambda_lora.zip -d models/
+```
+
+📊 **Training Data** (45 MB):
+- Download: [data.zip](https://drive.google.com/file/d/1S2FmttufCx9OJ5D8LG4G0JRv4in6Fv-1/view?usp=drive_link)
+- Extract to: `data_pipeline/data/`
+
+```bash
+# After downloading, extract:
+unzip data.zip -d data_pipeline/data/
+```
+
+**Expected directory structure after extraction**:
+```
+RecipeGen-LLM/
+├── models/
+│   └── llama3b_lambda_lora/
+│       ├── adapter_model.safetensors
+│       ├── adapter_config.json
+│       └── ...
+└── data_pipeline/data/
+    ├── chat_format/
+    │   ├── recipes_train_chat.jsonl
+    │   ├── recipes_val_chat.jsonl
+    │   └── recipes_test_chat.jsonl
+    ├── cleaned/
+    │   ├── recipes_train_cleaned.jsonl
+    │   ├── recipes_val_cleaned.jsonl
+    │   └── recipes_test_cleaned.jsonl
+    └── synthetic/
+        └── recipes_15k_raw.jsonl
+```
+
+### 3. Start MongoDB
 
 ```bash
 docker run -d -p 27017:27017 --name mongodb mongo:latest
 ```
 
-### 3. Backend Setup
+### 4. Backend Setup
 
 ```bash
 cd backend
@@ -261,7 +304,7 @@ python main.py
 
 Server runs on `http://localhost:8000`
 
-### 4. Frontend Setup (New Terminal)
+### 5. Frontend Setup (New Terminal)
 
 ```bash
 cd frontend
@@ -277,7 +320,7 @@ App opens at `http://localhost:3000`
 
 **For detailed setup instructions, see [SETUP.md](SETUP.md)**
 
-### 5. Usage
+### 6. Usage
 
 1. **Add Inventory**: Go to "Inventory" tab, add ingredients
 2. **Set Preferences**: Go to "Settings" tab, set dietary constraints
