@@ -41,6 +41,76 @@ function RecipeGenerator({ inventory, preferences }) {
     }
   };
 
+  const RecipeDisplay = ({ recipeData, title }) => {
+    const { status, missing_ingredients, recipe, shopping_list } = recipeData;
+
+    return (
+      <div className="card result-card">
+        <h3>{title}</h3>
+
+        {status === "error" && (
+          <div className="error-message">
+            <strong>⚠️ Error:</strong> Failed to generate recipe properly
+          </div>
+        )}
+
+        {status === "no_match" && missing_ingredients.length > 0 && (
+          <div className="warning-message">
+            <strong>⚠️ Missing ingredients:</strong> {missing_ingredients.join(", ")}
+          </div>
+        )}
+
+        <div className="recipe-display">
+          <div className="recipe-header">
+            <h4 className="recipe-name">{recipe.name}</h4>
+            <div className="recipe-meta">
+              <span className="meta-item">🍳 {recipe.cuisine}</span>
+              <span className="meta-item">⏱️ {recipe.time}</span>
+              <span className="meta-item">🥗 {recipe.culinary_preference}</span>
+            </div>
+          </div>
+
+          <div className="recipe-section">
+            <h5>Main Ingredients:</h5>
+            <ul className="ingredients-list">
+              {recipe.main_ingredients.map((ing, i) => (
+                <li key={i}>{ing}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="recipe-section">
+            <h5>Instructions:</h5>
+            <div className="recipe-steps">
+              {recipe.steps.split('\n').map((step, i) => (
+                step.trim() && <p key={i} className="step">{step}</p>
+              ))}
+            </div>
+          </div>
+
+          {recipe.note && (
+            <div className="recipe-section note">
+              <strong>💡 Note:</strong> {recipe.note}
+            </div>
+          )}
+
+          {shopping_list && shopping_list.length > 0 && (
+            <div className="recipe-section">
+              <h5>🛒 Shopping List:</h5>
+              <ul className="shopping-list">
+                {shopping_list.map((item, i) => (
+                  <li key={i}>
+                    {item.name} {item.quantity && `(${item.quantity})`}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="recipe-generator">
       <div className="card">
@@ -105,27 +175,20 @@ function RecipeGenerator({ inventory, preferences }) {
         <div className="results">
           {compareMode ? (
             <div className="comparison-view">
-              <div className="card result-card">
-                <h3>🤖 Base Model (Llama 3.2 3B Instruct)</h3>
-                <div className="recipe-content">
-                  <pre>{result.base_recipe}</pre>
-                </div>
-              </div>
-
-              <div className="card result-card finetuned">
-                <h3>⭐ Fine-tuned Model (Lambda-trained LoRA)</h3>
-                <div className="recipe-content">
-                  <pre>{result.recipe}</pre>
-                </div>
-              </div>
+              <RecipeDisplay
+                recipeData={result.base_recipe}
+                title="🤖 Base Model (Llama 3.2 3B Instruct)"
+              />
+              <RecipeDisplay
+                recipeData={result.recipe}
+                title="⭐ Fine-tuned Model (Lambda-trained LoRA)"
+              />
             </div>
           ) : (
-            <div className="card result-card">
-              <h3>⭐ Generated Recipe</h3>
-              <div className="recipe-content">
-                <pre>{result.recipe}</pre>
-              </div>
-            </div>
+            <RecipeDisplay
+              recipeData={result.recipe}
+              title="⭐ Generated Recipe"
+            />
           )}
         </div>
       )}

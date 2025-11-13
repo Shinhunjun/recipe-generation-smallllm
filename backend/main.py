@@ -9,6 +9,8 @@ from pydantic import BaseModel
 from typing import List, Dict, Optional, Any
 import uvicorn
 from pathlib import Path
+import json
+import re
 
 from model_service import ModelService
 from database import Database
@@ -33,9 +35,24 @@ class GenerateRecipeRequest(BaseModel):
     user_request: str  # Natural language request (e.g., "I want something healthy for dinner")
     compare: bool = False
 
+class RecipeDetails(BaseModel):
+    name: str
+    cuisine: str
+    culinary_preference: str
+    time: str
+    main_ingredients: List[str]
+    steps: str
+    note: Optional[str] = None
+
+class RecipeOutput(BaseModel):
+    status: str
+    missing_ingredients: List[str]
+    recipe: RecipeDetails
+    shopping_list: List[Dict[str, Any]]
+
 class RecipeResponse(BaseModel):
-    recipe: str
-    base_recipe: Optional[str] = None  # Only if compare=True
+    recipe: RecipeOutput
+    base_recipe: Optional[RecipeOutput] = None  # Only if compare=True
 
 class InventoryItem(BaseModel):
     name: str
@@ -79,6 +96,36 @@ async def shutdown_event():
         await db.disconnect()
     print("👋 Server shutdown")
 
+def parse_recipe_json(text: str) -> Dict:
+    """Parse JSON output from model, handling potential formatting issues"""
+    try:
+        # Try direct JSON parsing
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # Try to extract JSON from text (in case there's extra text)
+        json_match = re.search(r'\{.*\}', text, re.DOTALL)
+        if json_match:
+            try:
+                return json.loads(json_match.group(0))
+            except json.JSONDecodeError:
+                pass
+
+        # If all else fails, return error structure
+        return {
+            "status": "error",
+            "missing_ingredients": [],
+            "recipe": {
+                "name": "Error",
+                "cuisine": "Unknown",
+                "culinary_preference": "Unknown",
+                "time": "N/A",
+                "main_ingredients": [],
+                "steps": f"Failed to parse recipe. Raw output:\n{text}",
+                "note": "Please try again"
+            },
+            "shopping_list": []
+        }
+
 @app.get("/")
 async def root():
     """Health check"""
@@ -94,14 +141,21 @@ async def generate_recipe(request: GenerateRecipeRequest):
 
         if request.compare:
             # Generate with both base and fine-tuned models
-            base_output, finetuned_output = model_service.generate_comparison(
+            comparison = model_service.generate_comparison(
                 inventory,
                 preferences,
                 request.user_request
             )
+            base_output = comparison["base"]
+            finetuned_output = comparison["finetuned"]
+
+            # Parse JSON outputs
+            base_json = parse_recipe_json(base_output)
+            finetuned_json = parse_recipe_json(finetuned_output)
+
             return RecipeResponse(
-                recipe=finetuned_output,
-                base_recipe=base_output
+                recipe=finetuned_json,
+                base_recipe=base_json
             )
         else:
             # Generate with fine-tuned model only
@@ -111,7 +165,10 @@ async def generate_recipe(request: GenerateRecipeRequest):
                 request.user_request,
                 use_finetuned=True
             )
-            return RecipeResponse(recipe=output)
+
+            # Parse JSON output
+            output_json = parse_recipe_json(output)
+            return RecipeResponse(recipe=output_json)
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

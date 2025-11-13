@@ -50,58 +50,38 @@ class ModelService:
             self.finetuned_model = None
 
     def _format_prompt(self, inventory: List[Dict], preferences: Dict, user_request: str) -> str:
-        """Format user input into Llama 3 chat template"""
+        """Format user input into ChatML template (matching training data)"""
 
-        # Build inventory list
-        inventory_items = []
-        for item in inventory:
-            item_str = item['name']
-            if item.get('quantity') and item.get('unit'):
-                item_str += f" ({item['quantity']} {item['unit']})"
-            inventory_items.append(item_str)
-
+        # Build inventory list (names only, matching training data format)
+        inventory_items = [item['name'] for item in inventory]
         inventory_str = ", ".join(inventory_items)
 
-        # Extract dietary restrictions
-        dietary_restrictions = []
+        # Extract dietary preference (use first one if multiple, matching training data)
+        preference = None
         if preferences.get("dietary_restrictions"):
             dietary_restrictions = preferences["dietary_restrictions"]
+            if dietary_restrictions:
+                preference = dietary_restrictions[0].lower()
 
-        # Format dietary constraints
-        if dietary_restrictions:
-            constraints_str = ", ".join(dietary_restrictions)
-        else:
-            constraints_str = "None"
+        # System prompt (matching training data)
+        system_prompt = "You are a recipe generation AI that creates recipes based on user inventory and preferences."
 
-        # System instruction with dietary constraint enforcement
-        system_prompt = "You are a helpful recipe assistant. Generate recipes based on available ingredients and dietary constraints."
-
-        # Add explicit constraint warnings for critical diets
-        constraint_warnings = ""
-        if "vegan" in [d.lower() for d in dietary_restrictions]:
-            constraint_warnings += "\n\nIMPORTANT: This recipe must be VEGAN. Do not use any animal products including:\n- Meat, poultry, fish, seafood\n- Dairy (milk, cheese, butter, cream, yogurt)\n- Eggs\n- Honey"
-        elif "vegetarian" in [d.lower() for d in dietary_restrictions]:
-            constraint_warnings += "\n\nIMPORTANT: This recipe must be VEGETARIAN. Do not use:\n- Meat, poultry, fish, seafood\n- Gelatin or any meat-based products"
-
-        if "gluten-free" in [d.lower() for d in dietary_restrictions]:
-            constraint_warnings += "\n\nIMPORTANT: This recipe must be GLUTEN-FREE. Do not use:\n- Wheat, flour, bread, pasta\n- Barley, rye\n- Soy sauce (use gluten-free alternatives)"
-
-        if "dairy-free" in [d.lower() for d in dietary_restrictions]:
-            constraint_warnings += "\n\nIMPORTANT: This recipe must be DAIRY-FREE. Do not use:\n- Milk, butter, cream, cheese, yogurt\n- Any dairy-based products"
-
-        # User request
+        # Build user message in training format
         if user_request:
-            user_content = f"{user_request}\n\nAvailable ingredients: {inventory_str}\nDietary constraints: {constraints_str}"
+            user_content = f"{user_request}\n\nI have {inventory_str}."
+            if preference:
+                user_content += f" I want a {preference} recipe."
         else:
-            user_content = f"Generate a recipe using these ingredients: {inventory_str}\nDietary constraints: {constraints_str}"
+            user_content = f"I have {inventory_str}."
+            if preference:
+                user_content += f" I want a {preference} recipe."
 
-        # Llama 3 chat template
-        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-
-{system_prompt}{constraint_warnings}<|eot_id|><|start_header_id|>user<|end_header_id|>
-
-{user_content}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
+        # ChatML format (matching training data)
+        prompt = f"""<|im_start|>system
+{system_prompt}<|im_end|>
+<|im_start|>user
+{user_content}<|im_end|>
+<|im_start|>assistant
 """
 
         return prompt
@@ -160,10 +140,13 @@ class ModelService:
         # Decode
         full_output = self.tokenizer.decode(outputs[0], skip_special_tokens=False)
 
-        # Extract only assistant's response
-        if "<|start_header_id|>assistant<|end_header_id|>" in full_output:
-            response = full_output.split("<|start_header_id|>assistant<|end_header_id|>")[1]
-            response = response.split("<|eot_id|>")[0].strip()
+        # Extract only assistant's response (ChatML format)
+        if "<|im_start|>assistant" in full_output:
+            response = full_output.split("<|im_start|>assistant")[1]
+            if "<|im_end|>" in response:
+                response = response.split("<|im_end|>")[0].strip()
+            else:
+                response = response.strip()
             return response
 
         return full_output
