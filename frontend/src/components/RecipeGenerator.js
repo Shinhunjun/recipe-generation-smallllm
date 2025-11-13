@@ -75,8 +75,8 @@ function RecipeGenerator({ inventory, preferences }) {
           </label>
           <p className="hint">
             {compareMode
-              ? 'Will show outputs from both the base Phi-3 model and your fine-tuned model side-by-side'
-              : 'Will only show output from the fine-tuned model'}
+              ? 'Will show outputs from both the base Llama 3.2 3B model and Lambda-trained LoRA model side-by-side'
+              : 'Will only show output from the Lambda-trained LoRA model'}
           </p>
         </div>
 
@@ -106,14 +106,14 @@ function RecipeGenerator({ inventory, preferences }) {
           {compareMode ? (
             <div className="comparison-view">
               <div className="card result-card">
-                <h3>🤖 Base Model (Phi-3 Mini)</h3>
+                <h3>🤖 Base Model (Llama 3.2 3B Instruct)</h3>
                 <div className="recipe-content">
                   <pre>{result.base_recipe}</pre>
                 </div>
               </div>
 
               <div className="card result-card finetuned">
-                <h3>⭐ Fine-tuned Model (Your Custom Model)</h3>
+                <h3>⭐ Fine-tuned Model (Lambda-trained LoRA)</h3>
                 <div className="recipe-content">
                   <pre>{result.recipe}</pre>
                 </div>
