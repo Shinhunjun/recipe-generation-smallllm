@@ -224,22 +224,16 @@ Frontend (React) ←→ Backend (FastAPI) ←→ Model Service (PyTorch + LoRA)
 
 ### Prerequisites
 
-```bash
-# Python 3.10+
-python --version
-
-# Node.js 16+
-node --version
-
-# MongoDB
-docker pull mongo:latest
-```
+- Python 3.10+
+- Node.js 16+
+- Docker (for MongoDB)
+- 8GB+ RAM
 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/RecipeGen-LLM.git
-cd RecipeGen-LLM
+git clone https://github.com/Shinhunjun/recipe-generation-smallllm.git
+cd recipe-generation-smallllm
 ```
 
 ### 2. Start MongoDB
@@ -253,6 +247,11 @@ docker run -d -p 27017:27017 --name mongodb mongo:latest
 ```bash
 cd backend
 
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # macOS/Linux
+# venv\Scripts\activate   # Windows
+
 # Install dependencies
 pip install -r requirements.txt
 
@@ -262,7 +261,7 @@ python main.py
 
 Server runs on `http://localhost:8000`
 
-### 4. Frontend Setup
+### 4. Frontend Setup (New Terminal)
 
 ```bash
 cd frontend
@@ -275,6 +274,8 @@ npm start
 ```
 
 App opens at `http://localhost:3000`
+
+**For detailed setup instructions, see [SETUP.md](SETUP.md)**
 
 ### 5. Usage
 
