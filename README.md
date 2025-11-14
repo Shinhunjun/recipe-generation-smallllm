@@ -83,27 +83,34 @@ See [`data_pipeline/01_synthetic_generation/SCENARIOS.md`](data_pipeline/01_synt
 
 ### 2. Chat Format Conversion
 
-Converts structured JSON to **Llama 3 chat template**:
+Converts structured JSON to **ChatML format**:
 
 ```
-<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-
-You are a helpful recipe assistant. Generate recipes based on available ingredients and dietary constraints.
-
-IMPORTANT: This recipe must be VEGAN. Do not use any animal products...<|eot_id|><|start_header_id|>user<|end_header_id|>
-
-Generate a recipe using these ingredients: tofu, rice, vegetables
-Dietary constraints: vegan<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
-Recipe Name: Vegan Tofu Fried Rice
-Ingredients:
-- tofu: 200g
-...<|eot_id|>
+<|im_start|>system
+You are a recipe generation AI that creates recipes based on user inventory and preferences.<|im_end|>
+<|im_start|>user
+I have tofu, rice, vegetables. I want a vegan recipe.<|im_end|>
+<|im_start|>assistant
+{
+  "status": "ok",
+  "missing_ingredients": [],
+  "recipe": {
+    "name": "Vegan Tofu Fried Rice",
+    "cuisine": "Asian",
+    "culinary_preference": "vegan",
+    "time": "20m",
+    "main_ingredients": ["tofu", "rice", "vegetables"],
+    "steps": "1. Press tofu and cut into cubes...\n2. Heat oil in wok...",
+    "note": "Add soy sauce to taste"
+  },
+  "shopping_list": []
+}<|im_end|>
 ```
 
-**Why chat format?**
+**Why ChatML format?**
 - Matches training paradigm of instruction-tuned models
 - Explicit role separation (system/user/assistant)
+- Structured JSON output for easy parsing and display
 - Better constraint enforcement through system prompts
 - Standard format for Hugging Face trainers
 
