@@ -82,9 +82,21 @@ function RecipeGenerator({ inventory, preferences }) {
           <div className="recipe-section">
             <h5>Instructions:</h5>
             <div className="recipe-steps">
-              {recipe.steps.split('\n').map((step, i) => (
-                step.trim() && <p key={i} className="step">{step}</p>
-              ))}
+              {(() => {
+                // First try to split by newlines
+                let steps = recipe.steps.split('\n').filter(s => s.trim());
+
+                // If only one step exists, try to split by "Step N." pattern
+                if (steps.length === 1) {
+                  steps = recipe.steps.split(/Step \d+\./).filter(s => s.trim());
+                }
+
+                return steps.map((step, i) => (
+                  <p key={i} className="step">
+                    {step.trim().startsWith('Step') ? step.trim() : `Step ${i + 1}. ${step.trim()}`}
+                  </p>
+                ));
+              })()}
             </div>
           </div>
 

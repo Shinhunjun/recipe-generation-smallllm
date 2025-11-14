@@ -338,6 +338,221 @@ App opens at `http://localhost:3000`
 
 ---
 
+## 📋 Recent Updates & Changes
+
+### 🔄 December 2024: Backend/Frontend Alignment
+
+This project underwent critical updates to align the inference implementation with the training data format:
+
+#### 1. **ChatML Format Migration** (Backend)
+**Problem**: Model was trained with ChatML format but backend used Llama 3 format, causing suboptimal performance.
+
+**Changes Made** ([model_service.py](backend/model_service.py)):
+- Migrated prompt formatting from Llama 3 to ChatML format (`<|im_start|>`, `<|im_end|>`)
+- Simplified inventory input to ingredient names only (matching training data)
+- Extract single dietary preference instead of multiple (matching training distribution)
+- Updated system prompt to match training exactly
+
+**Before (Llama 3 format)**:
+```python
+<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+You are a helpful assistant...<|eot_id|>
+```
+
+**After (ChatML format)**:
+```python
+<|im_start|>system
+You are a recipe generation AI that creates recipes based on user inventory and preferences.<|im_end|>
+<|im_start|>user
+I have tofu, rice, vegetables. I want a vegan recipe.<|im_end|>
+<|im_start|>assistant
+```
+
+**Impact**: Model now receives prompts in expected format, significantly improving output quality and dietary constraint adherence.
+
+#### 2. **Structured JSON Output** (Backend)
+**Problem**: Backend returned raw text, no structured parsing of model output.
+
+**Changes Made** ([main.py](backend/main.py)):
+- Added Pydantic models for type-safe JSON parsing (`RecipeDetails`, `RecipeOutput`, `RecipeResponse`)
+- Created `parse_recipe_json()` function with robust error handling
+- Supports both perfect JSON and malformed responses (regex extraction)
+- Returns structured error messages when parsing fails
+
+**Example JSON Structure**:
+```json
+{
+  "status": "ok",
+  "missing_ingredients": [],
+  "recipe": {
+    "name": "Vegan Tofu Fried Rice",
+    "cuisine": "Asian",
+    "culinary_preference": "vegan",
+    "time": "20m",
+    "main_ingredients": ["tofu", "rice", "vegetables"],
+    "steps": "Step 1. Press tofu...\nStep 2. Heat oil...",
+    "note": "Add soy sauce to taste"
+  },
+  "shopping_list": []
+}
+```
+
+**Impact**: Frontend receives structured data, enabling rich UI components instead of plain text display.
+
+#### 3. **Structured Recipe Display** (Frontend)
+**Problem**: Frontend displayed raw text in `<pre>` tags, no visual hierarchy.
+
+**Changes Made** ([RecipeGenerator.js](frontend/src/components/RecipeGenerator.js), [RecipeGenerator.css](frontend/src/components/RecipeGenerator.css)):
+- Created `RecipeDisplay` component with sections for:
+  - Recipe metadata (name, cuisine, time, dietary preference)
+  - Main ingredients (grid layout)
+  - Step-by-step instructions (numbered boxes)
+  - Chef's notes (highlighted)
+  - Shopping list (if ingredients missing)
+- Added error and warning message displays
+- Implemented comparison view for base vs fine-tuned models
+
+**Visual Improvements**:
+- Recipe name: Large, bold header
+- Metadata: Pills with icons (🍳, ⏱️, 🥗)
+- Ingredients: Grid cards with color-coded borders
+- Steps: Separate boxes with green accent borders
+- Notes: Yellow background for emphasis
+- Shopping list: Orange accent borders
+
+**Impact**: Professional, easy-to-read recipe presentation with clear visual hierarchy.
+
+#### 4. **Smart Step Formatting** (Frontend)
+**Problem**: Fine-tuned model outputs steps as continuous text ("Step 1. ... Step 2. ...") while base model uses newlines. Both should display consistently.
+
+**Solution** ([RecipeGenerator.js:85-99](frontend/src/components/RecipeGenerator.js#L85-L99)):
+```javascript
+{(() => {
+  // First try to split by newlines
+  let steps = recipe.steps.split('\n').filter(s => s.trim());
+
+  // If only one step exists, try to split by "Step N." pattern
+  if (steps.length === 1) {
+    steps = recipe.steps.split(/Step \d+\./).filter(s => s.trim());
+  }
+
+  return steps.map((step, i) => (
+    <p key={i} className="step">
+      {step.trim().startsWith('Step') ? step.trim() : `Step ${i + 1}. ${step.trim()}`}
+    </p>
+  ));
+})()}
+```
+
+**Impact**: Both base and fine-tuned models now display steps in separate, formatted boxes consistently.
+
+---
+
+## 🛠️ Troubleshooting Guide
+
+### Common Issues and Solutions
+
+#### 1. Backend: `ModuleNotFoundError`
+**Problem**: Python packages not installed.
+
+**Solution**:
+```bash
+cd backend
+source venv/bin/activate  # Important: Activate venv first!
+pip install -r requirements.txt
+```
+
+#### 2. Docker: `Cannot connect to the Docker daemon`
+**Problem**: Docker Desktop not running.
+
+**Solution** (macOS):
+```bash
+open -a Docker  # Start Docker Desktop
+# Wait for Docker to fully start, then:
+docker run -d -p 27017:27017 --name mongodb mongo:latest
+```
+
+#### 3. Frontend: Port 3000 already in use
+**Problem**: Another process is using port 3000.
+
+**Solution**:
+```bash
+lsof -ti:3000 | xargs kill -9  # Kill existing process
+npm start
+```
+
+#### 4. Model: All recipes are vegan/vegetarian
+**Problem**: Dietary preferences set in Settings persist in MongoDB.
+
+**Check Settings**: Go to Settings tab in the web app and verify dietary restrictions. These are automatically added to every prompt.
+
+**Expected Behavior**: If you set "vegan" in Settings, every recipe will be vegan because the prompt becomes "I have [ingredients]. I want a vegan recipe."
+
+#### 5. Model: Base and fine-tuned give similar recipes
+**Explanation**: This is expected behavior when:
+- Same inventory constraints
+- Same dietary preferences
+- Temperature=0.7 (allows limited randomness)
+- LoRA modifies only 0.1% of parameters
+
+**Try**:
+- Different user requests ("quick breakfast" vs "comfort food dinner")
+- Remove dietary restrictions from Settings
+- Add more diverse ingredients to inventory
+
+#### 6. Model: Steps not displaying properly
+**Solution**: This should be fixed by the smart step formatter. If still broken:
+1. Check browser console for errors
+2. Verify model output contains either:
+   - Newlines: `"Step 1. ...\nStep 2. ..."`
+   - OR pattern: `"Step 1. ... Step 2. ..."`
+
+#### 7. Backend: Model loading takes forever
+**First Run**: Base model (6GB) downloads from Hugging Face (~5-10 min on fast connection).
+
+**Check Progress**: Look at backend logs for download progress bars.
+
+**Storage**: Ensure you have 10GB+ free disk space (6GB base + 4GB temporary).
+
+#### 8. Frontend: Blank page or React errors
+**Solution**:
+```bash
+cd frontend
+rm -rf node_modules package-lock.json
+npm install
+npm start
+```
+
+#### 9. Database: Inventory/preferences not saving
+**Check MongoDB**:
+```bash
+docker ps  # Verify mongodb container is running
+docker logs mongodb  # Check for errors
+```
+
+**Restart MongoDB**:
+```bash
+docker restart mongodb
+```
+
+#### 10. Performance: Recipe generation is slow
+**Expected Timing**:
+- First run: 5-10 seconds (model loading)
+- Subsequent runs: 2-5 seconds per recipe
+- Comparison mode: 4-10 seconds (generates twice)
+
+**Device Performance**:
+- **MPS (Apple Silicon)**: 2-3 seconds ✅
+- **CUDA (NVIDIA GPU)**: 2-4 seconds ✅
+- **CPU**: 10-30 seconds ⚠️
+
+**Improve Speed**:
+- Use GPU if available (MPS/CUDA detected automatically)
+- Disable comparison mode (generates only fine-tuned model)
+- Reduce inventory size (fewer items to consider)
+
+---
+
 ## 📦 Model Weights
 
 The fine-tuned LoRA adapter is included in `models/llama3b_lambda_lora/`:
