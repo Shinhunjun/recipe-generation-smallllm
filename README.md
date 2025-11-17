@@ -258,8 +258,12 @@ gcloud auth login
 # Download model from GCS
 gcloud storage cp -r gs://recipegen-llm-models/llama3b_lambda_lora ./models/
 
-# Verify download
+# Download training data and pipeline (optional, for reproducibility)
+gcloud storage cp -r gs://recipegen-llm-models/data_pipeline/data_pipeline/ ./data_pipeline/
+
+# Verify downloads
 ls -lh models/llama3b_lambda_lora/
+ls -lh data_pipeline/data/
 ```
 
 **Benefits**: Faster download speeds for GCP users, no manual extraction needed, version-controlled storage.
