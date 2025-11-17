@@ -245,7 +245,26 @@ cd recipe-generation-smallllm
 
 ### 2. Download Model and Data Files
 
-**Important**: The trained model and training data are not included in the Git repository due to file size. Download them from Google Drive:
+**Important**: The trained model and training data are not included in the Git repository due to file size.
+
+#### Download Options:
+
+**🌐 Option 1: Google Cloud Storage** (Recommended for GCP users with `gcloud` CLI)
+
+```bash
+# Authenticate with GCP (if not already authenticated)
+gcloud auth login
+
+# Download model from GCS
+gcloud storage cp -r gs://recipegen-llm-models/llama3b_lambda_lora ./models/
+
+# Verify download
+ls -lh models/llama3b_lambda_lora/
+```
+
+**Benefits**: Faster download speeds for GCP users, no manual extraction needed, version-controlled storage.
+
+**📦 Option 2: Google Drive** (For all users)
 
 📦 **Model Files** (52 MB):
 - Download: [llama3b_lambda_lora.zip](https://drive.google.com/file/d/1gPWh_ap_OLzseJui477wcmtwjNVOa0XA/view?usp=drive_link)
@@ -555,12 +574,34 @@ docker restart mongodb
 
 ## 📦 Model Weights
 
-The fine-tuned LoRA adapter is included in `models/llama3b_lambda_lora/`:
-- `adapter_model.safetensors` (35MB)
-- `adapter_config.json`
-- Tokenizer files
+The fine-tuned LoRA adapter is available from multiple sources:
 
-**Base model** (`meta-llama/Llama-3.2-3B-Instruct`) is auto-downloaded from Hugging Face on first run.
+### Download Sources:
+
+**🌐 Google Cloud Storage** (Recommended for GCP environments):
+```bash
+gcloud storage cp -r gs://recipegen-llm-models/llama3b_lambda_lora ./models/
+```
+- **Bucket**: `gs://recipegen-llm-models/`
+- **Region**: `us-central1`
+- **Access**: Public read access (requires `gcloud` authentication)
+
+**📦 Google Drive** (For general users):
+- Download: [llama3b_lambda_lora.zip](https://drive.google.com/file/d/1gPWh_ap_OLzseJui477wcmtwjNVOa0XA/view?usp=drive_link)
+
+### Model Contents:
+
+Located in `models/llama3b_lambda_lora/`:
+- `adapter_model.safetensors` (35MB) - LoRA adapter weights
+- `adapter_config.json` - Adapter configuration
+- `tokenizer.json` (16MB) - Tokenizer
+- `tokenizer_config.json` (53KB) - Tokenizer configuration
+- `special_tokens_map.json` - Special tokens
+- `training_args.bin` - Training arguments
+
+**Total size**: ~52 MB
+
+**Base model** (`meta-llama/Llama-3.2-3B-Instruct`, ~6GB) is auto-downloaded from Hugging Face on first run.
 
 ---
 
