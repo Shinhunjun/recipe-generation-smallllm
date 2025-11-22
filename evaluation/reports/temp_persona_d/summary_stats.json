@@ -1,0 +1,19 @@
+{
+  "total_tests": 20,
+  "dpo_wins": 16,
+  "sft_wins": 4,
+  "ties": 0,
+  "dpo_win_rate": 0.8,
+  "sft_win_rate": 0.2,
+  "tie_rate": 0.0,
+  "per_persona": {
+    "persona_d_japanese_lowsodium": {
+      "name": "Japanese Cuisine (Low Sodium)",
+      "dpo_win_rate": 0.8,
+      "dpo_wins": 16,
+      "sft_wins": 4,
+      "ties": 0,
+      "total_tests": 20
+    }
+  }
+}

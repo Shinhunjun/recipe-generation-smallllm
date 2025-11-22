@@ -1,0 +1,1624 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-21T18:38:31.237048",
+    "project_id": "mlops-compute-lab",
+    "personas_evaluated": [
+      "persona_f_chinese_keto"
+    ],
+    "test_count_per_persona": 20,
+    "evaluators_used": [
+      "gemini-flash"
+    ],
+    "total_tests": 20
+  },
+  "persona_results": {
+    "persona_f_chinese_keto": {
+      "persona_name": "Chinese Low-Carb (Keto)",
+      "test_count": 20,
+      "evaluations": {
+        "gemini-flash": [
+          {
+            "test_case_id": "f01",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 9.0,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it uses more precise measurements and the steps are slightly more detailed, leading to a potentially better cooking experience. Both recipes align well with the persona and available ingredients.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it uses more precise measurements and the steps are slightly more detailed, leading to a potentially better cooking experience. Both recipes align well with the persona and available ingredients.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f02",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like bok choy, ginger, and sesame oil, and it specifies a low-carb sauce recipe. It also explicitly states the use of sugar-free soy sauce, further reinforcing its commitment to the keto diet. The inclusion of onion and more detailed instructions also contribute to a higher quality recipe.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like bok choy, ginger, and sesame oil, and it specifies a low-carb sauce recipe. It also explicitly states the use of sugar-free soy sauce, further reinforcing its commitment to the keto diet. The inclusion of onion and more detailed instructions also contribute to a higher quality recipe.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f03",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it uses a more concise and clear format for ingredients, including quantities. The steps are also slightly more streamlined. Both recipes adhere to the persona's preferences and constraints, but Recipe B is a bit more refined.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it uses a more concise and clear format for ingredients, including quantities. The steps are also slightly more streamlined. Both recipes adhere to the persona's preferences and constraints, but Recipe B is a bit more refined.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f04",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.4,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 9,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is slightly better because it avoids the inclusion of carrots, which are higher in carbs than other vegetables. Recipe B includes carrots, which are not ideal for a keto diet, and also uses bell peppers which are not explicitly preferred. Recipe A also includes a note about the low-carb twist, which is a nice touch.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "carrots"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 9,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is slightly better because it avoids the inclusion of carrots, which are higher in carbs than other vegetables. Recipe B includes carrots, which are not ideal for a keto diet, and also uses bell peppers which are not explicitly preferred. Recipe A also includes a note about the low-carb twist, which is a nice touch.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "carrots"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f05",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.8,
+              "dpo_score": 5.4,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 9,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is the clear winner because it adheres to all the constraints, especially the forbidden ingredients. Recipe B includes cornstarch, which is a critical violation of the keto diet. While Recipe B includes more preferred ingredients like garlic, ginger, and five-spice powder, the constraint violation outweighs this benefit.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "cornstarch"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is the clear winner because it adheres to all the constraints, especially the forbidden ingredients. Recipe B includes cornstarch, which is a critical violation of the keto diet. While Recipe B includes more preferred ingredients like garlic, ginger, and five-spice powder, the constraint violation outweighs this benefit.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "cornstarch"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f06",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it aligns more closely with the persona's preferred flavor profile (savory, garlicky, ginger) by incorporating chili peppers and a Kung Pao style. It also utilizes more preferred ingredients and presents a more complex and interesting dish while still adhering to the low-carb constraints.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it aligns more closely with the persona's preferred flavor profile (savory, garlicky, ginger) by incorporating chili peppers and a Kung Pao style. It also utilizes more preferred ingredients and presents a more complex and interesting dish while still adhering to the low-carb constraints.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f07",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 9.0,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better due to its more precise ingredient quantities and the inclusion of garnish suggestions (scallions and sesame seeds), which enhance the overall presentation and flavor profile. The 'note' section in recipe B also adds value by highlighting the keto-friendliness and nutritional benefits.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better due to its more precise ingredient quantities and the inclusion of garnish suggestions (scallions and sesame seeds), which enhance the overall presentation and flavor profile. The 'note' section in recipe B also adds value by highlighting the keto-friendliness and nutritional benefits.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f08",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a clear winner because it explicitly mentions 'keto' in the name and culinary preference, uses cauliflower rice (a preferred ingredient), and includes sugar-free soy sauce, demonstrating a better understanding of the low-carb requirements. Recipe A includes carrots, which are higher in carbs than other vegetables, and doesn't explicitly cater to the keto aspect as well as Recipe B.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a clear winner because it explicitly mentions 'keto' in the name and culinary preference, uses cauliflower rice (a preferred ingredient), and includes sugar-free soy sauce, demonstrating a better understanding of the low-carb requirements. Recipe A includes carrots, which are higher in carbs than other vegetables, and doesn't explicitly cater to the keto aspect as well as Recipe B.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f09",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.8,
+              "dpo_score": 8.8,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb/keto dietary restrictions by using cauliflower rice instead of regular rice. Recipe A contains rice, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also incorporates preferred ingredients like bok choy and emphasizes savory flavors with garlic and ginger.",
+              "violations": {
+                "recipe_a": [
+                  "rice"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb/keto dietary restrictions by using cauliflower rice instead of regular rice. Recipe A contains rice, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also incorporates preferred ingredients like bok choy and emphasizes savory flavors with garlic and ginger.",
+                "violations_found": {
+                  "recipe_a": [
+                    "rice"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f10",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.0,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the persona's low-carb/keto dietary restrictions by substituting cauliflower rice for noodles and avoiding forbidden ingredients. Recipe A includes noodles, which are explicitly forbidden, making it a poor fit for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "noodles"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the persona's low-carb/keto dietary restrictions by substituting cauliflower rice for noodles and avoiding forbidden ingredients. Recipe A includes noodles, which are explicitly forbidden, making it a poor fit for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "noodles"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f11",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.2,
+              "dpo_score": 7.6,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 2,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 7,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is much better because it incorporates cauliflower rice and bok choy, aligning with the persona's preference for low-carb and vegetables. Recipe A uses sugar and cornstarch, which are forbidden ingredients, making it a poor fit for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "cornstarch",
+                  "sugar",
+                  "rice"
+                ],
+                "recipe_b": [
+                  "cornstarch"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 2,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 7,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is much better because it incorporates cauliflower rice and bok choy, aligning with the persona's preference for low-carb and vegetables. Recipe A uses sugar and cornstarch, which are forbidden ingredients, making it a poor fit for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "cornstarch",
+                    "sugar",
+                    "rice"
+                  ],
+                  "recipe_b": [
+                    "cornstarch"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f12",
+            "category": "constraint_stress",
+            "evaluation": {
+              "error": "429 Quota exceeded for aiplatform.googleapis.com/generate_content_requests_per_minute_per_project_per_base_model with base model: gemini-experimental. Please submit a quota increase request. https://cloud.google.com/vertex-ai/docs/generative-ai/quotas-genai.",
+              "winner": "unknown",
+              "sft_score": 0,
+              "dpo_score": 0,
+              "confidence": "none",
+              "reasoning": "Evaluation failed: 429 Quota exceeded for aiplatform.googleapis.com/generate_content_requests_per_minute_per_project_per_base_model with base model: gemini-experimental. Please submit a quota increase request. https://cloud.google.com/vertex-ai/docs/generative-ai/quotas-genai.",
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f13",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.2,
+              "dpo_score": 8.8,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the low-carb/keto constraints by using cauliflower rice and avoiding forbidden ingredients like noodles and sugar. Recipe A violates these constraints, making it unsuitable for the persona. Recipe B also incorporates more preferred ingredients like cauliflower rice and aligns better with the persona's dietary needs.",
+              "violations": {
+                "recipe_a": [
+                  "noodles",
+                  "sugar"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the low-carb/keto constraints by using cauliflower rice and avoiding forbidden ingredients like noodles and sugar. Recipe A violates these constraints, making it unsuitable for the persona. Recipe B also incorporates more preferred ingredients like cauliflower rice and aligns better with the persona's dietary needs.",
+                "violations_found": {
+                  "recipe_a": [
+                    "noodles",
+                    "sugar"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f14",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.0,
+              "dpo_score": 8.6,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 9,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb/keto constraints by avoiding forbidden ingredients like flour, sugar, and rice. It also incorporates preferred ingredients like cauliflower rice and aligns well with the persona's flavor profile and cooking style. Recipe A contains multiple forbidden ingredients, making it a poor fit.",
+              "violations": {
+                "recipe_a": [
+                  "flour",
+                  "cornstarch",
+                  "sugar",
+                  "rice vinegar (contains sugar)"
+                ],
+                "recipe_b": [
+                  "None"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 9,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb/keto constraints by avoiding forbidden ingredients like flour, sugar, and rice. It also incorporates preferred ingredients like cauliflower rice and aligns well with the persona's flavor profile and cooking style. Recipe A contains multiple forbidden ingredients, making it a poor fit.",
+                "violations_found": {
+                  "recipe_a": [
+                    "flour",
+                    "cornstarch",
+                    "sugar",
+                    "rice vinegar (contains sugar)"
+                  ],
+                  "recipe_b": [
+                    "None"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f15",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.0,
+              "dpo_score": 7.8,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 7,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is superior because it strictly adheres to the keto constraints, avoiding cornstarch, which is present in Recipe B. While Recipe B attempts to align with Kung Pao flavors, the constraint violation is a critical error. Recipe A also utilizes more of the preferred ingredients and keywords.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "cornstarch"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 7,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is superior because it strictly adheres to the keto constraints, avoiding cornstarch, which is present in Recipe B. While Recipe B attempts to align with Kung Pao flavors, the constraint violation is a critical error. Recipe A also utilizes more of the preferred ingredients and keywords.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "cornstarch"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f16",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it includes bok choy, a preferred ingredient, and is a more specific Chinese dish (Kung Pao Chicken) which aligns well with the persona's preference for Chinese cuisine. Both recipes adhere to the keto constraints, but Recipe B's use of peanuts and chili peppers adds to the savory and slightly spicy flavor profile.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it includes bok choy, a preferred ingredient, and is a more specific Chinese dish (Kung Pao Chicken) which aligns well with the persona's preference for Chinese cuisine. Both recipes adhere to the keto constraints, but Recipe B's use of peanuts and chili peppers adds to the savory and slightly spicy flavor profile.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f17",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 6.6,
+              "dpo_score": 7.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 6,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 6
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 6,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it includes ginger, which is a preferred flavor profile. Both recipes violate the constraint compliance due to the inclusion of sugar and cornstarch, but Recipe B includes bok choy which is a preferred ingredient. Recipe B also includes a more detailed ingredient list.",
+              "violations": {
+                "recipe_a": [
+                  "sugar"
+                ],
+                "recipe_b": [
+                  "cornstarch"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 6,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 6
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 6,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it includes ginger, which is a preferred flavor profile. Both recipes violate the constraint compliance due to the inclusion of sugar and cornstarch, but Recipe B includes bok choy which is a preferred ingredient. Recipe B also includes a more detailed ingredient list.",
+                "violations_found": {
+                  "recipe_a": [
+                    "sugar"
+                  ],
+                  "recipe_b": [
+                    "cornstarch"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f18",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 6.8,
+              "dpo_score": 8.8,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 6,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 6
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it avoids sugar, a forbidden ingredient for the persona, while Recipe A includes it. Recipe B also includes ginger, a preferred flavor, and has a slightly better structured recipe. Both recipes are quick and use available ingredients, but constraint compliance is critical.",
+              "violations": {
+                "recipe_a": [
+                  "sugar"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 6,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 6
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it avoids sugar, a forbidden ingredient for the persona, while Recipe A includes it. Recipe B also includes ginger, a preferred flavor, and has a slightly better structured recipe. Both recipes are quick and use available ingredients, but constraint compliance is critical.",
+                "violations_found": {
+                  "recipe_a": [
+                    "sugar"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f19",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.2,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 2,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb and keto dietary restrictions by using cauliflower rice instead of pasta. Recipe A contains pasta, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also incorporates preferred ingredients like garlic and tomatoes while maintaining an Italian-inspired flavor profile.",
+              "violations": {
+                "recipe_a": [
+                  "pasta"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 2,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the persona's low-carb and keto dietary restrictions by using cauliflower rice instead of pasta. Recipe A contains pasta, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also incorporates preferred ingredients like garlic and tomatoes while maintaining an Italian-inspired flavor profile.",
+                "violations_found": {
+                  "recipe_a": [
+                    "pasta"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "f20",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.2,
+              "dpo_score": 8.6,
+              "sft_scores_detail": {
+                "persona_alignment": 2,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 1,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the persona's dietary restrictions (low-carb/keto) and incorporates preferred ingredients like cauliflower, garlic, ginger, and bok choy. Recipe A contains multiple forbidden ingredients (rice, tortilla) and does not align with the persona's preferences.",
+              "violations": {
+                "recipe_a": [
+                  "rice",
+                  "tortilla"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 2,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 1,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the persona's dietary restrictions (low-carb/keto) and incorporates preferred ingredients like cauliflower, garlic, ginger, and bok choy. Recipe A contains multiple forbidden ingredients (rice, tortilla) and does not align with the persona's preferences.",
+                "violations_found": {
+                  "recipe_a": [
+                    "rice",
+                    "tortilla"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          }
+        ]
+      },
+      "consensus": {
+        "test_results": [
+          {
+            "test_idx": 0,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 1,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 2,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 3,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 4,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 5,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 6,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 7,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 8,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 9,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 10,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 11,
+            "winner": "unknown",
+            "confidence": "none",
+            "votes": {
+              "sft": 0,
+              "dpo": 0
+            },
+            "agreement_rate": 0
+          },
+          {
+            "test_idx": 12,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 13,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 14,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 15,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 16,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 17,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 18,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 19,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          }
+        ],
+        "overall": {
+          "dpo_wins": 16,
+          "sft_wins": 3,
+          "ties": 0,
+          "total_tests": 20,
+          "dpo_win_rate": 0.8,
+          "avg_agreement_rate": 0.95
+        }
+      },
+      "generated_recipes": [
+        {
+          "test_case_id": "f01",
+          "category": "basic_alignment",
+          "inventory": [
+            "chicken",
+            "bok choy",
+            "garlic",
+            "ginger",
+            "soy sauce alternative"
+          ],
+          "user_request": "Low-carb Chinese chicken",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Kung Pao Chicken Stir Fry\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken breast (1 lb, boneless, skinless)\",\n        \"quantity\": \"1 lb\",\n        \"unit\": \"lb\",\n        \"note\": \"cut into bite-sized pieces\"\n      },\n      \"bok choy (2 cups, chopped)\",\n      \"garlic (3 cloves, minced)\",\n      \"ginger (2 inches, grated)\",\n      \"soy sauce alternative (1/4 cup)\",\n      \"peanuts or almond (1/4 cup, chopped)\"\n    ],\n    \"steps\": [\n      \"Heat 2 tbsp of coconut oil in a wok or large skillet over high heat.\",\n      \"Add the chicken and cook until browned, about 5-6 minutes. Remove from the wok and set aside.\",\n      \"In the same wok, add the chopped garlic and ginger and sauté until fragrant, about 1 minute.\",\n      \"Add the chopped bok choy and cook until wilted, about 2-3 minutes.\",\n      \"Add the cooked chicken back into the wok and stir in the soy sauce alternative. Cook for an additional 1-2 minutes.\",\n      \"Season with salt and pepper to taste. Garnish with chopped peanuts or almonds.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Keto Kung Pao Chicken\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"low-carb\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken breast\",\n        \"quantity\": \"500g\",\n        \"unit\": \"g\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"bok choy\",\n        \"quantity\": \"200g\",\n        \"unit\": \"g\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"garlic\",\n        \"quantity\": \"4\",\n        \"unit\": \"\",\n        \"note\": \"minced\"\n      },\n      {\n        \"name\": \"ginger\",\n        \"quantity\": \"2\",\n        \"unit\": \"\",\n        \"note\": \"grated\"\n      },\n      {\n        \"name\": \"soy sauce alternative\",\n        \"quantity\": \"2 tbsp\",\n        \"unit\": \"tbsp\",\n        \"note\": \"use sugar-free soy sauce or tamari\"\n      }\n    ],\n    \"steps\": [\n      \"Heat 2 tbsp of oil in a wok or large skillet over high heat. Add 2 cloves of minced garlic and sauté for 1 minute until fragrant.\",\n      \"Add 2 inches of grated ginger and sauté for another minute until fragrant.\",\n      \"Add 500g of chicken breast, breaking it up into small pieces, and cook until browned.\",\n      \"Add 200g of bok choy and cook until wilted. Season with soy sauce alternative and stir-fry for 1 minute.\",\n      \"Serve hot, garnished with green onions and sesame seeds if desired.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f02",
+          "category": "basic_alignment",
+          "inventory": [
+            "beef",
+            "broccoli",
+            "garlic",
+            "low-carb sauce"
+          ],
+          "user_request": "Keto beef and broccoli",
+          "sft_recipe": "{\n  \"name\": \"Keto Beef and Broccoli Stir Fry\",\n  \"cuisine\": \"Asian\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"25m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Beef (500g)\",\n      \"quantity\": \"500g\",\n      \"unit\": \"g\",\n      \"measure\": \"raw\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Broccoli (400g)\",\n      \"quantity\": \"400g\",\n      \"unit\": \"g\",\n      \"measure\": \"raw\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Garlic (3 cloves)\",\n      \"quantity\": \"3\",\n      \"unit\": \"\",\n      \"measure\": \"cloves\",\n      \"note\": null\n    }\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of oil in a wok or large skillet over medium-high heat.\",\n    \"Add 3 cloves of minced garlic and sauté for 1 minute until fragrant.\",\n    \"Add 500g of beef and cook until browned, breaking it up with a spoon as it cooks.\",\n    \"Add 400g of broccoli and cook until tender but still crisp, about 3-4 minutes.\",\n    \"Serve hot, garnished with green onions if desired.\"\n  ],\n  \"note\": null\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Beef and Broccoli Stir Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"500g beef (sirloin or ribeye, sliced into thin strips)\",\n    \"300g broccoli (fresh, florets)\",\n    \"3 cloves garlic (minced)\",\n    \"2 tablespoons coconut oil\",\n    \"1 tablespoon low-carb sauce (see below for recipe)\",\n    \"1 small onion (thinly sliced)\",\n    \"1 small bok choy (chopped)\",\n    \"1 teaspoon grated ginger\",\n    \"1 teaspoon soy sauce (make sure sugar-free)\",\n    \"1 teaspoon sesame oil\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon coconut oil in a wok or large skillet over high heat. Add beef and cook for 3-4 minutes, or until browned. Remove from wok and set aside.\",\n    \"In the same wok, add the remaining 1 tablespoon coconut oil. Add minced garlic and cook for 1 minute, until fragrant.\",\n    \"Add the sliced onion and cook for 2-3 minutes, until softened. Add broccoli and cook for an additional 2-3 minutes, until tender but still crisp.\",\n    \"Add the cooked beef back into the wok, along with low-carb sauce, soy sauce, and sesame oil. Stir to combine.\",\n    \"Add chopped bok choy and cook for an additional 1-2 minutes, until wilted. Season with salt and pepper to taste.\"\n  ],\n  \"low-carb_sauce\": {\n    \"name\": \"Low-Carb Stir Fry Sauce\",\n    \"main_ingredients\": [\n      \"2 tablespoons coconut aminos\",\n      \"2 tablespoons coconut oil\",\n      \"2 cloves garlic (minced)\",\n      \"1 tablespoon grated ginger\",\n      \"1 tablespoon soy sauce (sugar-free)\",\n      \"1 teaspoon sesame oil\",\n      \"1 teaspoon rice vinegar\",\n      \"1/4 teaspoon red pepper flakes (optional)\"\n    ],\n    \"steps\": [\n      \"In a small bowl, whisk together all ingredients until smooth.\",\n      \"Adjust seasoning to taste.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f03",
+          "category": "basic_alignment",
+          "inventory": [
+            "pork",
+            "cauliflower",
+            "ginger",
+            "garlic"
+          ],
+          "user_request": "Keto Chinese stir-fry",
+          "sft_recipe": "{\n  \"name\": \"Keto Chinese Stir-Fry\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 head of cauliflower (1 cup, broken into florets)\",\n    \"2 inches of ginger (2 inches, peeled and grated)\",\n    \"3 cloves of garlic (minced)\",\n    \"1 pound of pork (sliced into thin strips)\",\n    \"2 tablespoons of coconut oil\",\n    \"1 tablespoon of soy sauce (make sure sugar-free)\",\n    \"1 tablespoon of oyster sauce (make sure sugar-free)\",\n    \"1 teaspoon of sesame oil\",\n    \"1 teaspoon of sesame seeds\",\n    \"Salt and pepper to taste\",\n    \"Scallions (chopped, for garnish)\",\n    \"Green onions (chopped, for garnish)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of coconut oil in a wok or large skillet over medium-high heat. Add the sliced pork and cook until browned, about 3-4 minutes. Remove the pork from the wok and set aside.\",\n    \"In the same wok, add the remaining 1 tablespoon of coconut oil. Add the grated ginger and minced garlic and stir-fry until fragrant, about 30 seconds.\",\n    \"Add the cauliflower florets to the wok and stir-fry for 3-4 minutes, or until slightly tender.\",\n    \"Return the cooked pork to the wok and stir in the soy sauce and oyster sauce. Cook for an additional 1-2 minutes, until the pork is coated in the sauce.\",\n    \"Season with salt and pepper to taste. Garnish with chopped scallions and green onions. Serve immediately.\",\n    \"Note: Make sure to use sugar-free soy sauce and oyster sauce to keep the dish keto-friendly.\"\n  ],\n  \"note\": \"This recipe is a keto-friendly Chinese stir-fry dish that combines the flavors of ginger, garlic, and pork with the crunch of cauliflower. Enjoy!\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Chinese Stir-Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Pork (200g)\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Cauliflower (250g)\",\n      \"quantity\": \"250g\",\n      \"unit\": \"g\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Ginger (3 cloves)\",\n      \"quantity\": \"3\",\n      \"unit\": \"\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Garlic (4 cloves)\",\n      \"quantity\": \"4\",\n      \"unit\": \"\",\n      \"note\": null\n    }\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of oil in a wok or large skillet over high heat.\",\n    \"Add the minced garlic and ginger and stir-fry for 1 minute until fragrant.\",\n    \"Add the pork and cook until browned, breaking it up into small pieces as it cooks.\",\n    \"Add the cauliflower and stir-fry for 3-4 minutes until slightly tender.\",\n    \"Season with soy sauce and stir-fry for another minute.\",\n    \"Serve hot, garnished with green onions if desired.\"\n  ],\n  \"note\": \"This keto stir-fry is a quick and easy meal that's perfect for a weeknight dinner. The cauliflower rice is a low-carb alternative to traditional rice.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f04",
+          "category": "basic_alignment",
+          "inventory": [
+            "shrimp",
+            "vegetables",
+            "garlic",
+            "ginger"
+          ],
+          "user_request": "Low-carb shrimp stir-fry",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Low-Carb Shrimp Stir-Fry\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"shrimp (12 oz)\",\n        \"quantity\": \"12 oz\",\n        \"unit\": \"g\"\n      },\n      \"vegetables (1 cup)\",\n      \"garlic (3 cloves)\",\n      \"ginger (2 inches)\",\n      \"coconut oil (2 tbsp)\",\n      \"soy sauce (2 tbsp)\",\n      \"green onions (1/4 cup)\",\n      \"sesame seeds (1 tsp)\"\n    ],\n    \"steps\": [\n      \"Heat coconut oil in a wok or large skillet over medium-high heat.\",\n      \"Add minced garlic and grated ginger; stir-fry for 1 minute until fragrant.\",\n      \"Add shrimp and cook for 2-3 minutes per side until pink and fully cooked.\",\n      \"Add vegetables and stir-fry for 3-4 minutes until tender but crisp.\",\n      \"Season with soy sauce and sesame seeds; serve immediately.\"\n    ],\n    \"note\": \"This recipe is a low-carb twist on the classic stir-fry. The coconut oil and sesame seeds add flavor without adding carbs.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Shrimp Stir-Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Shrimp (300g)\",\n      \"quantity\": \"300g\",\n      \"unit\": \"g\",\n      \"measurement_unit\": null\n    },\n    \"garlic (3 cloves)\",\n    \"ginger (2 inches)\",\n    \"vegetables (bell peppers, broccoli, carrots, snow peas) (200g)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of oil in a wok or large skillet over high heat.\",\n    \"Add minced garlic and ginger, stir-fry for 1 minute until fragrant.\",\n    \"Add bell peppers, broccoli, and carrots, stir-fry for 2-3 minutes until tender.\",\n    \"Add snow peas and cook for an additional 1-2 minutes.\",\n    \"Add shrimp, stir-fry for 2-3 minutes until pink and cooked through.\",\n    \"Season with salt and pepper to taste, serve immediately.\"\n  ],\n  \"note\": null\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f05",
+          "category": "basic_alignment",
+          "inventory": [
+            "chicken",
+            "cauliflower rice",
+            "vegetables",
+            "soy sauce alternative"
+          ],
+          "user_request": "Keto Chinese fried rice",
+          "sft_recipe": "{\n  \"name\": \"Keto Chinese Fried Cauliflower Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken breast\",\n      \"quantity\": \"250g\",\n      \"unit\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"cauliflower\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\",\n      \"note\": \"grated\"\n    },\n    {\n      \"name\": \"soy sauce alternative\",\n      \"quantity\": \"2 tbsp\",\n      \"unit\": \"tbsp\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"coconut oil\",\n      \"quantity\": \"2 tbsp\",\n      \"unit\": \"tbsp\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"vegetables (e.g. bell peppers, carrots, green onions)\",\n      \"quantity\": \"100g\",\n      \"unit\": \"g\",\n      \"note\": \"\"\n    }\n  ],\n  \"steps\": [\n    \"Step 1. Heat coconut oil in a large skillet or wok over medium-high heat. Add the chicken and cook until browned, about 5 minutes. Remove from heat and set aside.\",\n    \"Step 2. In the same skillet, add more coconut oil if necessary. Add the grated cauliflower and cook until slightly tender, about 3-4 minutes.\",\n    \"Step 3. Add the soy sauce alternative and stir-fry for 1 minute.\",\n    \"Step 4. Add the cooked chicken back into the skillet and stir-fry for another 2 minutes.\",\n    \"Step 5. Add the chopped vegetables and stir-fry for another minute. Serve hot.\"\n    ],\n  \"note\": \"Note: For a keto Chinese fried rice, it's essential to use cauliflower instead of regular rice to keep the dish low-carb. Also, be mindful of the portion size to keep the dish within keto guidelines.\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Chinese Fried Cauliflower Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 head of cauliflower (1.5 lbs, grated)\",\n    \"1/2 cup coconut oil\",\n    \"2 cloves of garlic (minced)\",\n    \"2 inches of ginger (grated)\",\n    \"1 lb boneless, skinless chicken breast (cut into small pieces)\",\n    \"1 cup mixed vegetables (bell peppers, carrots, broccoli)\",\n    \"2 tbsp soy sauce alternative (make sure sugar-free)\",\n    \"1 tsp sesame oil\",\n    \"1 tsp cornstarch\",\n    \"1 tsp five-spice powder\",\n    \"Salt and pepper to taste\",\n    \"2 green onions (chopped)\"\n  ],\n  \"steps\": [\n    \"Step 1. Heat coconut oil in a large skillet or wok over medium-high heat. Add minced garlic and grated ginger and stir-fry until fragrant (1 minute).\",\n    \"Step 2. Add the chicken to the skillet and cook until browned and cooked through (5-6 minutes). Remove from the skillet and set aside.\",\n    \"Step 3. In the same skillet, add the mixed vegetables and cook until tender-crisp (3-4 minutes).\",\n    \"Step 4. Add the grated cauliflower rice to the skillet and stir-fry for 2-3 minutes, breaking up any clumps with a spatula.\",\n    \"Step 5. In a small bowl, mix the soy sauce alternative, sesame oil, cornstarch, and five-spice powder. Pour the sauce into the skillet and stir-fry for an additional 1-2 minutes, until the cauliflower rice is well coated.\",\n    \"Step 6. Return the cooked chicken to the skillet and stir-fry everything together for another minute.\",\n    \"Step 7. Season with salt and pepper to taste. Garnish with chopped green onions and serve immediately.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f06",
+          "category": "basic_alignment",
+          "inventory": [
+            "fish",
+            "bok choy",
+            "ginger",
+            "garlic"
+          ],
+          "user_request": "Low-carb Chinese fish",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Pan-Seared Bok Choy with Ginger and Garlic\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"1 lb fish (any type, e.g. salmon or tilapia, cut into 1-inch pieces)\",\n      \"2 bunches bok choy, cleaned and separated into individual leaves\",\n      \"2 inches ginger, peeled and grated\",\n      \"3 cloves garlic, minced\"\n    ],\n    \"steps\": [\n      \"Heat a skillet or wok over medium-high heat. Add 1 tablespoon of oil and swirl to coat.\",\n      \"Add the garlic and ginger and stir-fry for 1 minute until fragrant.\",\n      \"Add the fish and cook for 3-4 minutes per side, or until cooked through.\",\n      \"Add the bok choy and stir-fry for 2-3 minutes, or until wilted.\",\n      \"Season with soy sauce and serve immediately.\"\n    ],\n    \"note\": \"This recipe is a keto-friendly take on a classic Chinese dish. The bok choy is a great source of fiber and vitamins, while the ginger and garlic add flavor without adding carbs.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Kung Pao Fish\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"fish (1 lb, skin removed, cut into bite-sized pieces)\",\n      \"quantity\": \"1\",\n      \"unit\": \"lb\"\n    },\n    \"bok choy (2 bunches, chopped)\",\n    \"ginger (2 inches, sliced)\",\n    \"garlic (4 cloves, minced)\",\n    \"peanuts (1/4 cup, chopped)\",\n    \"chili peppers (2, sliced)\",\n    \"soy sauce (2 tbsp, sugar-free)\",\n    \"oyster sauce (1 tbsp, sugar-free)\",\n    \"coconut aminos (1 tbsp)\",\n    \"sesame oil (2 tbsp)\",\n    \"salt (to taste)\",\n    \"black pepper (to taste)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of sesame oil in a wok or large skillet over high heat. Add the garlic and ginger and stir-fry until fragrant.\",\n    \"Add the fish and cook until browned on all sides, about 3-4 minutes. Remove the fish from the wok and set aside.\",\n    \"In the same wok, add the remaining 1 tablespoon of sesame oil. Add the peanuts and cook until fragrant, about 1 minute.\",\n    \"Add the chili peppers and cook for another minute.\",\n    \"Add the bok choy and cook until wilted, about 2-3 minutes.\",\n    \"Return the fish to the wok and pour in the soy sauce, oyster sauce, and coconut aminos. Stir-fry everything together for about 2-3 minutes.\",\n    \"Season with salt and black pepper to taste. Serve immediately.\",\n    \" Garnish with additional peanuts and scallions if desired.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f07",
+          "category": "basic_alignment",
+          "inventory": [
+            "beef",
+            "cabbage",
+            "garlic",
+            "ginger"
+          ],
+          "user_request": "Keto Chinese beef",
+          "sft_recipe": "{\n  \"name\": \"Keto Beef and Cabbage Stir-Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 lb beef (sirloin or ribeye, sliced)\",\n    \"2 cups cabbage (shredded)\",\n    \"3 cloves garlic (minced)\",\n    \"2 inches ginger (grated)\",\n    \"2 tbsp coconut oil\",\n    \"1 tsp sesame oil\",\n    \"1 tsp soy sauce (sugar-free)\",\n    \"1 tsp oyster sauce (sugar-free)\",\n    \"1 tsp five-spice powder\",\n    \"1 tsp salt\",\n    \"1 tsp black pepper\"\n  ],\n  \"steps\": [\n    \"Heat coconut oil in a wok or large skillet over high heat. Add beef and cook until browned, about 3-4 minutes. Remove beef from wok and set aside.\",\n    \"In the same wok, add sesame oil and cook garlic and ginger until fragrant, about 1 minute.\",\n    \"Add cabbage to the wok and cook until slightly wilted, about 3-4 minutes.\",\n    \"Return beef to the wok and stir in soy sauce, five-spice powder, salt, and black pepper. Cook for an additional 2-3 minutes.\",\n    \"Serve hot and garnish with green onions if desired.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Beef Stir-Fry with Garlic and Ginger\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"beef (sirloin steak, 120g)\",\n      \"quantity\": \"120g\",\n      \"unit\": \"g\",\n      \"note\": null\n    },\n    \"garlic (3 cloves)\",\n    \"ginger (1-inch piece, sliced)\",\n    \"cabbage (1 head, thinly sliced)\",\n    \"oil (1/4 cup, coconut oil)\",\n    \"soy sauce (1/4 cup, sugar-free)\",\n    \"oyster sauce (1/4 cup, sugar-free)\",\n    \"sesame oil (1 tsp)\",\n    \"salt (to taste)\",\n    \"black pepper (to taste)\",\n    \"scallions (chopped, for garnish)\",\n    \"sesame seeds (for garnish)\"\n  ],\n  \"steps\": [\n    \"Heat oil in a wok or large skillet over high heat. Add beef and cook for 3-4 minutes per side, or until cooked to desired level of doneness. Remove from wok and set aside.\",\n    \"In the same wok, add more oil if necessary, then add garlic and ginger. Stir-fry until fragrant, about 30 seconds.\",\n    \"Add cabbage and cook until slightly wilted, about 3-4 minutes.\",\n    \"Add soy sauce and oyster sauce, and stir to combine. Cook for 1 minute.\",\n    \"Return beef to wok and stir to coat with sauce. Cook for an additional 1-2 minutes.\",\n    \"Season with salt and black pepper to taste.\",\n    \"Garnish with scallions and sesame seeds. Serve immediately.\"\n  ],\n  \"note\": \"This recipe is keto-friendly, with a balance of protein and vegetables. The cabbage and beef provide a good source of fiber and nutrients, while the coconut oil and sesame oil add healthy fats. This dish is best served immediately, as the vegetables will wilt and lose their crunch over time.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f08",
+          "category": "basic_alignment",
+          "inventory": [
+            "chicken",
+            "vegetables",
+            "garlic",
+            "ginger",
+            "sesame oil"
+          ],
+          "user_request": "Low-carb chicken stir-fry",
+          "sft_recipe": "{\n  \"name\": \"Low-Carb Chicken Stir-Fry\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken breast (4 oz)\",\n      \"quantity\": \"1 cup\",\n      \"unit\": \"chicken breast, boneless, skinless\"\n    },\n    \"garlic (3 cloves)\",\n    \"ginger (1-inch piece)\",\n    \"sesame oil (2 tbsp)\",\n    \"vegetables (bell peppers, carrots, broccoli, snow peas)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tbsp of sesame oil in a wok or large skillet over medium-high heat.\",\n    \"Add 1-inch piece of ginger, minced, and sauté for 1 minute.\",\n    \"Add 3 cloves of minced garlic and sauté for another minute.\",\n    \"Add 1 cup of sliced chicken breast and cook until browned, about 5-6 minutes.\",\n    \"Add 1 cup of mixed vegetables (bell peppers, carrots, broccoli, snow peas) and stir-fry for 3-4 minutes.\",\n    \"Season with salt and pepper to taste.\",\n    \"Serve hot and garnish with sesame seeds if desired.\"\n  ],\n  \"note\": \"Note: This recipe is low-carb and can be adjusted according to individual dietary needs.\"\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Keto Chicken Stir-Fry\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken breast\",\n        \"quantity\": \"300g\",\n        \"unit\": \"g\"\n      },\n      {\n        \"name\": \"cauliflower\",\n        \"quantity\": \"200g\",\n        \"unit\": \"g\"\n      },\n      {\n        \"name\": \"garlic\",\n        \"quantity\": \"3\",\n        \"unit\": \"\"\n      },\n      {\n        \"name\": \"ginger\",\n        \"quantity\": \"2\",\n        \"unit\": \"\"\n      },\n      {\n        \"name\": \"sesame oil\",\n        \"quantity\": \"2tbsp\",\n        \"unit\": \"tbsp\"\n      },\n      {\n        \"name\": \"soy sauce (sugar-free)\",\n        \"quantity\": \"1tbsp\",\n        \"unit\": \"tbsp\"\n      }\n    ],\n    \"steps\": [\n      \"Heat 1 tbsp of sesame oil in a wok or large skillet over high heat. Add 3 cloves of minced garlic and 2 slices of ginger and stir-fry for 1 minute until fragrant.\",\n      \"Add 200g of cauliflower florets and stir-fry for 3-4 minutes until slightly tender.\",\n      \"Add 300g of diced chicken breast and stir-fry for 5-6 minutes until cooked through.\",\n      \"Add 1 tbsp of sugar-free soy sauce and stir-fry for 1 minute to combine.\",\n      \"Season with salt and pepper to taste. Serve hot.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "f09",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "rice",
+            "soy sauce",
+            "vegetables"
+          ],
+          "user_request": "Chinese fried rice",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chinese Fried Rice\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": null,\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken (1 cup, diced)\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"measured_by\": \"cups\"\n      },\n      \"rice (2 cups)\",\n      \"soy sauce (2 tbsp)\",\n      \"vegetables (1 cup, chopped)\",\n      \"vegetable oil (2 tbsp)\",\n      \"scallions (1/4 cup, chopped)\"\n    ],\n    \"steps\": [\n      \"Heat 2 tbsp of vegetable oil in a wok or large skillet over medium-high heat.\",\n      \"Add the diced chicken and cook until browned, about 5 minutes.\",\n      \"Add the chopped vegetables and cook until they are tender-crisp, about 3-4 minutes.\",\n      \"Add the cooked rice to the wok or skillet, breaking up any clumps with a spatula.\",\n      \"Add soy sauce and stir-fry for 2-3 minutes, until the rice is well coated.\",\n      \"Transfer the fried rice to a serving platter and garnish with chopped scallions.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Chinese Fried Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"savory, garlicky\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken breast (120g)\",\n      \"quantity\": \"120g\",\n      \"unit\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"cauliflower rice (150g)\",\n      \"quantity\": \"150g\",\n      \"unit\": \"g\",\n      \"note\": \"use a food processor to grind into rice-like consistency\"\n    },\n    {\n      \"name\": \"bok choy (50g)\",\n      \"quantity\": \"50g\",\n      \"unit\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"garlic (3 cloves)\",\n      \"quantity\": \"3\",\n      \"unit\": \"\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"ginger (1-inch piece)\",\n      \"quantity\": \"1\",\n      \"unit\": \"\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"soy sauce (2 tbsp)\",\n      \"quantity\": \"30ml\",\n      \"unit\": \"ml\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"oil (1 tbsp)\",\n      \"quantity\": \"15ml\",\n      \"unit\": \"ml\",\n      \"note\": \"\"\n    }\n  ],\n  \"steps\": [\n    \"Heat oil in a wok or large skillet over high heat. Add garlic and ginger, stir-fry until fragrant.\",\n    \"Add chicken breast and cook until browned, breaking it up into small pieces as it cooks.\",\n    \"Add cauliflower rice and bok choy, stir-fry for 2-3 minutes until the vegetables are tender.\",\n    \"Add soy sauce and stir-fry for another minute, until the sauce is well combined.\",\n    \"Serve hot and garnish with green onions if desired.\"\n  ]\n}",
+          "note": "Contains rice (forbidden)"
+        },
+        {
+          "test_case_id": "f10",
+          "category": "constraint_stress",
+          "inventory": [
+            "beef",
+            "noodles",
+            "vegetables",
+            "sauce"
+          ],
+          "user_request": "Lo mein",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Stir-Fried Beef Lo Mein\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"1 cup beef (sliced, 120g)\",\n      \"1 cup noodles (lo mein, 100g)\",\n      \"2 cups mixed vegetables (bell peppers, carrots, broccoli, 200g)\",\n      \"2 tablespoons vegetable oil (30g)\",\n      \"2 cloves garlic (minced, 6g)\",\n      \"1 tablespoon soy sauce (15g)\",\n      \"1 tablespoon oyster sauce (15g)\",\n      \"1 teaspoon sesame oil (5g)\",\n      \"Salt and pepper to taste (to taste)\",\n      \"Scallions (chopped, for garnish, 10g)\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of vegetable oil in a wok or large skillet over high heat. Add the beef and cook until browned, about 3-4 minutes. Remove the beef from the wok and set aside.\",\n      \"In the same wok, add the remaining 1 tablespoon of vegetable oil. Add the garlic and cook for 1 minute, until fragrant.\",\n      \"Add the mixed vegetables and cook for 3-4 minutes, until they start to soften.\",\n      \"Add the cooked noodles to the wok and stir-fry for 2-3 minutes, until the noodles are well combined with the vegetables.\",\n      \"Return the beef to the wok and add the soy sauce and oyster sauce. Stir-fry for another minute, until the beef is coated with the sauce.\",\n      \"Season with salt and pepper to taste. Garnish with chopped scallions and serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Beef Stir Fry with Cauliflower Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 head of bok choy (sliced)\",\n    \"1 head of cauliflower (grated, used as rice substitute)\",\n    \"1/2 pound beef (sliced)\",\n    \"2 cloves of garlic (minced)\",\n    \"1-inch piece of ginger (grated)\",\n    \"2 tablespoons of sesame oil\",\n    \"1 tablespoon of soy sauce (sugar-free)\",\n    \"1 tablespoon of oyster sauce (sugar-free)\",\n    \"1 teaspoon of sesame seeds\",\n    \"1/4 teaspoon of red pepper flakes\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Heat sesame oil in a wok or large skillet over high heat. Add garlic and ginger and stir-fry until fragrant.\",\n    \"Add beef and cook until browned, about 3-4 minutes. Remove from wok and set aside.\",\n    \"Add more oil if necessary, then add bok choy and cook until wilted. Add grated cauliflower and cook for an additional 2-3 minutes.\",\n    \"Return beef to the wok and stir in soy sauce and oyster sauce. Cook for 1 minute.\",\n    \"Season with sesame seeds, red pepper flakes, salt, and pepper to taste. Serve hot.\"\n  ]\n}",
+          "note": "Contains noodles (forbidden)"
+        },
+        {
+          "test_case_id": "f11",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "sugar",
+            "cornstarch",
+            "soy sauce"
+          ],
+          "user_request": "Sweet and sour chicken",
+          "sft_recipe": "{\n  \"name\": \"Sweet and Sour Chicken\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 lb chicken breast or thighs, cut into bite-sized pieces\",\n    \"1/2 cup cornstarch\",\n    \"2 tbsp soy sauce\",\n    \"2 tbsp sugar\"\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp oil in a wok or large skillet over medium-high heat. Add the chicken and cook until browned, about 5-6 minutes. Remove from heat and set aside.\",\n    \"In a small bowl, mix together cornstarch and 2 tbsp water until smooth. Add the soy sauce and sugar, and stir until combined.\",\n    \"Add the cornstarch mixture to the wok or skillet and stir-fry for 1-2 minutes, until the mixture thickens.\",\n    \"Return the chicken to the wok or skillet and stir to coat with the sauce. Cook for an additional 2-3 minutes, until the chicken is cooked through.\",\n    \"Serve hot over rice or noodles.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Sweet and Sour Chicken\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken breast\",\n      \"quantity\": \"500g\",\n      \"unit\": \"g\"\n    },\n    \"bok choy\",\n    \"cauliflower rice\",\n    \"soy sauce\",\n    \"ginger\",\n    \"garlic\",\n    \"cornstarch\",\n    \"oil\"\n  ],\n  \"steps\": [\n    \"Step 1. Cut chicken breast into bite-sized pieces and season with salt and pepper. Set aside.\",\n    \"Step 2. Heat oil in a wok or large skillet over medium-high heat. Add ginger and garlic and stir-fry for 1 minute until fragrant.\",\n    \"Step 3. Add chicken to the wok and stir-fry for 5-6 minutes until browned and cooked through.\",\n    \"Step 4. Add bok choy and cauliflower rice to the wok and stir-fry for 2-3 minutes until the vegetables are tender.\",\n    \"Step 5. Mix in soy sauce and stir-fry for an additional 1 minute. Serve hot.\"\n  ]\n}",
+          "note": "Contains sugar and cornstarch (forbidden)"
+        },
+        {
+          "test_case_id": "f12",
+          "category": "constraint_stress",
+          "inventory": [
+            "pork",
+            "rice",
+            "sweet sauce",
+            "pineapple"
+          ],
+          "user_request": "Chinese pork",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Pork Fried Rice\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"pork\",\n        \"quantity\": \"200g\",\n        \"unit\": \"g\",\n        \"measurement_unit\": \"g\"\n      },\n      \"rice\",\n      \"sweet sauce\",\n      \"pineapple\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of oil in a wok or large skillet over medium-high heat. Add the pork and cook until browned, breaking it up into small pieces as it cooks.\",\n      \"Add the cooked rice to the wok or skillet, breaking up any clumps with a spatula. Stir-fry for 2-3 minutes.\",\n      \"Add the sweet sauce and stir-fry for another minute, until the rice is well coated.\",\n      \"Add the pineapple and stir-fry for another minute, until heated through.\",\n      \"Season with salt and pepper to taste. Serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Chinese Pork Stir Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"pork\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\",\n      \"note\": \"lean pork breast or thigh, sliced\"\n    },\n    \"cauliflower rice\",\n    \"bok choy\",\n    \"garlic\",\n    \"ginger\",\n    \"sweet sauce\",\n    \"soy sauce\",\n    \"sesame oil\",\n    \"scallions\"\n  ],\n  \"steps\": [\n    \"Heat sesame oil in a wok or large skillet over high heat.\",\n    \"Add garlic and ginger, stir-fry until fragrant (30s)\",\n    \"Add pork, stir-fry until browned (3-4 min)\",\n    \"Add bok choy, stir-fry until wilted (2 min)\",\n    \"Add cauliflower rice, stir-fry for 2-3 min\",\n    \"Add sweet sauce and soy sauce, stir-fry for 1 min\",\n    \"Season with salt and pepper to taste, garnish with scallions\"\n  ],\n  \"note\": \"No added carbs, can be adapted to keto by using cauliflower rice and adjusting sweet sauce\"\n}",
+          "note": "Contains rice and sweet sauce (forbidden)"
+        },
+        {
+          "test_case_id": "f13",
+          "category": "constraint_stress",
+          "inventory": [
+            "shrimp",
+            "noodles",
+            "vegetables"
+          ],
+          "user_request": "Shrimp chow mein",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Shrimp Chow Mein\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"shrimp (12 oz)\",\n        \"quantity\": \"1 pound\",\n        \"unit\": \"lb\",\n        \"measure\": \"1 lb\"\n      },\n      \"noodles (8 oz)\",\n      \"vegetables (1 cup)\",\n      \"oil (2 tbsp)\",\n      \"soy sauce (2 tbsp)\",\n      \"sugar (1 tsp)\",\n      \"salt (1 tsp)\",\n      \"pepper (1/2 tsp)\",\n      \"garlic (2 cloves)\",\n      \"ginger (1-inch piece)\"\n    ],\n    \"steps\": [\n      \"Heat oil in a wok or large skillet over high heat.\",\n      \"Add garlic and ginger, stir-fry until fragrant (30 seconds).\",\n      \"Add shrimp, cook until pink and fully cooked (3-4 minutes).\",\n      \"Add noodles, stir-fry for 2 minutes.\",\n      \"Add vegetables, stir-fry for 2-3 minutes.\",\n      \"Season with soy sauce, sugar, salt, and pepper. Serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Shrimp and Vegetable Stir Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 pound large shrimp, peeled and deveined\",\n    \"1 head of cauliflower, grated into rice-like consistency\",\n    \"2 cloves of garlic, minced\",\n    \"1-inch piece of ginger, grated\",\n    \"1 cup of mixed vegetables (such as bell peppers, carrots, and broccoli)\",\n    \"2 tablespoons of coconut oil\",\n    \"1 tablespoon of soy sauce (make sure it's sugar-free)\",\n    \"1 tablespoon of sesame oil\",\n    \"1 teaspoon of sesame seeds\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Heat coconut oil in a wok or large skillet over high heat. Add garlic and ginger and stir-fry for 1 minute until fragrant.\",\n    \"Add mixed vegetables and stir-fry for 3-4 minutes until they start to soften.\",\n    \"Add cauliflower 'rice' and stir-fry for 2-3 minutes until it's slightly browned.\",\n    \"Add shrimp and stir-fry for 2-3 minutes until pink and cooked through.\",\n    \"Season with soy sauce, sesame oil, and sesame seeds. Serve immediately and garnish with additional sesame seeds if desired.\"\n  ],\n  \"note\": \"This recipe is a low-carb and keto-friendly version of the classic Shrimp Chow Mein dish. The cauliflower rice provides a low-carb substitute for traditional noodles.\"\n}",
+          "note": "Contains noodles (forbidden)"
+        },
+        {
+          "test_case_id": "f14",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "flour",
+            "sweet sauce"
+          ],
+          "user_request": "General Tso's chicken",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"General Tso's Chicken\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 lb boneless, skinless chicken breast or thighs, cut into bite-sized pieces\",\n      \"1/2 cup all-purpose flour\",\n      \"1/4 cup cornstarch\",\n      \"2 tablespoons vegetable oil\",\n      \"2 cloves garlic, minced\",\n      \"1 tablespoon ginger, minced\",\n      \"1/4 cup sweet sauce\",\n      \"1/4 cup soy sauce\",\n      \"1/4 cup rice vinegar\",\n      \"1/4 cup sugar\",\n      \"1/4 cup water\",\n      \"1 teaspoon sesame oil\",\n      \"1/4 teaspoon red pepper flakes (optional)\",\n      \"Scallions, chopped (optional)\"\n    ],\n    \"steps\": [\n      \"Step 1. In a medium bowl, whisk together flour, cornstarch, and a pinch of salt. Add the chicken pieces and toss to coat. Set aside.\",\n      \"Step 2. In a large skillet or wok, heat 1 tablespoon of vegetable oil over medium-high heat. Add the chicken and cook until browned and cooked through, about 5-7 minutes. Remove the chicken from the skillet and set aside.\",\n      \"Step 3. In the same skillet, add the remaining 1 tablespoon of vegetable oil. Add the minced garlic and ginger and cook for 1 minute, until fragrant.\",\n      \"Step 4. Add the sweet sauce, soy sauce, rice vinegar, sugar, and water to the skillet. Bring the mixture to a boil, then reduce the heat to medium-low and simmer for 2-3 minutes, until the sauce has thickened.\",\n      \"Step 5. Add the cooked chicken back into the skillet and toss to coat with the sauce. Cook for an additional 1-2 minutes, until the chicken is fully coated. Season with sesame oil and red pepper flakes (if using). Garnish with chopped scallions (if using). Serve immediately.\",\n      \"Step 6. Serve hot over steamed rice or noodles, if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto General Tso's Chicken with Cauliflower Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 lb boneless, skinless chicken breast or thighs (cut into bite-sized pieces)\",\n    \"1 head of cauliflower (broken into florets)\",\n    \"2 cloves of garlic (minced)\",\n    \"1-inch piece of ginger (grated)\",\n    \"1/4 cup low-carb sweet sauce\",\n    \"2 tbsp soy sauce\",\n    \"1 tsp sesame oil\",\n    \"1 tsp sesame seeds\",\n    \"1 tsp cornstarch\",\n    \"1/4 cup chopped scallions (optional)\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C). Toss cauliflower florets with 1 tsp sesame oil, salt, and pepper on a baking sheet. Roast for 15-20 minutes or until tender.\",\n    \"In a small bowl, whisk together sweet sauce, soy sauce, and cornstarch. Set aside.\",\n    \"In a large skillet or wok, heat 1 tsp sesame oil over medium-high heat. Add chicken and cook until browned and cooked through, about 5-7 minutes. Remove from heat and set aside.\",\n    \"In the same skillet, add the minced garlic and grated ginger. Cook for 1 minute until fragrant.\",\n    \"Add the roasted cauliflower to the skillet and stir to combine with garlic and ginger. Pour in the sweet sauce mixture and stir to coat. Cook for an additional 2-3 minutes.\",\n    \"Return the cooked chicken to the skillet and stir to combine with cauliflower and sauce. Season with sesame seeds and scallions (if using). Serve hot.\"\n  ]\n}",
+          "note": "Contains flour and sweet sauce (forbidden)"
+        },
+        {
+          "test_case_id": "f15",
+          "category": "edge_case",
+          "inventory": [
+            "chicken",
+            "bok choy",
+            "garlic"
+          ],
+          "user_request": "Simple Chinese keto",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Keto Stir-Fried Bok Choy with Garlic\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken (1 lb, boneless, skinless)\",\n        \"quantity\": \"1\",\n        \"unit\": \"lb\",\n        \"culinary_preference\": \"keto\"\n      },\n      \"bok choy (2 bunches)\",\n      \"garlic (3 cloves)\",\n      \"coconut oil (2 tbsp)\",\n      \"soy sauce (2 tbsp, sugar-free)\",\n      \"oyster sauce (2 tbsp, sugar-free)\",\n      \"sesame oil (1 tsp)\",\n      \"salt (to taste)\",\n      \"black pepper (to taste)\"\n    ],\n    \"steps\": [\n      \"Heat coconut oil in a wok or large skillet over medium-high heat. Add garlic and stir-fry until fragrant.\",\n      \"Add chicken and cook until browned, about 5-6 minutes. Remove from the wok and set aside.\",\n      \"Add more coconut oil if needed, then add bok choy and stir-fry until wilted.\",\n      \"Return chicken to the wok and stir in soy sauce and oyster sauce. Cook for an additional 2-3 minutes.\",\n      \"Season with salt and black pepper to taste. Serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Keto Kung Pao Chicken with Bok Choy\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 lb boneless, skinless chicken breast, cut into bite-sized pieces\",\n    \"2 cups bok choy, chopped\",\n    \"6 cloves garlic, minced\",\n    \"1/4 cup vegetable oil\",\n    \"1/4 cup coconut aminos\",\n    \"2 tsp sesame oil\",\n    \"1 tsp soy sauce (make sure sugar-free)\",\n    \"1 tsp cornstarch\",\n    \"1 tsp grated fresh ginger\",\n    \"1/4 cup chopped scallions, for garnish\"\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of vegetable oil in a wok or large skillet over high heat. Add the chicken and cook until browned, about 5 minutes. Remove the chicken from the wok and set aside.\",\n    \"In the same wok, add the remaining 2 tbsp of vegetable oil. Add the minced garlic and grated ginger and stir-fry for 1 minute.\",\n    \"Add the chopped bok choy to the wok and stir-fry until wilted, about 2 minutes.\",\n    \"Return the chicken to the wok and add the coconut aminos, soy sauce, and cornstarch. Stir-fry for 1 minute.\",\n    \"Season with sesame oil and stir-fry for another minute. Garnish with chopped scallions and serve immediately.\"\n  ],\n  \"note\": \"This recipe is a simplified version of the classic Kung Pao chicken dish, adapted to fit a keto diet by using coconut aminos and reducing the sugar content.\"\n}",
+          "note": "Minimal ingredients"
+        },
+        {
+          "test_case_id": "f16",
+          "category": "edge_case",
+          "inventory": [
+            "many proteins",
+            "vegetables",
+            "low-carb sauces",
+            "cauliflower rice"
+          ],
+          "user_request": "Keto Chinese feast",
+          "sft_recipe": "```json\n{\n  \"recipe\": {\n    \"name\": \"Keto Chinese Stir-Fried Cauliflower 'Rice' with Shrimp and Vegetables\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"keto\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Shrimp (1 pound, peeled and deveined)\",\n        \"quantity\": \"1 pound\",\n        \"unit\": \"pound\",\n        \"measure\": \"by weight\"\n      },\n      {\n        \"name\": \"Cauliflower (1 head, florets)\",\n        \"quantity\": \"1 head\",\n        \"unit\": \"head\",\n        \"measure\": \"by whole\"\n      },\n      {\n        \"name\": \"Vegetables (broccoli, bell peppers, carrots, snow peas)\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"measure\": \"by volume\"\n      },\n      {\n        \"name\": \"Olive oil (2 tablespoons)\",\n        \"quantity\": \"2 tablespoons\",\n        \"unit\": \"tablespoon\",\n        \"measure\": \"by volume\"\n      },\n      {\n        \"name\": \"Soy sauce (low-carb, 2 tablespoons)\",\n        \"quantity\": \"2 tablespoons\",\n        \"unit\": \"tablespoon\",\n        \"measure\": \"by volume\"\n      },\n      {\n        \"name\": \"Garlic (2 cloves)\",\n        \"quantity\": \"2 cloves\",\n        \"unit\": \"cloves\",\n        \"measure\": \"by count\"\n      },\n      {\n        \"name\": \"Ginger (1-inch piece)\",\n        \"quantity\": \"1 piece\",\n        \"unit\": \"piece\",\n        \"measure\": \"by length\"\n      },\n      {\n        \"name\": \"Green onions (chopped, 1/4 cup)\",\n        \"quantity\": \"1/4 cup\",\n        \"unit\": \"cup\",\n        \"measure\": \"by volume\"\n      }\n    ],\n    \"steps\": [\n      \"Heat olive oil in a large skillet or wok over medium-high heat.\",\n      \"Add garlic and ginger and stir-fry for 1 minute until fragrant.\",\n      \"Add broccoli, bell peppers, and carrots and stir-fry for 3-4 minutes until they start to soften.\",\n      \"Add snow peas and stir-fry for an additional 1-2 minutes until the vegetables are tender but still crisp.\",\n      \"Add shrimp and stir-fry",
+          "dpo_recipe": "```json\n{\n  \"name\": \"Keto Kung Pao Chicken with Cauliflower Rice\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken breast (500g)\",\n      \"quantity\": \"1 pound\",\n      \"units\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"cauliflower (1 head)\",\n      \"quantity\": \"1 head\",\n      \"units\": \"\",\n      \"note\": \"for cauliflower rice\"\n    },\n    {\n      \"name\": \"bok choy (1 bunch)\",\n      \"quantity\": \"1 bunch\",\n      \"units\": \"\",\n      \"note\": \"for stir-fry\"\n    },\n    {\n      \"name\": \"peanuts (1/4 cup)\",\n      \"quantity\": \"60g\",\n      \"units\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"garlic (4 cloves)\",\n      \"quantity\": \"4\",\n      \"units\": \"\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"ginger (2 inches)\",\n      \"quantity\": \"5cm\",\n      \"units\": \"\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"Soy sauce (2 tbsp)\",\n      \"quantity\": \"30ml\",\n      \"units\": \"ml\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"Shaoxing wine (1 tbsp)\",\n      \"quantity\": \"15ml\",\n      \"units\": \"ml\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"chili peppers (2)\",\n      \"quantity\": \"2\",\n      \"units\": \"\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"scallions (1/4 cup)\",\n      \"quantity\": \"60g\",\n      \"units\": \"g\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"sesame oil (2 tbsp)\",\n      \"quantity\": \"30ml\",\n      \"units\": \"ml\",\n      \"note\": \"\"\n    }\n  ],\n  \"steps\": [\n    \"Step 1. Rinse the chicken breast under cold water, pat dry with paper towels. Cut into bite-sized pieces and season with salt and pepper. Set aside. \\n\",\n    \"Step 2. In a blender or food processor, blend the peanuts,",
+          "note": "Many ingredients"
+        },
+        {
+          "test_case_id": "f17",
+          "category": "edge_case",
+          "inventory": [
+            "beef",
+            "cabbage"
+          ],
+          "user_request": "Quick Chinese",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Stir-Fried Cabbage with Beef\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"500g beef (sliced)\",\n      \"200g cabbage (shredded)\",\n      \"2 cloves garlic (minced)\",\n      \"2 tablespoons vegetable oil\",\n      \"2 teaspoons soy sauce\",\n      \"1 teaspoon oyster sauce (optional)\",\n      \"1 teaspoon sesame oil\",\n      \"1 teaspoon sugar\",\n      \"1 teaspoon salt\",\n      \"1/4 teaspoon black pepper\",\n      \"1/4 teaspoon red pepper flakes (optional)\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of vegetable oil in a wok or large skillet over medium-high heat. Add the beef and cook until browned, about 3-4 minutes. Remove the beef from the wok and set aside.\",\n      \"In the same wok, add the remaining 1 tablespoon of vegetable oil. Add the minced garlic and cook for 1 minute until fragrant.\",\n      \"Add the shredded cabbage to the wok and cook for 2-3 minutes until it starts to wilt.\",\n      \"Add the cooked beef back into the wok, along with the soy sauce, oyster sauce (if using), sesame oil, sugar, salt, black pepper, and red pepper flakes (if using). Stir-fry for an additional 2-3 minutes until the cabbage is tender and the sauce has thickened.\",\n      \"Serve hot, garnished with green onions and sesame seeds (if desired)\"\n    ]\n  }\n}",
+          "dpo_recipe": "Since the user requested a Quick Chinese dish and the available ingredients are beef and cabbage, I'll generate a recipe that fits the request. However, since the ingredients cabbage and beef don't match the user's requested ingredients, I'll replace cabbage with bok choy, which is a more suitable ingredient for a Chinese dish.\n\n```json\n{\n  \"name\": \"Kung Pao Beef Stir Fry\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"Quick\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"beef (120g)\",\n      \"quantity\": \"120g\",\n      \"unit\": \"g\",\n      \"note\": null\n    },\n    {\n      \"name\": \"bok choy (2 cups)\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\",\n      \"note\": \"use 2 cups of chopped bok choy\"\n    },\n    {\n      \"name\": \"garlic (3 cloves)\",\n      \"quantity\": \"3\",\n      \"unit\": \"pieces\",\n      \"note\": \"minced\"\n    },\n    {\n      \"name\": \"ginger (1-inch piece)\",\n      \"quantity\": \"1\",\n      \"unit\": \"piece\",\n      \"note\": \"grated\"\n    },\n    {\n      \"name\": \"soy sauce (2 tbsp)\",\n      \"quantity\": \"30ml\",\n      \"unit\": \"ml\",\n      \"note\": \"low-sodium soy sauce\"\n    },\n    {\n      \"name\": \"cornstarch (1 tsp)\",\n      \"quantity\": \"5g\",\n      \"unit\": \"g\",\n      \"note\": \"cornstarch for thickening\"\n    },\n    {\n      \"name\": \"vegetable oil (2 tbsp)\",\n      \"quantity\": \"30ml\",\n      \"unit\": \"ml\",\n      \"note\": \"use a wok or large skillet\"\n    }\n  ],\n  \"steps\": [\n    \"Heat 2 tablespoons of vegetable oil in a wok or large skillet over high heat. Add 3 minced garlic and 1-inch grated ginger. Stir-fry until fragrant.\",\n    \"Add 120g of beef and cook until browned, breaking it up into small pieces as it cooks.\",\n    \"Add 2 cups of chopped bok choy and stir-fry until wilted.\",\n    \"In a small bowl, mix 2 tablespoons of low-sodium soy sauce and 1",
+          "note": "Very limited"
+        },
+        {
+          "test_case_id": "f18",
+          "category": "edge_case",
+          "inventory": [
+            "bok choy",
+            "garlic"
+          ],
+          "user_request": "Any Chinese dish?",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Stir-Fried Bok Choy with Garlic\",\n    \"cuisine\": \"Chinese\",\n    \"culinary_preference\": null,\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"1 bunch bok choy (200g)\",\n      \"3 cloves garlic (minced, 15g)\",\n      \"2 tablespoons vegetable oil\",\n      \"1 tablespoon soy sauce\",\n      \"1 tablespoon oyster sauce (optional)\",\n      \"1 teaspoon sesame oil\",\n      \"1 teaspoon sugar\",\n      \"1/4 teaspoon red pepper flakes (optional)\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of vegetable oil in a wok or large skillet over high heat. Add minced garlic and stir-fry for 1 minute until fragrant.\",\n      \"Add the bok choy and stir-fry for 2-3 minutes until it starts to wilt. Add soy sauce, oyster sauce (if using), sesame oil, sugar, and red pepper flakes (if using).\",\n      \"Stir-fry for another 2-3 minutes until the bok choy is tender but still crisp. Season with salt and pepper to taste.\",\n      \"Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Stir-Fried Bok Choy with Garlic\",\n  \"cuisine\": \"Chinese\",\n  \"culinary_preference\": \"savory, garlicky\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Bok Choy (1 bunch, cleaned, chopped)\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\"\n    },\n    \"Garlic (3 cloves, minced)\",\n    \"Vegetable oil (2 tbsp)\",\n    \"Ginger (1-inch piece, grated)\",\n    \"Soy sauce (1 tsp)\",\n    \"Sesame oil (1 tsp)\",\n    \"Soy sauce (1 tsp)\",\n    \"Salt (to taste)\",\n    \"Pepper (to taste)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of vegetable oil in a wok or large skillet over medium-high heat. Add minced garlic and grated ginger and stir-fry until fragrant, about 30 seconds.\",\n    \"Add chopped bok choy to the wok and stir-fry for 2-3 minutes, until it starts to wilt.\",\n    \"Add soy sauce, sesame oil, soy sauce, salt, and pepper to the wok. Stir-fry for another 2 minutes, until the bok choy is tender but still crisp.\",\n    \"Taste and adjust seasoning as needed.\",\n    \"Serve immediately, garnished with sesame seeds and scallions if desired.\"\n  ]\n}",
+          "note": "Minimal"
+        },
+        {
+          "test_case_id": "f19",
+          "category": "cross_persona",
+          "inventory": [
+            "pasta",
+            "tomato",
+            "basil"
+          ],
+          "user_request": "Italian pasta",
+          "sft_recipe": "{\n  \"name\": \"Italian Pasta with Tomato and Basil\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"250g pasta ( spaghetti or linguine work well)\",\n    \"2 medium tomatoes (diced)\",\n    \"1/4 cup fresh basil leaves (chopped)\",\n    \"2 cloves garlic (minced)\",\n    \"1/4 cup olive oil\",\n    \"Salt and pepper to taste\",\n    \"Grated Parmesan cheese (optional)\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the pasta according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat the olive oil over medium heat. Add the minced garlic and cook for 1-2 minutes until fragrant.\",\n    \"Add the diced tomatoes to the skillet and cook for 3-4 minutes until they start to break down and release their juices.\",\n    \"Stir in the chopped basil leaves and cook for an additional minute.\",\n    \"Add the reserved pasta water to the skillet and toss the cooked pasta in the tomato sauce, ensuring the pasta is well coated.\",\n    \"Season with salt and pepper to taste, and top with grated Parmesan cheese if desired.\"\n  ]\n}",
+          "dpo_recipe": "{\n    \"name\": \"Italian-Style Cauliflower Fried Rice\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"sour, savory\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n        \"1 head of cauliflower\",\n        \"1/4 cup olive oil\",\n        \"2 cloves of garlic, minced\",\n        \"1 cup of cherry tomatoes, halved\",\n        \"1/4 cup of fresh basil leaves\",\n        \"1/2 cup of grated Parmesan cheese (low-carb option)\",\n        \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n        \"Preheat the oven to 400°F (200°C). Rinse and break the cauliflower into florets. Pulse in a food processor until it resembles rice.\",\n        \"Heat olive oil in a large skillet over medium-high heat. Add garlic and cook for 1 minute until fragrant.\",\n        \"Add the cauliflower 'rice' and cook for 5 minutes until it starts to brown.\",\n        \"Add cherry tomatoes and cook for an additional 2-3 minutes until they start to release their juices.\",\n        \"Stir in basil leaves and cook for 1 minute. Season with salt and pepper to taste.\",\n        \"Transfer the mixture to a serving dish and top with Parmesan cheese (if using). Serve hot.\"\n    ]\n}",
+          "note": "Contains pasta"
+        },
+        {
+          "test_case_id": "f20",
+          "category": "cross_persona",
+          "inventory": [
+            "beans",
+            "rice",
+            "tortilla"
+          ],
+          "user_request": "Mexican burrito",
+          "sft_recipe": "{\n  \"name\": \"Mexican Burrito\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": null,\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked beans (black beans, kidney beans, or pinto beans)\",\n    \"2 medium tortilla (flour or corn)\",\n    \"1/2 cup cooked rice\",\n    \"1/2 cup diced onion\",\n    \"1/4 cup diced bell pepper\",\n    \"1/4 cup diced tomato\",\n    \"2 cloves garlic\",\n    \"1 tablespoon olive oil\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"Salt and pepper to taste\",\n    \"Shredded cheese (optional)\",\n    \"Sour cream or salsa (optional)\"\n  ],\n  \"steps\": [\n    \"Heat olive oil in a pan over medium heat. Add diced onion and cook until translucent.\",\n    \"Add diced bell pepper and cook for an additional 2-3 minutes.\",\n    \"Add garlic and cook for 1 minute.\",\n    \"Add cooked beans, cooked rice, cumin, and chili powder. Stir well to combine.\",\n    \"Warm tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble burritos by spooning bean and rice mixture onto a tortilla, followed by any desired toppings (cheese, sour cream, salsa).\",\n    \"Fold bottom edge of tortilla up over filling, then fold in sides and roll into a tight cylinder.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Cauliflower Beef Fajita Burrito\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"keto\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 head of cauliflower (1 cup, grated)\",\n    \"1 lb beef (sirloin or flank steak, sliced)\",\n    \"1/2 cup of avocado oil\",\n    \"2 cloves of garlic, minced\",\n    \"1 tablespoon of grated fresh ginger\",\n    \"1 cup of bok choy, chopped\",\n    \"1 cup of diced bell peppers\",\n    \"1 cup of diced onion\",\n    \"1/2 cup of chopped fresh cilantro\",\n    \"1/4 cup of chopped fresh scallions\",\n    \"1/2 teaspoon of ground cumin\",\n    \"1/2 teaspoon of chili powder\",\n    \"1/4 teaspoon of cayenne pepper\",\n    \"Salt and pepper, to taste\"\n  ],\n  \"steps\": [\n    \"Preheat a large skillet over medium-high heat. Add 1/4 cup of avocado oil and swirl to coat the pan.\",\n    \"Add the sliced beef to the skillet and cook for 3-4 minutes per side, or until cooked to desired level of doneness. Transfer the beef to a plate and cover with foil to keep warm.\",\n    \"In the same skillet, add the remaining 1/4 cup of avocado oil and swirl to coat the pan. Add the minced garlic and grated ginger and cook for 1 minute, or until fragrant.\",\n    \"Add the chopped onion and bell peppers to the skillet and cook for 3-4 minutes, or until the vegetables are tender. Add the chopped bok choy and cook for an additional 1-2 minutes, or until wilted.\",\n    \"Warm large lettuce leaves or low-carb tortillas in the microwave for 10-15 seconds. Assemble the burritos by spooning the beef and vegetable mixture onto the tortillas, followed by a sprinkle of chopped cilantro and scallions.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": "Contains rice and tortilla"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 20,
+    "dpo_wins": 16,
+    "sft_wins": 3,
+    "ties": 0,
+    "dpo_win_rate": 0.8,
+    "sft_win_rate": 0.15,
+    "tie_rate": 0.0,
+    "per_persona": {
+      "persona_f_chinese_keto": {
+        "name": "Chinese Low-Carb (Keto)",
+        "dpo_win_rate": 0.8,
+        "dpo_wins": 16,
+        "sft_wins": 3,
+        "ties": 0,
+        "total_tests": 20
+      }
+    }
+  }
+}

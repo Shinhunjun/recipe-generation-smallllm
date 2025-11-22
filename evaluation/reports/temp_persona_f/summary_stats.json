@@ -1,0 +1,19 @@
+{
+  "total_tests": 20,
+  "dpo_wins": 16,
+  "sft_wins": 3,
+  "ties": 0,
+  "dpo_win_rate": 0.8,
+  "sft_win_rate": 0.15,
+  "tie_rate": 0.0,
+  "per_persona": {
+    "persona_f_chinese_keto": {
+      "name": "Chinese Low-Carb (Keto)",
+      "dpo_win_rate": 0.8,
+      "dpo_wins": 16,
+      "sft_wins": 3,
+      "ties": 0,
+      "total_tests": 20
+    }
+  }
+}

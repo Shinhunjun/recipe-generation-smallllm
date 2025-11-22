@@ -1,0 +1,1728 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-21T16:59:56.644632",
+    "project_id": "mlops-compute-lab",
+    "personas_evaluated": [
+      "persona_d_japanese_lowsodium"
+    ],
+    "test_count_per_persona": 20,
+    "evaluators_used": [
+      "gemini-flash"
+    ],
+    "total_tests": 20
+  },
+  "persona_results": {
+    "persona_d_japanese_lowsodium": {
+      "persona_name": "Japanese Cuisine (Low Sodium)",
+      "test_count": 20,
+      "evaluations": {
+        "gemini-flash": [
+          {
+            "test_case_id": "d01",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.6,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 2,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 4
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is much better because it adheres to the low-sodium constraint, while Recipe A uses soy sauce, a forbidden ingredient. Recipe B also incorporates more preferred ingredients like yuzu and wakame seaweed, aligning better with the persona's preferences for fresh, light, and healthy Japanese cuisine.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 2,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 4
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is much better because it adheres to the low-sodium constraint, while Recipe A uses soy sauce, a forbidden ingredient. Recipe B also incorporates more preferred ingredients like yuzu and wakame seaweed, aligning better with the persona's preferences for fresh, light, and healthy Japanese cuisine.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d02",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.2,
+              "dpo_score": 4.8,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is much better because it adheres to the persona's constraints by avoiding forbidden ingredients. Recipe B includes soy sauce, which is explicitly forbidden. Therefore, Recipe A is the clear winner due to constraint compliance.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is much better because it adheres to the persona's constraints by avoiding forbidden ingredients. Recipe B includes soy sauce, which is explicitly forbidden. Therefore, Recipe A is the clear winner due to constraint compliance.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d03",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 5.4,
+              "dpo_score": 5.2,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 5,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 4
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 1,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is better because it adheres to the crucial constraint of avoiding forbidden ingredients. Recipe B includes soy sauce, a forbidden ingredient, making it unsuitable despite its better cuisine alignment. While Recipe A's cuisine is Mediterranean, it is still a better fit due to constraint compliance.",
+              "violations": {
+                "recipe_a": [
+                  "salt"
+                ],
+                "recipe_b": [
+                  "soy sauce",
+                  "salt"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 5,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 4
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 1,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is better because it adheres to the crucial constraint of avoiding forbidden ingredients. Recipe B includes soy sauce, a forbidden ingredient, making it unsuitable despite its better cuisine alignment. While Recipe A's cuisine is Mediterranean, it is still a better fit due to constraint compliance.",
+                "violations_found": {
+                  "recipe_a": [
+                    "salt"
+                  ],
+                  "recipe_b": [
+                    "soy sauce",
+                    "salt"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d04",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 6.8,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 5,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 6
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the low-sodium constraint by avoiding soy sauce and salt. It also aligns better with the persona's preferred umami, light, and fresh flavor profile, and utilizes available ingredients effectively. Recipe A includes sake and mirin which, while Japanese, often contain sodium.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 5,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 6
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the low-sodium constraint by avoiding soy sauce and salt. It also aligns better with the persona's preferred umami, light, and fresh flavor profile, and utilizes available ingredients effectively. Recipe A includes sake and mirin which, while Japanese, often contain sodium.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d05",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it specifies Japanese cuisine and uses ingredients like shiso leaves, which align with the persona's preference for umami, light, and fresh flavors. It also provides more specific instructions and ingredient quantities, making it a higher quality recipe overall.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it specifies Japanese cuisine and uses ingredients like shiso leaves, which align with the persona's preference for umami, light, and fresh flavors. It also provides more specific instructions and ingredient quantities, making it a higher quality recipe overall.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d06",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.0,
+              "dpo_score": 8.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 7,
+                "preferred_ingredients": 9,
+                "recipe_quality": 7,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is much better because it attempts to adhere to the low sodium constraint, although it fails by including salt. Recipe A includes soy sauce, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also better aligns with the persona's preferred ingredients and style.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "salt"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 7,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 7,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is much better because it attempts to adhere to the low sodium constraint, although it fails by including salt. Recipe A includes soy sauce, a forbidden ingredient, making it completely unsuitable for the persona. Recipe B also better aligns with the persona's preferred ingredients and style.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "salt"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d07",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.0,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 9,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A uses soy sauce, a forbidden ingredient. Recipe B adheres to the persona's constraints and preferences much better, offering a healthy, low-sodium Japanese stir-fry with preferred ingredients and a well-structured recipe.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 9,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe A uses soy sauce, a forbidden ingredient. Recipe B adheres to the persona's constraints and preferences much better, offering a healthy, low-sodium Japanese stir-fry with preferred ingredients and a well-structured recipe.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d08",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 2,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it aligns with the Japanese cuisine persona and avoids all forbidden ingredients. Recipe A uses salt, which is a critical violation, and is Mediterranean, not Japanese.",
+              "violations": {
+                "recipe_a": [
+                  "salt"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 2,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it aligns with the Japanese cuisine persona and avoids all forbidden ingredients. Recipe A uses salt, which is a critical violation, and is Mediterranean, not Japanese.",
+                "violations_found": {
+                  "recipe_a": [
+                    "salt"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d09",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.6,
+              "dpo_score": 7.6,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 7,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it attempts to address the low-sodium constraint, even though it still includes soy sauce. Recipe A uses soy sauce without any modification and includes a note about pickled ginger, which is explicitly forbidden. Recipe B also uses more preferred ingredients like shiitake mushrooms and sesame seeds.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 7,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it attempts to address the low-sodium constraint, even though it still includes soy sauce. Recipe A uses soy sauce without any modification and includes a note about pickled ginger, which is explicitly forbidden. Recipe B also uses more preferred ingredients like shiitake mushrooms and sesame seeds.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d10",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 5.0,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the constraint of avoiding miso paste, soy sauce, and salt. Recipe A is slightly better because it doesn't include soy sauce, which is a major forbidden ingredient. Since both recipes violate the constraints, neither is a good fit for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "miso paste"
+                ],
+                "recipe_b": [
+                  "miso paste",
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the constraint of avoiding miso paste, soy sauce, and salt. Recipe A is slightly better because it doesn't include soy sauce, which is a major forbidden ingredient. Since both recipes violate the constraints, neither is a good fit for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "miso paste"
+                  ],
+                  "recipe_b": [
+                    "miso paste",
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d11",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.4,
+              "dpo_score": 7.8,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it avoids the forbidden ingredient 'salt' and aligns better with the persona's preference for light, fresh, and healthy Japanese cuisine by using tofu and vegetables. Recipe A uses salt directly, violating a key constraint, and doesn't incorporate the persona's preferred keywords as effectively.",
+              "violations": {
+                "recipe_a": [
+                  "salt"
+                ],
+                "recipe_b": [
+                  "salt (used sparingly)"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it avoids the forbidden ingredient 'salt' and aligns better with the persona's preference for light, fresh, and healthy Japanese cuisine by using tofu and vegetables. Recipe A uses salt directly, violating a key constraint, and doesn't incorporate the persona's preferred keywords as effectively.",
+                "violations_found": {
+                  "recipe_a": [
+                    "salt"
+                  ],
+                  "recipe_b": [
+                    "salt (used sparingly)"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d12",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 5.2,
+              "dpo_score": 5.4,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 2,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 4
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 2,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 4
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the low sodium constraint by including salt and pickled vegetables. Recipe A is slightly better due to the simpler preparation and slightly better ingredient balance, but both are poor fits for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "salt",
+                  "pickled vegetables"
+                ],
+                "recipe_b": [
+                  "salt",
+                  "pickled vegetables"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 2,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 4
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 2,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 4
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the low sodium constraint by including salt and pickled vegetables. Recipe A is slightly better due to the simpler preparation and slightly better ingredient balance, but both are poor fits for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "salt",
+                    "pickled vegetables"
+                  ],
+                  "recipe_b": [
+                    "salt",
+                    "pickled vegetables"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d13",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.0,
+              "dpo_score": 5.8,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 9,
+                "overall_fit": 4
+              },
+              "confidence": "medium",
+              "reasoning": "Both recipes fail to comply with the constraint of avoiding soy sauce. However, Recipe B is slightly better because it uses fewer forbidden ingredients and has a more detailed and well-structured recipe. The use of green onion in Recipe B also aligns better with the persona's preference for fresh ingredients.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 9,
+                  "overall_fit": 4
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Both recipes fail to comply with the constraint of avoiding soy sauce. However, Recipe B is slightly better because it uses fewer forbidden ingredients and has a more detailed and well-structured recipe. The use of green onion in Recipe B also aligns better with the persona's preference for fresh ingredients.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d14",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.0,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "confidence": "medium",
+              "reasoning": "Both recipes fail to adhere to the low-sodium constraint by including soy sauce. However, Recipe B includes nori seaweed, a preferred ingredient, and suggests using low-sodium soy sauce, showing some awareness of the persona's needs. Recipe B also includes garlic and ginger, which enhance the flavor profile.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Both recipes fail to adhere to the low-sodium constraint by including soy sauce. However, Recipe B includes nori seaweed, a preferred ingredient, and suggests using low-sodium soy sauce, showing some awareness of the persona's needs. Recipe B also includes garlic and ginger, which enhance the flavor profile.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d15",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.0,
+              "dpo_score": 7.2,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 1,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 6,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B aligns better with the persona's preference for fresh and healthy Japanese cuisine, utilizing salmon and seaweed. While both recipes contain soy sauce (a forbidden ingredient), Recipe B uses 'low-sodium' soy sauce, which is a slight improvement. Recipe A is heavily penalized for using soy sauce without any modification.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 1,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 6,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B aligns better with the persona's preference for fresh and healthy Japanese cuisine, utilizing salmon and seaweed. While both recipes contain soy sauce (a forbidden ingredient), Recipe B uses 'low-sodium' soy sauce, which is a slight improvement. Recipe A is heavily penalized for using soy sauce without any modification.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d16",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.6,
+              "dpo_score": 7.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 2,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 4
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 5,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it aligns more closely with the persona's low-sodium requirement, even though it still contains soy sauce. Recipe A contains soy sauce and salt, violating the forbidden ingredients list. Recipe B also incorporates wakame seaweed, a preferred ingredient, more prominently.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce",
+                  "salt"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 2,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 4
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 5,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it aligns more closely with the persona's low-sodium requirement, even though it still contains soy sauce. Recipe A contains soy sauce and salt, violating the forbidden ingredients list. Recipe B also incorporates wakame seaweed, a preferred ingredient, more prominently.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce",
+                    "salt"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d17",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 5.0,
+              "dpo_score": 7.8,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 7,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A violates the constraint of forbidden ingredients by using soy sauce. Recipe B attempts to address the sodium constraint by using low-sodium soy sauce, although it is still not ideal. Recipe B is a better fit overall due to the constraint violation in Recipe A.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 7,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe A violates the constraint of forbidden ingredients by using soy sauce. Recipe B attempts to address the sodium constraint by using low-sodium soy sauce, although it is still not ideal. Recipe B is a better fit overall due to the constraint violation in Recipe A.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d18",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.6,
+              "dpo_score": 6.8,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 5,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 6
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is better because it attempts to address the low-sodium constraint by using \"low-sodium soy sauce\", even though it still violates the constraint. Recipe A uses regular soy sauce, which is a major violation. Both recipes use lemon and fish, which are preferred ingredients.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce",
+                  "salt"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 5,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 6
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is better because it attempts to address the low-sodium constraint by using \"low-sodium soy sauce\", even though it still violates the constraint. Recipe A uses regular soy sauce, which is a major violation. Both recipes use lemon and fish, which are preferred ingredients.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce",
+                    "salt"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d19",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.4,
+              "dpo_score": 3.8,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 4,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the low-sodium constraint due to the use of salt. Recipe B is slightly better because its description of 'Light and Fresh' aligns a bit more with the persona's preferences, even though the core issue of salt remains.",
+              "violations": {
+                "recipe_a": [
+                  "salt"
+                ],
+                "recipe_b": [
+                  "salt"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 4,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "winner": "B",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the low-sodium constraint due to the use of salt. Recipe B is slightly better because its description of 'Light and Fresh' aligns a bit more with the persona's preferences, even though the core issue of salt remains.",
+                "violations_found": {
+                  "recipe_a": [
+                    "salt"
+                  ],
+                  "recipe_b": [
+                    "salt"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "d20",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.4,
+              "dpo_score": 3.8,
+              "sft_scores_detail": {
+                "persona_alignment": 2,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 2,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it attempts to align with the Japanese cuisine persona, although it still fails due to the inclusion of soy sauce. Both recipes violate the constraint of forbidden ingredients, but Recipe B at least tries to incorporate some preferred ingredients and culinary preferences.",
+              "violations": {
+                "recipe_a": [
+                  "soy sauce"
+                ],
+                "recipe_b": [
+                  "soy sauce"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 2,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 2,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it attempts to align with the Japanese cuisine persona, although it still fails due to the inclusion of soy sauce. Both recipes violate the constraint of forbidden ingredients, but Recipe B at least tries to incorporate some preferred ingredients and culinary preferences.",
+                "violations_found": {
+                  "recipe_a": [
+                    "soy sauce"
+                  ],
+                  "recipe_b": [
+                    "soy sauce"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          }
+        ]
+      },
+      "consensus": {
+        "test_results": [
+          {
+            "test_idx": 0,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 1,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 2,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 3,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 4,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 5,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 6,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 7,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 8,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 9,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 10,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 11,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 12,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 13,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 14,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 15,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 16,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 17,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 18,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 19,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          }
+        ],
+        "overall": {
+          "dpo_wins": 16,
+          "sft_wins": 4,
+          "ties": 0,
+          "total_tests": 20,
+          "dpo_win_rate": 0.8,
+          "avg_agreement_rate": 1.0
+        }
+      },
+      "generated_recipes": [
+        {
+          "test_case_id": "d01",
+          "category": "basic_alignment",
+          "inventory": [
+            "fish",
+            "vegetables",
+            "rice",
+            "light seasoning"
+          ],
+          "user_request": "Low sodium Japanese fish",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Grilled Salmon with Teriyaki Glaze and Stir-Fried Vegetables\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"gluten-free, low-sodium\",\n    \"time\": \"25m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"fish\",\n        \"quantity\": 4, \n        \"unit\": \"pieces\"\n      },\n      {\n        \"name\": \"vegetables\",\n        \"quantity\": 1, \n        \"unit\": \"cup\"\n      },\n      {\n        \"name\": \"rice\",\n        \"quantity\": 1, \n        \"unit\": \"\"\n      },\n      {\n        \"name\": \"light seasoning\",\n        \"quantity\": 2, \n        \"unit\": \"tbsp\"\n      }\n    ],\n    \"steps\": [\n      \"Step 1. Preheat grill to medium-high heat. Rinse the fish pieces and pat them dry with paper towels. Season with a pinch of light seasoning.\\nStep 2. Grill the fish for 4-5 minutes per side or until cooked through.\\nStep 3. In a separate pan, heat 1 tablespoon of light seasoning over medium heat. Add the vegetables and stir-fry until tender.\\nStep 4. In a small bowl, whisk together 2 tablespoons of light seasoning, 2 tablespoons of soy sauce (use a low-sodium version), and 1 tablespoon of sake (optional). Brush the teriyaki glaze over the grilled fish.\\nStep 5. Serve the grilled fish with stir-fried vegetables and a side of steamed rice.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Grilled Salmon with Yuzu-Ginger Rice\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"low_sodium\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Salmon fillet (4 oz, 115g)\",\n        \"quantity\": \"1\",\n        \"unit\": \"piece\",\n        \"note\": \"wild-caught, sustainably sourced\"\n      },\n      {\n        \"name\": \"Japanese short-grain rice (1 cup, 180g)\",\n        \"quantity\": \"1\",\n        \"unit\": \"cup\",\n        \"note\": \"preferably Koshihikari or Akita Komachi\"\n      },\n      {\n        \"name\": \"yuzu juice (2 tbsp, 30ml)\",\n        \"quantity\": \"2\",\n        \"unit\": \"tablespoon\",\n        \"note\": \"freshly squeezed\"\n      },\n      {\n        \"name\": \"grated ginger (1 tsp, 5g)\",\n        \"quantity\": \"1\",\n        \"unit\": \"teaspoon\",\n        \"note\": \"freshly grated\"\n      },\n      {\n        \"name\": \"sesame oil (1 tsp, 5ml)\",\n        \"quantity\": \"1\",\n        \"unit\": \"teaspoon\",\n        \"note\": \"light, high-quality\"\n      },\n      {\n        \"name\": \"wakame seaweed (1/4 cup, 15g)\",\n        \"quantity\": \"1/4\",\n        \"unit\": \"cup\",\n        \"note\": \"dried, rehydrated in water\"\n      }",
+          "note": ""
+        },
+        {
+          "test_case_id": "d02",
+          "category": "basic_alignment",
+          "inventory": [
+            "tofu",
+            "vegetables",
+            "seaweed",
+            "rice"
+          ],
+          "user_request": "Healthy tofu recipe",
+          "sft_recipe": "{\n  \"name\": \"Pan-Seared Tofu with Stir-Fried Vegetables and Seaweed\",\n  \"cuisine\": \"Asian-Inspired\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Tofu (200g)\",\n      \"quantity\": 1 block,\n      \"unit\": \"block\"\n    },\n    \"seaweed (20g)\",\n    \"rice (150g)\",\n    \"vegetables (broccoli, bell pepper, carrots, onion) (200g)\"\n  ],\n  \"steps\": [\n    \"Step 1. Cut the tofu into small cubes and press it between two plates for 10 minutes to remove excess moisture.\",\n    \"Step 2. Heat a non-stick pan with 1 tablespoon of oil over medium heat. Add the tofu and cook until golden brown on all sides.\",\n    \"Step 3. In the same pan, add the sliced vegetables (broccoli, bell pepper, carrots, onion) and cook until they are tender.\",\n    \"Step 4. Add the seaweed to the pan and stir-fry for 1 minute.\",\n    \"Step 5. Serve the tofu with the stir-fried vegetables and seaweed over a bed of rice.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Grilled Tofu with Seaweed and Vegetable Wrap\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"healthy\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 block firm tofu (120g)\",\n    \"2 sheets of nori seaweed (20g)\",\n    \"1 cup mixed vegetables (such as bell peppers, carrots, cucumber, and asparagus) (100g)\",\n    \"2 cloves garlic (minced) (6g)\",\n    \"1 tablespoon sesame oil (15g)\",\n    \"1 tablespoon soy sauce (5g)\",\n    \"1 tablespoon rice vinegar (5g)\",\n    \"1 teaspoon grated ginger (2g)\",\n    \"Salt-free seasoning blend (to taste)\"\n  ],\n  \"steps\": [\n    \"Cut the tofu into thin slices and marinate in a mixture of sesame oil, soy sauce, and rice vinegar for at least 5 minutes.\",\n    \"Preheat a non-stick pan over medium heat and grill the tofu slices until golden brown.\",\n    \"In a separate pan, sauté the mixed vegetables in a little sesame oil until tender.\",\n    \"Assemble the wrap by placing a grilled tofu slice on a nori sheet, topping with sautéed vegetables, and rolling up tightly.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d03",
+          "category": "basic_alignment",
+          "inventory": [
+            "salmon",
+            "rice",
+            "vegetables",
+            "lemon"
+          ],
+          "user_request": "Light salmon dish",
+          "sft_recipe": "{\n  \"name\": \"Grilled Salmon with Lemon and Herbs\",\n  \"cuisine\": \"Mediterranean\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"25m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"salmon (4 fillets, 120g each)\",\n      \"quantity\": 4,\n      \"unit\": \"fillets\"\n    },\n    \"rice (250g)\",\n    \"lemon (2, juiced)\",\n    \"olive oil (2 tbsp)\",\n    \"garlic (2 cloves, minced)\",\n    \"fresh parsley (chopped, 1/4 cup)\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. Season salmon fillets with salt and pepper. Grill for 4-5 minutes per side, or until cooked through.\",\n    \"While salmon is cooking, heat olive oil in a pan over medium heat. Add garlic and sauté for 1 minute.\",\n    \"Squeeze lemon juice over salmon fillets and sprinkle with parsley.\",\n    \"Serve salmon with steamed rice and a side of lemon wedges.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Light Grilled Salmon with Lemon-Ginger Rice\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"light\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"salmon (4 fillets, 120g each)\",\n      \"rice (200g, Japanese short-grain)\",\n      \"lemon (1, juiced)\",\n      \"ginger (2-inch piece, grated)\",\n      \"sesame oil (2 tsp)\",\n      \"soy sauce (2 tsp, low-sodium)\",\n      \"green onions (chopped, for garnish)\",\n      \"sesame seeds (for garnish)\"\n    ],\n    \"steps\": [\n      \"Preheat grill to medium-high heat. Season salmon fillets with sesame oil and grill for 4-5 minutes per side, or until cooked through.\",\n      \"Cook Japanese rice according to package instructions. Mix in grated ginger and lemon juice.\",\n      \"In a small bowl, whisk together soy sauce and a pinch of salt. Pour over cooked rice and toss to combine.\",\n      \"To assemble, place a salmon fillet on each plate, top with a scoop of lemon-ginger rice, and garnish with green onions and sesame seeds.\",\n      \"Serve immediately and enjoy!\"\n    ],\n    \"note\": \"This dish highlights the delicate flavor of the salmon while maintaining a light and refreshing texture.\"\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d04",
+          "category": "basic_alignment",
+          "inventory": [
+            "chicken",
+            "vegetables",
+            "rice",
+            "ginger"
+          ],
+          "user_request": "Japanese chicken without soy sauce",
+          "sft_recipe": "{\n  \"name\": \"Japanese-Style Grilled Chicken and Rice\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 lb chicken breast, cut into bite-sized pieces\",\n    \"2 cups rice\",\n    \"2 inches ginger, peeled and grated\",\n    \"1/4 cup sake (or dry white wine)\",\n    \"2 tablespoons mirin (sweet Japanese cooking wine)\",\n    \"2 tablespoons vegetable oil\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of vegetable oil in a large skillet over medium-high heat. Add the chicken and cook until browned on both sides, about 5-6 minutes. Remove from heat and set aside.\",\n    \"In the same skillet, add the remaining 1 tablespoon of vegetable oil. Add the grated ginger and cook for 1 minute, until fragrant.\",\n    \"Add the sake and mirin to the skillet and bring to a boil. Scrape up any browned bits from the bottom of the pan.\",\n    \"Add the cooked rice to the skillet and stir-fry for 2-3 minutes, until the rice is well coated with the ginger-sake mixture.\",\n    \"Return the chicken to the skillet and stir-fry everything together for another minute, until the chicken is heated through.\",\n    \"Serve hot, garnished with chopped green onions and sesame seeds if desired.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Yakitori-Style Chicken with Ginger and Vegetables\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"umami, light, fresh\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 lb boneless, skinless chicken breast, cut into bite-sized pieces\",\n    \"2 inches of fresh ginger, peeled and grated\",\n    \"2 cups mixed vegetables (bell peppers, carrots, zucchini, shiitake mushrooms)\",\n    \"2 tbsp sesame oil\",\n    \"2 tbsp rice vinegar\",\n    \"1 tsp sugar\",\n    \"1 tsp grated daikon radish (optional)\",\n    \"Salt-free seasoning blend (or salt-free seasoning)\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. In a small bowl, mix together sesame oil, rice vinegar, sugar, and grated ginger. Add the chicken pieces and marinate for at least 15 minutes.\",\n    \"Thread the marinated chicken and vegetables onto skewers. Grill for 8-10 minutes per side, or until cooked through.\",\n    \"In a small bowl, mix together daikon radish (if using) and salt-free seasoning blend. Brush the mixture onto the grilled chicken and vegetables during the last minute of grilling.\",\n    \"Serve hot, garnished with additional grated ginger if desired.\"\n  ],\n  \"note\": \"This recipe focuses on umami flavors from the sesame oil, rice vinegar, and daikon radish. The ginger adds a light and refreshing touch.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d05",
+          "category": "basic_alignment",
+          "inventory": [
+            "vegetables",
+            "rice",
+            "sesame",
+            "light seasoning"
+          ],
+          "user_request": "Vegetable rice bowl, low sodium",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Low Sodium Vegetable Rice Bowl\",\n    \"cuisine\": \"Asian\",\n    \"culinary_preference\": \"low_sodium\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Vegetables\",\n        \"quantity\": \"2 cups\",\n        \"units\": \"chopped\"\n      },\n      \"rice\",\n      \"sesame\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of sesame oil in a large pan over medium heat. Add chopped vegetables and cook until tender.\",\n      \"In a separate pot, cook 1 cup of rice according to package instructions using low-sodium broth.\",\n      \"Combine cooked rice and vegetables in a bowl.\",\n      \"Sprinkle sesame seeds on top and serve.\"\n    ],\n    \"note\": \"Be mindful of the sodium content of the rice and season with light seasoning to keep it low in sodium.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Light Vegetable Rice Bowl\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"umami, light, fresh\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Japanese Short-Grain Rice\",\n        \"quantity\": \"200g\",\n        \"unit\": \"g\",\n        \"note\": \"preferably short-grain rice\"\n      },\n      \"vegetables\": [\n        {\n          \"name\": \"Shiso Leaves\",\n          \"quantity\": \"4-6\",\n          \"unit\": \"leaves\",\n          \"note\": \"fresh shiso leaves\"\n        },\n        {\n          \"name\": \"Sliced Cucumber\",\n          \"quantity\": \"1 medium\",\n          \"unit\": \"piece\",\n          \"note\": \"thinly sliced\"\n        },\n        {\n          \"name\": \"Sliced Carrots\",\n          \"quantity\": \"1 medium\",\n          \"unit\": \"piece\",\n          \"note\": \"thinly sliced\"\n        },\n        {\n          \"name\": \"Sliced Green Onions\",\n          \"quantity\": \"1/4 cup\",\n          \"unit\": \"scallions\",\n          \"note\": \"thinly sliced\"\n        }\n      ],\n      \"seasonings\": [\n        {\n          \"name\": \"Light Sesame Oil\",\n          \"quantity\": \"2 tsp\",\n          \"unit\": \"tsp\",\n          \"note\": \"light sesame oil\"\n        },\n        {\n          \"name\": \"Sesame Seeds\",\n          \"quantity\": \"1 tsp\",\n          \"unit\": \"tsp\",\n          \"note\": \"toasted sesame seeds\"\n        }\n      ]\n    },\n    \"steps\": [\n      \"Rinse the Japanese short-grain rice thoroughly and cook according to package instructions. Set aside to cool.\",\n      \"In a small pan, heat the light sesame oil over low heat. Add the sliced shiso leaves and cook until wilted.\",\n      \"In a separate pan, heat a small amount of sesame oil over medium heat. Add the sliced carrots and cook until tender.\",\n      \"In a large bowl, combine the cooked rice, cooked carrots, and wilted shiso leaves.\",\n      \"Garnish with toasted sesame seeds and serve immediately.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d06",
+          "category": "basic_alignment",
+          "inventory": [
+            "fish",
+            "daikon",
+            "rice",
+            "light broth"
+          ],
+          "user_request": "Light fish soup",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Light Fish Soup\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"pescatarian\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"fish (1 fillet, 120g)\",\n        \"quantity\": \"1\",\n        \"unit\": \"piece\",\n        \"notes\": \"Choose a mild-flavored fish like cod or tilapia\"\n      },\n      \"daikon (1 medium, peeled and grated)\",\n      \"light broth (250ml)\",\n      \"rice (1 cup, cooked)\",\n      \"green onions (chopped, for garnish)\",\n      \"sesame oil (1 tsp)\",\n      \"soy sauce (1 tsp)\",\n      \"ginger (grated, 1 tsp)\",\n      \"garlic (minced, 1 clove)\"\n    ],\n    \"steps\": [\n      \"Heat sesame oil in a pan over medium heat. Add ginger and garlic and sauté until fragrant.\",\n      \"Add daikon and cook for 5 minutes, until slightly tender.\",\n      \"Add fish and cook for 3-4 minutes per side, until cooked through.\",\n      \"Add light broth and bring to a simmer. Season with soy sauce.\",\n      \"Serve with cooked rice and garnish with chopped green onions.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Light Delightful Fish Soup\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"light, fresh, healthy\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"fish (150g)\",\n        \"quantity\": \"1 piece (e.g. salmon, tilapia, or cod)\",\n        \"unit\": \"piece\"\n      },\n      {\n        \"name\": \"daikon (200g)\",\n        \"quantity\": \"1 medium-sized\",\n        \"unit\": \"piece\"\n      },\n      \"light_broth\": \"200ml\"\n    ],\n    \"steps\": [\n      \"Cut the daikon into thin slices and soak in cold water for 10 minutes. Drain and set aside.\",\n      \"Heat the light broth in a pot over low heat.\",\n      \"Add the fish to the pot and cook for 3-4 minutes on each side, until cooked through.\",\n      \"Add the daikon slices to the pot and cook for an additional 2 minutes.\",\n      \"Season with salt to taste and serve immediately.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d07",
+          "category": "basic_alignment",
+          "inventory": [
+            "tofu",
+            "mushrooms",
+            "vegetables",
+            "rice"
+          ],
+          "user_request": "Healthy Japanese stir-fry",
+          "sft_recipe": "{\n  \"name\": \"Japanese Tofu Stir-Fry\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 block of firm tofu (120g)\",\n    \"1 cup of mushrooms (sliced)\",\n    \"1 cup of mixed vegetables (bell peppers, carrots, broccoli)\"\n  ],\n  \"steps\": [\n    \"Heat 2 tablespoons of sesame oil in a pan over medium-high heat.\",\n    \"Add the sliced mushrooms and cook until they release their moisture and start browning (3-4 minutes).\",\n    \"Add the mixed vegetables and cook until they are tender-crisp (3-4 minutes).\",\n    \"Cut the tofu into small cubes and add it to the pan. Stir-fry until the tofu is lightly browned (2-3 minutes).\",\n    \"Season with soy sauce and serve immediately.\"\n  ],\n  \"note\": \"For a more authentic Japanese flavor, use a small amount of mirin or sake instead of soy sauce.\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Japanese Tofu Stir-Fry\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"healthy\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Tofu (250g)\",\n      \"quantity\": \"250g\",\n      \"unit\": \"g\",\n      \"note\": null\n    },\n    {\n      \"name\": \"Mushrooms (150g)\",\n      \"quantity\": \"150g\",\n      \"unit\": \"g\",\n      \"note\": \"use shiitake or cremini mushrooms for best flavor\"\n    },\n    {\n      \"name\": \"Vegetables (50g)\",\n      \"quantity\": \"50g\",\n      \"unit\": \"g\",\n      \"note\": \"use a mix of bell peppers, carrots, and snap peas for color and crunch\"\n    },\n    {\n      \"name\": \"Rice (100g)\",\n      \"quantity\": \"100g\",\n      \"unit\": \"g\",\n      \"note\": \"use short-grain Japanese rice for best texture\"\n    },\n    {\n      \"name\": \"Sesame oil (10ml)\",\n      \"quantity\": \"10ml\",\n      \"unit\": \"ml\",\n      \"note\": \"use a light drizzle for flavor, not too much\"\n    }\n  ],\n  \"steps\": [\n    \"Heat sesame oil in a pan over medium heat. Add tofu and cook until golden brown, about 3-4 minutes.\",\n    \"Add mushrooms and cook until they release their moisture and start browning, about 4-5 minutes.\",\n    \"Add vegetables and cook until they're tender-crisp, about 2-3 minutes.\",\n    \"Serve over cooked Japanese rice.\",\n    \"Season with a pinch of salt-free seasoning and serve immediately.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d08",
+          "category": "basic_alignment",
+          "inventory": [
+            "shrimp",
+            "vegetables",
+            "rice",
+            "lemon"
+          ],
+          "user_request": "Light shrimp dish",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Grilled Shrimp with Lemon and Vegetables\",\n    \"cuisine\": \"Mediterranean\",\n    \"culinary_preference\": \"pescatarian\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"1 pound shrimp (12-15 count, peeled and deveined)\",\n      \"1 cup uncooked white rice\",\n      \"2 medium lemons (juice and zest)\",\n      \"1 medium onion (chopped)\",\n      \"2 cloves garlic (minced)\",\n      \"1 cup mixed vegetables (bell peppers, carrots, zucchini)\",\n      \"2 tablespoons olive oil\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Preheat grill to medium-high heat. Rinse the shrimp and pat dry with paper towels.\",\n      \"In a large bowl, whisk together lemon juice, olive oil, salt, and pepper. Add the shrimp and marinate for at least 10 minutes.\",\n      \"Grill the shrimp for 2-3 minutes per side, or until pink and cooked through.\",\n      \"In a separate pan, heat a tablespoon of olive oil over medium heat. Add the chopped onion and cook until softened, about 3-4 minutes.\",\n      \"Add the mixed vegetables to the pan and cook for an additional 3-4 minutes, or until tender.\",\n      \"Serve the grilled shrimp with the vegetable mixture and a squeeze of lemon juice.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Grilled Shrimp with Yuzu-Ginger Rice\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"light\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"shrimp (12 medium-sized, peeled and deveined)\",\n      \"quantity\": \"12\",\n      \"unit\": \"pieces\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"Japanese short-grain rice\",\n      \"quantity\": \"1 cup\",\n      \"unit\": \"cup\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"yuzu juice\",\n      \"quantity\": \"2 tablespoons\",\n      \"unit\": \"tablespoon\",\n      \"note\": \"use fresh yuzu or substitute with lemon juice\"\n    },\n    {\n      \"name\": \"grated ginger\",\n      \"quantity\": \"1-inch piece\",\n      \"unit\": \"piece\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"sesame oil\",\n      \"quantity\": \"1 teaspoon\",\n      \"unit\": \"teaspoon\",\n      \"note\": \"\"\n    },\n    {\n      \"name\": \"chopped scallions\",\n      \"quantity\": \"1/4 cup\",\n      \"unit\": \"cup\",\n      \"note\": \"\"\n    }\n  ],\n  \"steps\": [\n    \"Rinse the shrimp under cold water and pat dry with paper towels.\",\n    \"Heat sesame oil in a small pan over medium heat. Add grated ginger and cook for 1 minute until fragrant.\",\n    \"Add yuzu juice to the pan and stir to combine. Bring to a simmer.\",\n    \"Add the shrimp to the pan and cook for 2-3 minutes per side, until pink and cooked through.\",\n    \"Serve the shrimp on top of Japanese short-grain rice, garnished with chopped scallions.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d09",
+          "category": "constraint_stress",
+          "inventory": [
+            "fish",
+            "soy sauce",
+            "rice",
+            "vegetables"
+          ],
+          "user_request": "Japanese fish",
+          "sft_recipe": "{\n  \"name\": \"Japanese-Style Grilled Fish with Teriyaki Sauce\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 piece of fish (any type, 120g)\",\n    \"1/4 cup soy sauce\",\n    \"2 tablespoons rice vinegar\",\n    \"2 tablespoons sugar\",\n    \"2 tablespoons vegetable oil\",\n    \"1/2 cup mixed vegetables (e.g., bell peppers, carrots, green onions)\",\n    \"1 tablespoon grated ginger\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. Clean and pat dry the fish with paper towels.\",\n    \"In a small bowl, whisk together soy sauce, rice vinegar, sugar, and vegetable oil to make the teriyaki sauce.\",\n    \"Brush the teriyaki sauce on both sides of the fish.\",\n    \"Grill the fish for 4-5 minutes per side, or until cooked through.\",\n    \"Serve with steamed rice and mixed vegetables on the side.\"\n  ],\n  \"note\": \"For a more authentic Japanese flavor, serve with steamed Japanese rice and pickled ginger.\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Grilled Salmon Teriyaki with Stir-Fried Vegetables\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"umami, light, fresh\",\n  \"time\": \"25m\",\n  \"main_ingredients\": [\n    \"250g salmon fillet (preferably wild-caught, skin removed)\",\n    \"2 cups mixed vegetables (bell peppers, carrots, green beans, shiitake mushrooms)\",\n    \"2 tablespoons soy sauce (low-sodium)\",\n    \"1 tablespoon rice vinegar\",\n    \"1 tablespoon sesame oil\",\n    \"1 tablespoon grated ginger\",\n    \"1 teaspoon sesame seeds\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. Season salmon with salt-free seasoning blend (optional). Grill salmon for 4-5 minutes per side, or until cooked through.\",\n    \"In a large skillet or wok, heat sesame oil over medium-high heat. Add grated ginger and cook for 1 minute, until fragrant.\",\n    \"Add mixed vegetables and cook for 3-4 minutes, until tender-crisp.\",\n    \"In a small bowl, whisk together soy sauce and rice vinegar. Pour sauce over vegetables and stir to coat.\",\n    \"Serve grilled salmon on top of stir-fried vegetables, garnished with sesame seeds.\"\n  ]\n}",
+          "note": "Contains soy sauce (forbidden)"
+        },
+        {
+          "test_case_id": "d10",
+          "category": "constraint_stress",
+          "inventory": [
+            "tofu",
+            "miso paste",
+            "seaweed",
+            "rice"
+          ],
+          "user_request": "Miso soup",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Miso Soup with Tofu\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"1 block of firm tofu (drained and cut into small cubes)\",\n      \"2 tablespoons of miso paste\",\n      \"2 cups of water\",\n      \"1 sheet of nori seaweed (cut into small pieces)\",\n      \"1/4 cup of rice (for garnish)\"\n    ],\n    \"steps\": [\n      \"In a pot, combine the water and miso paste. Whisk until smooth.\",\n      \"Bring the mixture to a simmer over medium heat.\",\n      \"Add the tofu to the pot and cook for 3-4 minutes or until heated through.\",\n      \"Add the seaweed to the pot and cook for an additional minute.\",\n      \"Serve the miso soup hot, garnished with rice and nori seaweed.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Miso Soup\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"umami, light, fresh\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 block of firm tofu (250g)\",\n    \"2 tablespoons of miso paste\",\n    \"2 cups of dashi broth (low-sodium)\",\n    \"1 sheet of wakame seaweed (dried)\",\n    \"1 tablespoon of soy sauce (low-sodium)\",\n    \"1 teaspoon of grated ginger\",\n    \"2 cloves of garlic (minced)\",\n    \"1/4 cup of sliced green onions (for garnish)\"\n  ],\n  \"steps\": [\n    \"Cut the tofu into small cubes and set aside.\",\n    \"In a pot, combine dashi broth and miso paste. Whisk until smooth.\",\n    \"Bring the mixture to a simmer and cook for 5 minutes.\",\n    \"Add wakame seaweed and cook for another 2 minutes.\",\n    \"Add tofu and cook until heated through.\",\n    \"Season with soy sauce and garnish with green onions.\",\n    \"Serve hot.\"\n  ]\n}",
+          "note": "Contains miso (forbidden)"
+        },
+        {
+          "test_case_id": "d11",
+          "category": "constraint_stress",
+          "inventory": [
+            "pork",
+            "salt",
+            "rice",
+            "vegetables"
+          ],
+          "user_request": "Tonkatsu",
+          "sft_recipe": "{\n  \"name\": \"Pork and Rice Bowl\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"pork\",\n      \"quantity\": \"200g\",\n      \"unit\": \"g\"\n    },\n    \"rice\",\n    \"salt\"\n  ],\n  \"steps\": [\n    \"Heat a pan with a small amount of oil over medium heat. Slice the pork into thin strips.\",\n    \"Season the pork with salt to taste.\",\n    \"Cook the pork in the pan until browned and cooked through.\",\n    \"Serve the pork over a bed of cooked rice.\",\n    \"Garnish with additional salt to taste.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Pan-Seared Tofu Katsu\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"light, fresh, healthy\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 block of firm tofu (150g)\",\n    \"1 cup of rice (uncooked)\",\n    \"1/2 cup of mixed vegetables (such as shiso leaves, carrots, and bell peppers)\"\n  ],\n  \"steps\": [\n    \"Cut the tofu into thin slices and season with salt to taste.\",\n    \"In a pan, heat a small amount of oil over medium heat and add the mixed vegetables. Cook until tender.\",\n    \"In a separate pan, add a small amount of oil and sear the tofu slices until golden brown on both sides.\",\n    \"Serve the tofu with the cooked vegetables and a side of steamed rice.\",\n    \"Garnish with shiso leaves and serve immediately.\"\n  ],\n  \"note\": \"This recipe is a healthier alternative to traditional Tonkatsu, using tofu as a protein source and avoiding deep-frying.\"\n}",
+          "note": "Contains salt (forbidden)"
+        },
+        {
+          "test_case_id": "d12",
+          "category": "constraint_stress",
+          "inventory": [
+            "fish",
+            "pickled vegetables",
+            "rice"
+          ],
+          "user_request": "Traditional Japanese meal",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Japanese-Style Bento Box\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": null,\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup Japanese short-grain rice\",\n      \"1/2 cup pickled vegetables (e.g., cucumber, carrot, daikon)\",\n      \"6 oz fish (e.g., salmon, tilapia)\"\n    ],\n    \"steps\": [\n      \"Step 1. Rinse the rice thoroughly and cook according to package instructions. Set aside.\",\n      \"Step 2. Cut the pickled vegetables into bite-sized pieces.\",\n      \"Step 3. Season the fish with a pinch of salt and a squeeze of lemon juice. Grill or pan-fry until cooked through.\",\n      \"Step 4. In a small saucepan, heat a tablespoon of sesame oil over low heat. Add the cooked rice and stir-fry for 2-3 minutes, breaking up any clumps with a spatula.\",\n      \"Step 5. Assemble the bento box by placing a scoop of rice, a piece of fish, and a few pieces of pickled vegetables on a plate. Serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Japanese-Style Grilled Salmon with Pickled Vegetables and Rice\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"umami, light, fresh, healthy, low sodium\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Salmon Fillet (150g)\",\n        \"quantity\": 1,\n        \"unit\": \"piece\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Pickled Vegetables (Takuan no Aji)\",\n        \"quantity\": 100g,\n        \"unit\": \"piece\",\n        \"note\": \"Japanese daikon radish pickled in vinegar and sugar\"\n      },\n      {\n        \"name\": \"Japanese Short-Grain Rice\",\n        \"quantity\": 150g,\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      }\n    ],\n    \"steps\": [\n      {\n        \"step\": \"Preheat a grill or grill pan to medium-high heat. Season the salmon fillet with salt and pepper.\",\n        \"time\": \"5 minutes\",\n        \"note\": \"\"\n      },\n      {\n        \"step\": \"Grill the salmon for 4-5 minutes per side, or until cooked through.\",\n        \"time\": \"10 minutes\",\n        \"note\": \"\"\n      },\n      {\n        \"step\": \"While the salmon is cooking, prepare the pickled vegetables by slicing the daikon radish thinly and soaking it in a mixture of rice vinegar, sugar, and water for at least 30 minutes.\",\n        \"time\": \"30 minutes\",\n        \"note\": \"\"\n      },\n      {\n        \"step\": \"Cook the Japanese short-grain rice according to the package instructions.\",\n        \"time\": \"15 minutes\",\n        \"note\": \"\"\n      },\n      {\n        \"step\": \"Serve the grilled salmon with pickled vegetables and steamed Japanese short-grain rice.\",\n        \"time\": \"5 minutes\",\n        \"note\": \"\"\n      }\n    ]\n  }\n}",
+          "note": "Contains pickled (forbidden)"
+        },
+        {
+          "test_case_id": "d13",
+          "category": "constraint_stress",
+          "inventory": [
+            "salmon",
+            "soy sauce",
+            "mirin",
+            "rice"
+          ],
+          "user_request": "Teriyaki salmon",
+          "sft_recipe": "{\n  \"name\": \"Teriyaki Salmon\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 salmon fillet (6 oz)\",\n    \"1/4 cup soy sauce\",\n    \"2 tbsp mirin\",\n    \"2 tbsp vegetable oil\",\n    \"2 cloves garlic (minced)\",\n    \"1 tsp grated ginger\",\n    \"1 tsp sugar\",\n    \"1 tsp sesame oil\",\n    \"sesame seeds (for garnish)\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.\",\n    \"In a small saucepan, whisk together soy sauce, mirin, sugar, garlic, and ginger. Bring to a boil over medium heat and cook until the sugar dissolves.\",\n    \"Remove the sauce from heat and stir in sesame oil. Set aside.\",\n    \"Place the salmon fillet on the prepared baking sheet and brush with vegetable oil. Season with salt and pepper.\",\n    \"Brush the teriyaki sauce over the salmon and bake for 12-15 minutes or until cooked through.\",\n    \"Remove from oven and garnish with sesame seeds. Serve immediately.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Teriyaki Salmon\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"umami, light, fresh\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Salmon fillet (4 pieces, 120g each)\",\n        \"quantity\": \"4\",\n        \"unit\": \"pieces\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Mirin (2 tbsp)\",\n        \"quantity\": \"2\",\n        \"unit\": \"tbsp\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Soy sauce (1 tbsp)\",\n        \"quantity\": \"1\",\n        \"unit\": \"tbsp\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Ginger (1-inch piece, grated)\",\n        \"quantity\": \"1\",\n        \"unit\": \"piece\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Green onion (1/4 cup, thinly sliced)\",\n        \"quantity\": \"1/4\",\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Sesame oil (1 tsp)\",\n        \"quantity\": \"1\",\n        \"unit\": \"tsp\",\n        \"note\": \"\"\n      }\n    ],\n    \"steps\": [\n      \"Preheat a non-stick pan over medium heat. Add 1 tsp of sesame oil and let it heat up for 1 minute.\",\n      \"In a small bowl, whisk together mirin, soy sauce, and grated ginger. Set aside.\",\n      \"Place the salmon fillets in the pan and cook for 3-4 minutes on each side, or until cooked through.\",\n      \"Brush the teriyaki sauce on the salmon during the last minute of cooking.\",\n      \"Garnish with thinly sliced green onion and serve hot.\"\n    ]\n  }\n}",
+          "note": "Contains soy sauce (forbidden)"
+        },
+        {
+          "test_case_id": "d14",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "soy sauce",
+            "sake",
+            "sugar"
+          ],
+          "user_request": "Chicken teriyaki",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chicken Teriyaki\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken breast (1 pound)\",\n        \"quantity\": \"1\",\n        \"unit\": \"pound\"\n      },\n      \"soy sauce (1/2 cup)\",\n      \"sake (1/4 cup)\",\n      \"sugar (2 tablespoons)\"\n    ],\n    \"steps\": [\n      \"Preheat grill or grill pan to medium-high heat. Cut chicken breast into thin slices.\",\n      \"In a small saucepan, combine soy sauce, sake, and sugar. Bring to a boil over medium heat, then reduce heat to low and simmer for 5 minutes, or until the sauce has thickened slightly.\",\n      \"Add the chicken slices to the sauce and toss to coat. Grill the chicken for 5-6 minutes per side, or until cooked through.\",\n      \"Serve hot, garnished with green onions and sesame seeds if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chicken Teriyaki\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"umami, light, fresh\",\n    \"time\": \"25m\",\n    \"main_ingredients\": [\n      \"400g chicken breast or thighs, cut into bite-sized pieces\",\n      \"2 tbsp soy sauce\",\n      \"2 tbsp sake\",\n      \"2 tbsp sugar\",\n      \"2 cloves garlic, minced\",\n      \"1 tsp grated ginger\",\n      \"1 sheet of nori seaweed, cut into thin strips\",\n      \"1/4 cup sliced green onions for garnish\"\n    ],\n    \"steps\": [\n      \"Preheat grill or grill pan to medium-high heat. In a small bowl, whisk together soy sauce, sake, and sugar until dissolved. Add garlic and ginger, whisk until well combined.\",\n      \"Add the chicken to the bowl and toss to coat with the sauce. Let marinate for at least 10 minutes.\",\n      \"Remove the chicken from the marinade, letting any excess liquid drip off. Grill the chicken for 5-6 minutes per side, or until cooked through.\",\n      \"While the chicken is cooking, toast the nori seaweed strips by holding them over the grill or in a dry pan for a few seconds.\",\n      \"Once the chicken is cooked, serve with toasted nori seaweed strips and garnished with green onions.\"\n    ],\n    \"note\": \"To make this recipe even healthier, use low-sodium soy sauce and reduce the amount of sugar to 1 tsp.\"\n  }\n}",
+          "note": "Contains soy sauce (forbidden)"
+        },
+        {
+          "test_case_id": "d15",
+          "category": "edge_case",
+          "inventory": [
+            "rice",
+            "seaweed",
+            "fish"
+          ],
+          "user_request": "Simple Japanese",
+          "sft_recipe": "{\n  \"name\": \"Simple Japanese Seaweed Rice Bowl\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"2 cups Japanese short-grain rice\",\n    \"1 sheet of nori seaweed\",\n    \"1/2 cup water\",\n    \"1/4 cup sake (or dry white wine)\",\n    \"2 tablespoons soy sauce\",\n    \"1 tablespoon sesame oil\"\n  ],\n  \"steps\": [\n    \"Rinse the rice thoroughly and cook according to package instructions. Set aside.\",\n    \"Cut the nori sheet into bite-sized pieces and soak in water for about 30 seconds.\",\n    \"In a small saucepan, combine sake, soy sauce, and sesame oil. Heat over low heat until the mixture is warm and fragrant.\",\n    \"Drain the nori pieces and add them to the saucepan. Toss to coat evenly.\",\n    \"To assemble the dish, place a scoop of cooked rice on a plate, top with nori pieces, and serve immediately.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Japanese-Style Grilled Salmon with Seaweed Salad\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"light\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"250g salmon fillet (preferably wild-caught)\",\n    \"1 sheet of wakame seaweed (dried)\",\n    \"2 cups Japanese short-grain rice (preferably Koshihikari)\",\n    \"2 tablespoons sesame oil\",\n    \"2 cloves garlic (minced)\",\n    \"1 tablespoon soy sauce (low-sodium)\",\n    \"1 tablespoon rice vinegar\",\n    \"1 teaspoon grated daikon (optional)\"\n  ],\n  \"steps\": [\n    \"Preheat the grill to medium-high heat. Season the salmon fillet with salt-free seasoning blend and brush with sesame oil. Grill for 4-5 minutes per side, or until cooked through.\",\n    \"Cut the wakame seaweed into bite-sized pieces and soak in water for 5 minutes. Drain and squeeze out excess water.\",\n    \"Cook the Japanese rice according to package instructions. Allow to cool.\",\n    \"In a small bowl, whisk together soy sauce and rice vinegar. Set aside.\",\n    \"In a separate bowl, combine cooked rice, wakame seaweed, and grated daikon (if using). Pour the soy sauce mixture over the top and toss to combine.\",\n    \"Slice the grilled salmon into thin pieces and place on top of the rice mixture.\"\n  ]\n}",
+          "note": "Minimal ingredients"
+        },
+        {
+          "test_case_id": "d16",
+          "category": "edge_case",
+          "inventory": [
+            "many fish types",
+            "vegetables",
+            "tofu",
+            "rice",
+            "various seasonings"
+          ],
+          "user_request": "Healthy Japanese meal",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Grilled Salmon with Stir-Fried Vegetables and Tofu\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"healthy\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 salmon fillet (150g)\",\n      \"1 block of firm tofu (120g)\",\n      \"1 cup of mixed vegetables (bell peppers, carrots, broccoli, green beans)\",\n      \"2 tablespoons of soy sauce\",\n      \"1 tablespoon of sesame oil\",\n      \"1 tablespoon of rice vinegar\",\n      \"1 teaspoon of grated ginger\",\n      \"1 teaspoon of garlic powder\",\n      \"1/4 teaspoon of black pepper\"\n    ],\n    \"steps\": [\n      \"Preheat the grill to medium-high heat. Season the salmon fillet with salt and black pepper. Grill for 4-5 minutes per side, or until cooked through.\",\n      \"Cut the tofu into small cubes and pan-fry in sesame oil until golden brown.\",\n      \"In a separate pan, heat soy sauce, rice vinegar, ginger, and garlic powder. Add the mixed vegetables and stir-fry for 3-4 minutes.\",\n      \"Combine the grilled salmon, stir-fried vegetables, and tofu in a bowl. Serve hot.\",\n      \"Garnish with sesame seeds and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Grilled Salmon with Tofu and Wakame Salad\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"healthy\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Salmon fillet (150g)\",\n      \"quantity\": \"1\",\n      \"unit\": \"piece\",\n      \"note\": \"Fresh, wild-caught salmon for optimal omega-3 fatty acids\"\n    },\n    \"tofu (100g)\",\n    \"rice (150g)\",\n    \"wakame seaweed (20g)\",\n    \"sesame oil (10ml)\",\n    \"soy sauce (5ml)\",\n    \"yuzu juice (5ml)\",\n    \"ginger (1 slice)\",\n    \"green onion (1/4 bunch)\",\n    \"sesame seeds (1 tsp)\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. Season the salmon fillet with salt-free seasoning blend and grill for 4-5 minutes per side, or until cooked through.\",\n    \"Cut the wakame seaweed into bite-sized pieces and soak in water for 5 minutes. Drain and set aside.\",\n    \"In a small bowl, whisk together sesame oil, soy sauce, and yuzu juice. Add the tofu and marinate for at least 5 minutes.\",\n    \"In a separate pan, heat a small amount of sesame oil over medium heat. Add the ginger and green onion and sauté until fragrant.\",\n    \"To assemble the salad, place the grilled salmon on a plate, top with wakame seaweed, and drizzle with the tofu marinade. Garnish with sesame seeds and serve immediately.\"\n  ],\n  \"note\": \"This dish is low in sodium and rich in omega-3 fatty acids from the salmon, making it a healthy and refreshing option for a light Japanese meal.\"\n}",
+          "note": "Many options"
+        },
+        {
+          "test_case_id": "d17",
+          "category": "edge_case",
+          "inventory": [
+            "tofu",
+            "rice"
+          ],
+          "user_request": "Quickest Japanese dish",
+          "sft_recipe": "{\n  \"name\": \"Japanese-Style Teriyaki Tofu\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 block of firm tofu (200g)\",\n    \"1 cup of rice (150g)\",\n    \"2 tablespoons of soy sauce (30ml)\",\n    \"2 tablespoons of mirin (30ml)\",\n    \"1 tablespoon of rice vinegar (15ml)\",\n    \"1 teaspoon of grated ginger (5g)\",\n    \"1 teaspoon of sesame oil (5ml)\"\n  ],\n  \"steps\": [\n    \"Cut the tofu into small cubes and set aside.\",\n    \"Heat sesame oil in a pan over medium heat.\",\n    \"Add grated ginger and sauté for 1 minute until fragrant.\",\n    \"Add soy sauce, mirin, and rice vinegar to the pan and stir to combine.\",\n    \"Add the tofu to the pan and cook for 5-7 minutes until golden brown.\",\n    \"Serve with steamed rice.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Tofu Teriyaki Rice Bowl\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"light, fresh\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 block of firm tofu (150g)\",\n    \"1 cup of Japanese short-grain rice (150g)\",\n    \"2 tablespoons of low-sodium soy sauce (30g)\",\n    \"1 tablespoon of rice vinegar (15g)\",\n    \"1 teaspoon of grated ginger (5g)\",\n    \"1 teaspoon of sesame oil (5g)\"\n  ],\n  \"steps\": [\n    \"Step 1. Cut the tofu into small cubes and set aside. Rinse the rice thoroughly and cook according to package instructions. Set aside.\",\n    \"Step 2. In a small saucepan, combine soy sauce, rice vinegar, grated ginger, and sesame oil. Heat over low heat, whisking until the soy sauce dissolves.\",\n    \"Step 3. Once the rice is cooked, fluff it with a fork and place it in a bowl. Pour the teriyaki sauce over the rice and toss to coat.\",\n    \"Step 4. Heat a non-stick pan with a small amount of sesame oil over medium heat. Add the tofu and cook until lightly browned on all sides.\",\n    \"Step 5. Serve the tofu on top of the rice and enjoy!\"\n  ]\n}",
+          "note": "Very limited"
+        },
+        {
+          "test_case_id": "d18",
+          "category": "edge_case",
+          "inventory": [
+            "fish",
+            "lemon"
+          ],
+          "user_request": "Can you make Japanese food?",
+          "sft_recipe": "{\n  \"name\": \"Grilled Salmon Teriyaki with Lemon\",\n  \"cuisine\": \"Japanese\",\n  \"culinary_preference\": \"pescatarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1/2 pound salmon fillet (6 oz)\",\n    \"2 lemons, juiced (about 2 tablespoons)\",\n    \"1/4 cup soy sauce\",\n    \"2 tablespoons sake (or dry white wine)\",\n    \"2 tablespoons brown sugar\",\n    \"2 cloves garlic, minced\",\n    \"1 tablespoon grated ginger\",\n    \"1/4 cup chopped green onions, for garnish\"\n  ],\n  \"steps\": [\n    \"Preheat grill to medium-high heat. Rinse the salmon fillet and pat dry with paper towels. Season with salt and pepper to taste.\",\n    \"In a small bowl, whisk together soy sauce, sake, brown sugar, garlic, and ginger to make the teriyaki sauce.\",\n    \"Brush the teriyaki sauce onto both sides of the salmon fillet.\",\n    \"Grill the salmon for 4-5 minutes per side, or until cooked through.\",\n    \"Serve hot, garnished with green onions and a squeeze of lemon juice.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Grilled Salmon Teriyaki with Lemon-Ginger Dipping Sauce\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"umami, light, fresh\",\n    \"time\": \"25m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Salmon fillet (6 oz)\",\n        \"quantity\": \"1\",\n        \"unit\": \"piece\"\n      },\n      \"lemon\",\n      \"ginger\",\n      \"soy sauce (low-sodium)\",\n      \"maple syrup\",\n      \"sesame oil\",\n      \"green onion\",\n      \"sesame seeds\"\n    ],\n    \"steps\": [\n      \"Preheat grill to medium-high heat. Rinse the salmon fillet and pat dry with paper towels.\",\n      \"In a blender, combine lemon juice, ginger, soy sauce, maple syrup, and sesame oil. Blend until smooth.\",\n      \"Brush the salmon fillet with the lemon-ginger sauce and season with sesame seeds.\",\n      \"Grill the salmon for 4-5 minutes per side, or until cooked through.\",\n      \"Serve with additional lemon wedges and garnish with green onion.\"\n    ],\n    \"note\": \"For a lighter version, use a non-stick grill mat or a grill with a temperature control to prevent overcooking.\"\n  }\n}",
+          "note": "Very minimal"
+        },
+        {
+          "test_case_id": "d19",
+          "category": "cross_persona",
+          "inventory": [
+            "pasta",
+            "tomato",
+            "basil",
+            "salt"
+          ],
+          "user_request": "Italian food",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Spaghetti Aglio e Olio\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"pescatarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"250g pasta (spaghetti)\",\n      \"2 medium tomato (chopped)\",\n      \"1/4 cup basil (chopped)\",\n      \"1 tsp salt\"\n    ],\n    \"steps\": [\n      \"Bring a large pot of salted water to a boil. Cook spaghetti according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n      \"In a large skillet, heat 2 tablespoons of olive oil over medium heat. Add chopped basil and cook for 1 minute, until fragrant.\",\n      \"Add chopped tomatoes to the skillet and cook for 3-4 minutes, until they start to break down and release their juices.\",\n      \"Add the cooked spaghetti to the skillet, tossing to combine with the tomato and basil mixture. If the sauce seems too thick, add some reserved pasta water.\",\n      \"Season with salt to taste and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Pasta con Salsa Fresca\",\n  \"cuisine\": \"Italian\",\n  \"culinary_style\": \"Light and Fresh\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"Pasta (250g)\",\n    \"Fresh Basil (10g)\",\n    \"Tomato (2 medium, diced)\",\n    \"Salt (to taste)\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the pasta according to package instructions. Reserve 1 cup of pasta water before draining.\",\n    \"In a blender or food processor, puree the diced tomato with a pinch of salt until smooth.\",\n    \"In a large bowl, combine the cooked pasta, tomato puree, and reserved pasta water. Toss to combine.\",\n    \"Add the fresh basil leaves and toss gently to combine.\",\n    \"Serve immediately, garnished with additional basil leaves if desired.\"\n  ],\n  \"note\": \"This recipe is a creative take on traditional Italian pasta dishes, using the available ingredients in a light and fresh way.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "d20",
+          "category": "cross_persona",
+          "inventory": [
+            "curry",
+            "chicken",
+            "rice",
+            "soy sauce"
+          ],
+          "user_request": "Spicy curry",
+          "sft_recipe": "{\n  \"name\": \"Spicy Chicken Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"Spicy\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup rice\",\n    \"1 lb chicken breast or thighs, cut into bite-sized pieces\",\n    \"2 tbsp curry powder\",\n    \"1 tsp ground cumin\",\n    \"1 tsp ground coriander\",\n    \"1/2 tsp turmeric powder\",\n    \"1/2 tsp cayenne pepper\",\n    \"2 cloves garlic, minced\",\n    \"1 small onion, diced\",\n    \"2 tbsp soy sauce\",\n    \"2 tbsp vegetable oil\"\n  ],\n  \"steps\": [\n    \"Heat oil in a large pan over medium-high heat. Add garlic and onion and sauté until onion is translucent.\",\n    \"Add cumin, coriander, turmeric, and cayenne pepper. Cook for 1 minute, stirring constantly.\",\n    \"Add chicken and cook until browned on all sides. Remove from heat and set aside.\",\n    \"In the same pan, add curry powder and cook for 1 minute, stirring constantly.\",\n    \"Add soy sauce and stir to combine. Return chicken to the pan and simmer for 10-15 minutes or until cooked through.\",\n    \"Serve over rice.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Spicy Chicken and Vegetable Curry\",\n    \"cuisine\": \"Japanese\",\n    \"culinary_preference\": \"light, fresh, healthy\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup chicken breast (cut into bite-sized pieces)\",\n      \"2 cups mixed vegetables (bell peppers, carrots, green beans)\",\n      \"2 tablespoons curry paste\",\n      \"2 tablespoons soy sauce\",\n      \"1 tablespoon rice vinegar\",\n      \"1 teaspoon sesame oil\",\n      \"1/4 teaspoon ground ginger\",\n      \"1/4 teaspoon red pepper flakes\"\n    ],\n    \"steps\": [\n      \"Heat sesame oil in a pan over medium heat. Add ginger and cook for 1 minute.\",\n      \"Add chicken and cook until browned, about 5 minutes.\",\n      \"Add mixed vegetables and cook until tender-crisp, about 5 minutes.\",\n      \"Add curry paste and cook for 1 minute, stirring constantly.\",\n      \"Add soy sauce, rice vinegar, and red pepper flakes. Stir to combine.\",\n      \"Simmer for 5 minutes, serving over steamed rice.\"\n    ]\n  }\n}",
+          "note": ""
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 20,
+    "dpo_wins": 16,
+    "sft_wins": 4,
+    "ties": 0,
+    "dpo_win_rate": 0.8,
+    "sft_win_rate": 0.2,
+    "tie_rate": 0.0,
+    "per_persona": {
+      "persona_d_japanese_lowsodium": {
+        "name": "Japanese Cuisine (Low Sodium)",
+        "dpo_win_rate": 0.8,
+        "dpo_wins": 16,
+        "sft_wins": 4,
+        "ties": 0,
+        "total_tests": 20
+      }
+    }
+  }
+}

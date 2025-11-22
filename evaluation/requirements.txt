@@ -1,0 +1,17 @@
+# DPO Persona Evaluation Requirements
+
+# Core dependencies
+torch>=2.0.0
+transformers>=4.35.0
+peft>=0.7.0
+accelerate>=0.25.0
+
+# Vertex AI
+google-cloud-aiplatform>=1.38.0
+
+# Data processing
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Already in project (should be available)
+# groq  # For comparison with existing Groq evaluations

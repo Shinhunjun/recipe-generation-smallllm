@@ -1,0 +1,1671 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-21T16:56:10.884325",
+    "project_id": "mlops-compute-lab",
+    "personas_evaluated": [
+      "persona_c_italian_gf"
+    ],
+    "test_count_per_persona": 20,
+    "evaluators_used": [
+      "gemini-flash"
+    ],
+    "total_tests": 20
+  },
+  "persona_results": {
+    "persona_c_italian_gf": {
+      "persona_name": "Italian Food Lover (Gluten-Free)",
+      "test_count": 20,
+      "evaluations": {
+        "gemini-flash": [
+          {
+            "test_case_id": "c01",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.2,
+              "dpo_score": 8.6,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is slightly better because it uses fewer ingredients outside of the persona's preferred list. Both recipes are gluten-free and Italian, but Recipe A is slightly more straightforward and uses butter, which is a common ingredient in risotto and aligns well with the persona's savory preference.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is slightly better because it uses fewer ingredients outside of the persona's preferred list. Both recipes are gluten-free and Italian, but Recipe A is slightly more straightforward and uses butter, which is a common ingredient in risotto and aligns well with the persona's savory preference.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c02",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it uses more fresh ingredients and incorporates olive oil and basil more prominently, aligning better with the persona's flavor profile. The use of diced tomatoes and minced garlic in Recipe B also feels more traditional and savory.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it uses more fresh ingredients and incorporates olive oil and basil more prominently, aligning better with the persona's flavor profile. The use of diced tomatoes and minced garlic in Recipe B also feels more traditional and savory.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c03",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.4,
+              "dpo_score": 9.6,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 9,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 10
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like basil and oregano, and the name \"Shrimp alla Pescatora\" aligns better with the Italian food lover persona. Both recipes are gluten-free and avoid forbidden ingredients, but Recipe B demonstrates a stronger understanding of the persona's culinary preferences.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 9,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 10
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like basil and oregano, and the name \"Shrimp alla Pescatora\" aligns better with the Italian food lover persona. Both recipes are gluten-free and avoid forbidden ingredients, but Recipe B demonstrates a stronger understanding of the persona's culinary preferences.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c04",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 9.0,
+              "dpo_score": 9.6,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 10
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it uses more of the preferred ingredients like basil and oregano, and the name \"alla Mediterranea\" adds a touch of Italian flair. Both recipes are gluten-free and use available inventory effectively.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 10
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it uses more of the preferred ingredients like basil and oregano, and the name \"alla Mediterranea\" adds a touch of Italian flair. Both recipes are gluten-free and use available inventory effectively.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c05",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.4,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes Arborio rice, which is not gluten-free. Recipe A also aligns well with the persona's preference for Italian cuisine and utilizes preferred ingredients like mozzarella, basil, and olive oil.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "Arborio rice"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes Arborio rice, which is not gluten-free. Recipe A also aligns well with the persona's preference for Italian cuisine and utilizes preferred ingredients like mozzarella, basil, and olive oil.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "Arborio rice"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c06",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.4,
+              "dpo_score": 8.6,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is slightly better because it explicitly states \"gluten-free\" which aligns more closely with the persona. While both recipes avoid gluten, Recipe A's title reinforces the persona's dietary restriction. Recipe A also provides more specific ingredient quantities.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is slightly better because it explicitly states \"gluten-free\" which aligns more closely with the persona. While both recipes avoid gluten, Recipe A's title reinforces the persona's dietary restriction. Recipe A also provides more specific ingredient quantities.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c07",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.2,
+              "dpo_score": 4.6,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes breadcrumbs, which contain gluten. Recipe A also utilizes more of the available inventory and preferred ingredients like olive oil, basil, and oregano.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "breadcrumbs"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes breadcrumbs, which contain gluten. Recipe A also utilizes more of the available inventory and preferred ingredients like olive oil, basil, and oregano.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "breadcrumbs"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c08",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it aligns more closely with the persona's preferred ingredients (basil, oregano, olive oil) and culinary preference (savory). It also uses more specific quantities and includes more of the preferred herbs, making it a better fit overall.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it aligns more closely with the persona's preferred ingredients (basil, oregano, olive oil) and culinary preference (savory). It also uses more specific quantities and includes more of the preferred herbs, making it a better fit overall.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c09",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 4.6,
+              "dpo_score": 4.6,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the gluten-free constraint. Since they are identical in their failure, the choice of winner is arbitrary. The models need significant improvement in constraint compliance.",
+              "violations": {
+                "recipe_a": [
+                  "spaghetti"
+                ],
+                "recipe_b": [
+                  "spaghetti"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the gluten-free constraint. Since they are identical in their failure, the choice of winner is arbitrary. The models need significant improvement in constraint compliance.",
+                "violations_found": {
+                  "recipe_a": [
+                    "spaghetti"
+                  ],
+                  "recipe_b": [
+                    "spaghetti"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c10",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.4,
+              "dpo_score": 4.2,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to meet the gluten-free constraint. However, Recipe B is slightly better because it aligns more with traditional Italian cuisine and has a higher recipe quality score. Both recipes contain forbidden ingredients.",
+              "violations": {
+                "recipe_a": [
+                  "flour"
+                ],
+                "recipe_b": [
+                  "spaghetti"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "winner": "B",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to meet the gluten-free constraint. However, Recipe B is slightly better because it aligns more with traditional Italian cuisine and has a higher recipe quality score. Both recipes contain forbidden ingredients.",
+                "violations_found": {
+                  "recipe_a": [
+                    "flour"
+                  ],
+                  "recipe_b": [
+                    "spaghetti"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c11",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 5.0,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the gluten-free constraint by including bread. Since both are equally bad in this regard, there is no clear winner. The recipes are very similar in other aspects.",
+              "violations": {
+                "recipe_a": [
+                  "bread"
+                ],
+                "recipe_b": [
+                  "bread"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the gluten-free constraint by including bread. Since both are equally bad in this regard, there is no clear winner. The recipes are very similar in other aspects.",
+                "violations_found": {
+                  "recipe_a": [
+                    "bread"
+                  ],
+                  "recipe_b": [
+                    "bread"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c12",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 5.0,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the gluten-free constraint, making them equally unsuitable for the persona. Since there is no difference in the constraint violation, the models are equally bad.",
+              "violations": {
+                "recipe_a": [
+                  "pizza dough"
+                ],
+                "recipe_b": [
+                  "pizza dough"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the gluten-free constraint, making them equally unsuitable for the persona. Since there is no difference in the constraint violation, the models are equally bad.",
+                "violations_found": {
+                  "recipe_a": [
+                    "pizza dough"
+                  ],
+                  "recipe_b": [
+                    "pizza dough"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c13",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "unknown",
+              "sft_score": 3.8,
+              "dpo_score": 4.2,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Both recipes fail to adhere to the gluten-free constraint, making them equally unsuitable for the persona. The presence of pasta in both recipes is a critical violation.",
+              "violations": {
+                "recipe_a": [
+                  "penne pasta"
+                ],
+                "recipe_b": [
+                  "penne pasta"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "N/A",
+                "confidence": "high",
+                "reasoning": "Both recipes fail to adhere to the gluten-free constraint, making them equally unsuitable for the persona. The presence of pasta in both recipes is a critical violation.",
+                "violations_found": {
+                  "recipe_a": [
+                    "penne pasta"
+                  ],
+                  "recipe_b": [
+                    "penne pasta"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c14",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.2,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 5,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "confidence": "medium",
+              "reasoning": "Both recipes fail to adhere to the gluten-free constraint by including couscous. However, Recipe B is slightly better because it incorporates basil and oregano, which are preferred ingredients for the persona. It also uses more olive oil, aligning with the persona's preference.",
+              "violations": {
+                "recipe_a": [
+                  "couscous"
+                ],
+                "recipe_b": [
+                  "couscous"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Both recipes fail to adhere to the gluten-free constraint by including couscous. However, Recipe B is slightly better because it incorporates basil and oregano, which are preferred ingredients for the persona. It also uses more olive oil, aligning with the persona's preference.",
+                "violations_found": {
+                  "recipe_a": [
+                    "couscous"
+                  ],
+                  "recipe_b": [
+                    "couscous"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c15",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.8,
+              "dpo_score": 5.0,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 10,
+                "overall_fit": 10
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is a clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes baguette, a forbidden ingredient. Recipe A also aligns well with the persona's preference for simple Italian dishes and utilizes available ingredients effectively.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "baguette"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 10,
+                  "overall_fit": 10
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is a clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes baguette, a forbidden ingredient. Recipe A also aligns well with the persona's preference for simple Italian dishes and utilizes available ingredients effectively.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "baguette"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c16",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.6,
+              "dpo_score": 4.4,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes risotto rice, which is not gluten-free. Recipe A also utilizes more of the preferred ingredients and aligns better with the persona's preferences for Italian and Mediterranean cuisine while respecting the gluten-free constraint.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "risotto rice"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is the clear winner because it adheres to the gluten-free dietary restriction, while Recipe B includes risotto rice, which is not gluten-free. Recipe A also utilizes more of the preferred ingredients and aligns better with the persona's preferences for Italian and Mediterranean cuisine while respecting the gluten-free constraint.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "risotto rice"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c17",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "unknown",
+              "sft_score": 4.8,
+              "dpo_score": 4.8,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes are equally bad because they both contain baguette, which is a forbidden ingredient. Neither recipe is suitable for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "baguette"
+                ],
+                "recipe_b": [
+                  "baguette"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "winner": "N/A",
+                "confidence": "low",
+                "reasoning": "Both recipes are equally bad because they both contain baguette, which is a forbidden ingredient. Neither recipe is suitable for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "baguette"
+                  ],
+                  "recipe_b": [
+                    "baguette"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c18",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.2,
+              "dpo_score": 4.8,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 1
+              },
+              "confidence": "high",
+              "reasoning": "Recipe A is a clear winner because it adheres to the gluten-free dietary restriction, unlike Recipe B which includes baguette. Recipe A also aligns well with the persona's preference for Italian cuisine and available ingredients, resulting in a better overall fit.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "baguette"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 1
+                },
+                "winner": "A",
+                "confidence": "high",
+                "reasoning": "Recipe A is a clear winner because it adheres to the gluten-free dietary restriction, unlike Recipe B which includes baguette. Recipe A also aligns well with the persona's preference for Italian cuisine and available ingredients, resulting in a better overall fit.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "baguette"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c19",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 4.0,
+              "dpo_score": 3.8,
+              "sft_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 0,
+                "recipe_quality": 6,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to align with the persona's preferred cuisine and ingredients. Recipe A is slightly better due to the inclusion of garlic and ginger, which are more common in Italian cooking, and slightly better recipe quality.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 6,
+                  "overall_fit": 2
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to align with the persona's preferred cuisine and ingredients. Recipe A is slightly better due to the inclusion of garlic and ginger, which are more common in Italian cooking, and slightly better recipe quality.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "c20",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 4.6,
+              "dpo_score": 4.4,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 0,
+                "recipe_quality": 6,
+                "overall_fit": 3
+              },
+              "confidence": "medium",
+              "reasoning": "Both recipes are equally poor in terms of persona alignment, as they are Mexican and don't incorporate any Italian or Mediterranean elements. Recipe A is slightly better due to the more detailed ingredient list and slightly better-defined steps, making it a higher quality recipe overall.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 6,
+                  "overall_fit": 3
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Both recipes are equally poor in terms of persona alignment, as they are Mexican and don't incorporate any Italian or Mediterranean elements. Recipe A is slightly better due to the more detailed ingredient list and slightly better-defined steps, making it a higher quality recipe overall.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          }
+        ]
+      },
+      "consensus": {
+        "test_results": [
+          {
+            "test_idx": 0,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 1,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 2,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 3,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 4,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 5,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 6,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 7,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 8,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 9,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 10,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 11,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 12,
+            "winner": "unknown",
+            "confidence": "none",
+            "votes": {
+              "sft": 0,
+              "dpo": 0
+            },
+            "agreement_rate": 0
+          },
+          {
+            "test_idx": 13,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 14,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 15,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 16,
+            "winner": "unknown",
+            "confidence": "none",
+            "votes": {
+              "sft": 0,
+              "dpo": 0
+            },
+            "agreement_rate": 0
+          },
+          {
+            "test_idx": 17,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 18,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 19,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          }
+        ],
+        "overall": {
+          "dpo_wins": 6,
+          "sft_wins": 12,
+          "ties": 0,
+          "total_tests": 20,
+          "dpo_win_rate": 0.3,
+          "avg_agreement_rate": 0.9
+        }
+      },
+      "generated_recipes": [
+        {
+          "test_case_id": "c01",
+          "category": "basic_alignment",
+          "inventory": [
+            "arborio rice",
+            "mushrooms",
+            "parmesan",
+            "white wine",
+            "butter"
+          ],
+          "user_request": "Mushroom risotto",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mushroom Risotto\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"arborio rice\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"note\": null\n      },\n      {\n        \"name\": \"mushrooms\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"button mushrooms, sliced\"\n      },\n      {\n        \"name\": \"white wine\",\n        \"quantity\": \"1/2 cup\",\n        \"unit\": \"cup\",\n        \"note\": null\n      },\n      {\n        \"name\": \"butter\",\n        \"quantity\": \"2 tbsp\",\n        \"unit\": \"tablespoon\",\n        \"note\": null\n      },\n      {\n        \"name\": \"parmesan\",\n        \"quantity\": \"1/4 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"grated\"\n      }\n    ],\n    \"steps\": [\n      \"Heat 2 tablespoons of butter in a large saucepan over medium heat. Add the sliced mushrooms and cook until they release their liquid and start to brown.\",\n      \"Add 1 cup of Arborio rice and cook for 1-2 minutes, stirring constantly, until the rice is coated in butter and slightly toasted.\",\n      \"Add 1/2 cup of white wine and cook until the liquid is almost completely absorbed, stirring constantly.\",\n      \"Add 1 cup of hot water, 1/2 cup at a time, stirring continuously and allowing each portion to be absorbed before adding the next. This process should take about 20 minutes and the rice should be cooked but still slightly firm in the center.\",\n      \"Remove the saucepan from the heat and stir in 1/4 cup of grated parmesan cheese. Season with salt and pepper to taste.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Risotto alla Funghi\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Arborio Rice\",\n      \"quantity\": \"250g\",\n      \"unit\": \"g\"\n    },\n    \"mushrooms\",\n      {\n        \"name\": \" quantity\",\n        \"quantity\": \"300g\",\n        \"unit\": \"\"\n      }\n  ],\n  \"steps\": [\n    \"Heat 3 tablespoons of olive oil in a large saucepan over medium heat. Add 1 small onion, finely chopped, and cook until translucent. Add 2 cloves of garlic, minced, and cook for another minute.\",\n    \"Add Arborio rice and cook for 1-2 minutes, stirring constantly, until the rice is coated in oil and slightly toasted.\",\n    \"Add 250ml white wine and cook until the liquid is almost completely absorbed. Add 250ml hot water, 1/4 cup white wine, and stir constantly until the liquid is mostly absorbed. Repeat this process until the rice is cooked and creamy, about 20 minutes.\",\n    \"Add 200g sliced mushrooms and cook for 5 minutes, stirring occasionally, until they release their liquid and start to brown.\",\n    \"Season with salt and 20g grated Parmesan cheese. Stir in 20g butter until melted and well combined. Serve immediately, garnished with additional Parmesan cheese and parsley if desired.\"\n  ],\n  \"note\": null\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c02",
+          "category": "basic_alignment",
+          "inventory": [
+            "polenta",
+            "tomato sauce",
+            "mozzarella",
+            "basil"
+          ],
+          "user_request": "Polenta with tomato",
+          "sft_recipe": "{\n  \"name\": \"Polenta with Tomato Sauce\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup polenta\",\n    \"2 cups tomato sauce\",\n    \"8 oz mozzarella cheese (sliced)\",\n    \"1/4 cup fresh basil leaves\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil. Gradually whisk in the polenta and reduce heat to low. Cook for 20-25 minutes or until the polenta is creamy and tender.\",\n    \"Preheat the oven to 375°F (190°C).\",\n    \"Transfer the cooked polenta to a serving dish. Top with tomato sauce and sliced mozzarella cheese.\",\n    \"Sprinkle fresh basil leaves on top of the cheese.\",\n    \"Bake in the preheated oven for 5-7 minutes or until the cheese is melted and bubbly.\",\n    \"Season with salt and pepper to taste.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Polenta con Salsa di Pomodoro\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"savory\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"250g polenta\",\n      \"2 medium tomatoes, diced\",\n      \"2 cloves garlic, minced\",\n      \"1/4 cup extra virgin olive oil\",\n      \"salt\",\n      \"fresh basil leaves, chopped\",\n      \"1/4 cup grated mozzarella cheese\"\n    ],\n    \"steps\": [\n      \"Bring to a boil 4 cups of water in a large pot. Gradually whisk in 250g of polenta and cook over medium heat, stirring constantly, for 15-20 minutes or until polenta is creamy and cooked. Remove from heat and stir in 1/4 cup of olive oil and 1/2 tsp of salt.\",\n      \"In a pan, heat 2 tbsp of olive oil over medium heat. Add 2 cloves of minced garlic and cook for 1 minute until fragrant. Add 2 medium diced tomatoes and cook for 5-7 minutes, stirring occasionally, until the tomatoes start to break down.\",\n      \"Season the tomato mixture with salt to taste and stir in 1/4 cup of chopped fresh basil. Let it simmer for an additional 2-3 minutes.\",\n      \"To assemble, place cooked polenta on a plate or in a bowl, top with the tomato sauce and sprinkle with grated mozzarella cheese.\",\n      \"Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c03",
+          "category": "basic_alignment",
+          "inventory": [
+            "shrimp",
+            "garlic",
+            "olive oil",
+            "lemon",
+            "herbs"
+          ],
+          "user_request": "Garlic shrimp Italian style",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Garlic Shrimp Italian Style\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"pescatarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"1 pound shrimp (12-15 count, peeled and deveined)\",\n      \"3 cloves garlic (minced)\",\n      \"1/4 cup olive oil\",\n      \"2 tablespoons freshly squeezed lemon juice\",\n      \"1 tablespoon chopped fresh parsley\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Heat olive oil in a large skillet over medium-high heat. Add garlic and sauté for 1 minute until fragrant.\",\n      \"Add shrimp and cook for 2-3 minutes per side, until pink and cooked through.\",\n      \"Remove shrimp from skillet and set aside. Reduce heat to medium.\",\n      \"Add lemon juice to skillet and stir to deglaze, scraping up any browned bits from bottom of pan.\",\n      \"Return shrimp to skillet and toss to coat with lemon sauce. Season with salt and pepper to taste.\",\n      \"Garnish with parsley and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Shrimp alla Pescatora\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 pound shrimp (peeled and deveined)\",\n    \"4 cloves garlic (minced)\",\n    \"2 tablespoons olive oil\",\n    \"1 lemon (juiced)\",\n    \"1/4 cup white wine (optional)\",\n    \"1/4 cup chopped fresh parsley\",\n    \"1/4 cup chopped fresh basil\",\n    \"1/2 teaspoon dried oregano\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Heat olive oil in a large skillet over medium-high heat. Add garlic and cook for 1 minute, until fragrant.\",\n    \"Add shrimp to the skillet and cook for 2-3 minutes per side, until pink and cooked through.\",\n    \"Add white wine (if using) and cook until the liquid has reduced by half.\",\n    \"Stir in lemon juice, parsley, basil, and oregano. Season with salt and pepper to taste.\",\n    \"Serve immediately, garnished with additional parsley and lemon wedges if desired.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c04",
+          "category": "basic_alignment",
+          "inventory": [
+            "salmon",
+            "tomatoes",
+            "olives",
+            "capers",
+            "herbs"
+          ],
+          "user_request": "Mediterranean fish",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mediterranean Salmon with Tomato and Olive Relish\",\n    \"cuisine\": \"Mediterranean\",\n    \"culinary_preference\": \"fish\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 lb salmon fillet (6 oz)\",\n      \"2 medium tomatoes (chopped)\",\n      \"1/4 cup pitted and chopped olives\",\n      \"2 tbsp capers (chopped)\",\n      \"2 tbsp olive oil\",\n      \"2 cloves garlic (minced)\",\n      \"1 tsp dried oregano\",\n      \"1 tsp lemon juice\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.\",\n      \"Rinse the salmon fillet and pat dry with paper towels. Season with salt and pepper.\",\n      \"In a small bowl, mix together chopped tomatoes, olives, capers, garlic, and oregano.\",\n      \"Brush the salmon fillet with olive oil and place on the prepared baking sheet.\",\n      \"Top the salmon with the tomato and olive relish.\",\n      \"Bake for 12-15 minutes or until the salmon is cooked through.\",\n      \"Squeeze lemon juice over the top and serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Mediterranean Salmon alla Mediterranea\",\n  \"cuisine\": \"Mediterranean\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 salmon fillet (6 oz/170g)\",\n    \"1/2 cup (120g) olives, pitted\",\n    \"1/4 cup (30g) capers, rinsed and drained\",\n    \"2 cloves garlic, minced\",\n    \"1/4 cup (60g) fresh basil leaves, chopped\",\n    \"1/4 cup (15g) fresh oregano leaves, chopped\",\n    \"2 tbsp olive oil\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Preheat the oven to 400°F (200°C). Season the salmon fillet with salt and pepper. Set aside.\",\n    \"In a pan, heat 1 tablespoon of olive oil over medium heat. Add the minced garlic and sauté for 1 minute until fragrant.\",\n    \"Add the chopped capers and cook for an additional 1 minute. Add the chopped olives and cook for 2 minutes.\",\n    \"Stir in the chopped basil and oregano. Cook for 1 minute.\",\n    \"Place the salmon fillet on a baking sheet lined with parchment paper. Top with the olive-caper mixture.\",\n    \"Bake in the preheated oven for 12-15 minutes or until the salmon is cooked through.\",\n    \"Serve immediately, garnished with additional basil leaves if desired.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c05",
+          "category": "basic_alignment",
+          "inventory": [
+            "chicken",
+            "tomatoes",
+            "mozzarella",
+            "basil",
+            "olive oil"
+          ],
+          "user_request": "Caprese chicken",
+          "sft_recipe": "{\n  \"name\": \"Caprese Chicken\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 pound boneless, skinless chicken breast\",\n    \"2 medium tomatoes, sliced\",\n    \"8 ounces fresh mozzarella cheese, sliced\",\n    \"1/4 cup fresh basil leaves, chopped\",\n    \"2 tablespoons olive oil\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C). Season the chicken breast with salt and pepper. Drizzle with olive oil and cook in the oven for 15-20 minutes or until cooked through.\",\n    \"While the chicken is cooking, toast the basil leaves in a pan with a small amount of olive oil until fragrant.\",\n    \"Slice the tomatoes and mozzarella cheese. Arrange the toasted basil leaves on a plate, followed by a slice of mozzarella, a slice of tomato, and finally the cooked chicken breast.\",\n    \"Repeat the layers, ending with a layer of basil leaves on top.\",\n    \"Drizzle with olive oil and serve immediately.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Chicken Caprese Risotto\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"40m\",\n  \"main_ingredients\": [\n    \"1 lb boneless, skinless chicken breast, cut into bite-sized pieces\",\n    \"2 cups Arborio rice\",\n    \"4 cups vegetable broth, warmed\",\n    \"1/2 cup olive oil\",\n    \"1/4 cup white wine\",\n    \"1/2 cup fresh tomatoes, diced\",\n    \"2 tbsp fresh basil, chopped\",\n    \"1 tsp dried oregano\",\n    \"1/2 cup mozzarella cheese, shredded\",\n    \"Salt and pepper, to taste\"\n  ],\n  \"steps\": [\n    \"Heat olive oil in a large skillet over medium-high heat. Add chicken and cook until browned, about 5 minutes. Remove from heat and set aside.\",\n    \"In the same skillet, add Arborio rice and cook for 1-2 minutes, until lightly toasted.\",\n    \"Add white wine and cook until absorbed, stirring constantly. Add 1/2 cup warmed broth and cook until absorbed. Repeat until all broth is used, stirring constantly.\",\n    \"Stir in diced tomatoes, basil, and oregano. Cook for 2-3 minutes.\",\n    \"Add cooked chicken back into the skillet and stir to combine. Season with salt and pepper to taste.\",\n    \"Transfer risotto to a serving dish and top with shredded mozzarella cheese. Serve immediately.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c06",
+          "category": "basic_alignment",
+          "inventory": [
+            "eggplant",
+            "tomato sauce",
+            "mozzarella",
+            "basil"
+          ],
+          "user_request": "Eggplant parmigiana, no breading",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Eggplant Parmigiana (Breadless Version)\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"gluten-free\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"2 large eggplant (sliced into 1/4 inch thick rounds)\",\n      \"1 cup tomato sauce\",\n      \"8 oz mozzarella cheese (sliced)\",\n      \"1/4 cup fresh basil leaves (chopped)\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C).\",\n      \"Season eggplant slices with salt and let them sit for 10 minutes to draw out excess moisture.\",\n      \"In a baking dish, spread a layer of tomato sauce on the bottom. Arrange a layer of eggplant slices on top of the sauce.\",\n      \"Sprinkle a layer of mozzarella cheese on top of the eggplant. Repeat the layers one more time, ending with a layer of cheese on top.\",\n      \"Bake in the oven for 20-25 minutes or until the cheese is melted and bubbly. Sprinkle with chopped basil before serving.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Eggplant Parmigiana\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"eggplant\",\n        \"quantity\": \"2 medium-sized\",\n        \"unit\": \"pieces\"\n      },\n      \"tomato sauce\",\n      \"mozzarella\",\n      \"basil\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C). Slice the eggplant into 1/4-inch thick rounds.\\n\",\n      \"Season the eggplant slices with salt and let them sit for 10 minutes to draw out excess moisture.\\n\",\n      \"In a pan, heat a couple of tablespoons of olive oil over medium heat. Fry the eggplant slices until golden brown on both sides.\\n\",\n      \"Transfer the fried eggplant to a baking dish and spread a layer of tomato sauce on top of each slice.\\n\",\n      \"Sprinkle shredded mozzarella cheese over the tomato sauce and bake in the oven for 15-20 minutes, or until the cheese is melted and bubbly.\\n\",\n      \"Garnish with fresh basil leaves and serve hot.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c07",
+          "category": "basic_alignment",
+          "inventory": [
+            "zucchini",
+            "tomato",
+            "garlic",
+            "olive oil",
+            "herbs"
+          ],
+          "user_request": "Italian zucchini",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Italian Zucchini Fritters\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": null,\n    \"time\": \"25m\",\n    \"main_ingredients\": [\n      \"1 medium zucchini (finely chopped)\",\n      \"1 medium tomato (finely chopped)\",\n      \"3 cloves garlic (minced)\",\n      \"2 tbsp olive oil\",\n      \"1 tsp dried oregano\",\n      \"1 tsp dried basil\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 375°F (190°C). In a bowl, combine chopped zucchini, tomato, garlic, olive oil, oregano, basil, salt, and pepper. Mix well.\",\n      \"Using your hands, shape the mixture into patties. You should end up with about 8-10 fritters.\",\n      \"Place the fritters on a baking sheet lined with parchment paper. Drizzle with a little olive oil and bake for 15-20 minutes or until golden brown.\",\n      \"Remove from the oven and let cool for a few minutes before serving.\",\n      \"Serve warm with your favorite Italian sides, such as pasta or a green salad.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Italian Zucchini Fritters\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 medium zucchini (grated, 250g)\",\n    \"1/4 cup breadcrumbs (50g)\",\n    \"1/2 cup grated mozzarella (120g)\",\n    \"2 cloves garlic (minced, 6g)\",\n    \"1 egg (50g)\",\n    \"1/4 cup olive oil (60ml)\",\n    \"salt (to taste)\",\n    \"fresh basil (chopped, 20g)\",\n    \"fresh oregano (chopped, 10g)\"\n  ],\n  \"steps\": [\n    \"Preheat the oven to 200°C (400°F).\",\n    \"In a bowl, combine grated zucchini, breadcrumbs, mozzarella, garlic, egg, salt, basil, and oregano. Mix well.\",\n    \"Heat 2 tablespoons of olive oil in a pan over medium heat. Add the zucchini mixture and shape into patties.\",\n    \"Fry the zucchini patties until golden brown on both sides (5-6 minutes).\",\n    \"Transfer the zucchini patties to a baking sheet and bake for 10-12 minutes or until cooked through.\",\n    \"Serve hot with additional olive oil and basil, if desired.\"\n  ],\n  \"note\": \"A classic Italian recipe for zucchini fritters, perfect as an antipasto or side dish.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c08",
+          "category": "basic_alignment",
+          "inventory": [
+            "seafood mix",
+            "tomato",
+            "white wine",
+            "herbs"
+          ],
+          "user_request": "Seafood stew Italian style",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Seafood Stew Italian Style\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Seafood mix\",\n        \"quantity\": \"500g\",\n        \"unit\": \"g\"\n      },\n      \"tomato\",\n      \"white wine\",\n      \"herbs\"\n    ],\n    \"steps\": [\n      \"Heat 2 tablespoons of olive oil in a large pot over medium heat. Add 1 onion, finely chopped, and sauté until softened, about 5 minutes.\",\n      \"Add 2 cloves of garlic, minced, and cook for another minute, until fragrant.\",\n      \"Add the seafood mix and cook until lightly browned, about 5 minutes.\",\n      \"Pour in 250ml of white wine and bring to a boil. Reduce heat to low and simmer for 10 minutes.\",\n      \"Add 2 cups of diced tomatoes and 1 cup of water. Season with salt and pepper to taste.\",\n      \"Add the chopped herbs and simmer for 10-15 minutes, until the seafood is cooked through.\",\n      \"Serve hot, garnished with additional herbs if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Seafood Stew alla Mediterranea\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"savory\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"seafood mix (500g)\",\n      \"tomato (2 medium, chopped)\",\n      \"white wine (250ml)\",\n      \"olive oil (3 tbsp)\",\n      \"basil (1 bunch, chopped)\",\n      \"oregano (2 tbsp, chopped)\",\n      \"salt (to taste)\",\n      \"pepper (to taste)\"\n    ],\n    \"steps\": [\n      \"Step 1. Heat olive oil in a large pot over medium heat. Add chopped onion and cook until translucent, 3-4 minutes.\",\n      \"Step 2. Add the seafood mix and cook until lightly browned, 5-6 minutes.\",\n      \"Step 3. Add chopped tomato, white wine, basil, and oregano. Stir well to combine.\",\n      \"Step 4. Reduce heat to low and let the stew simmer for 15-20 minutes or until the flavors have melded together.\",\n      \"Step 5. Season with salt and pepper to taste. Serve hot, garnished with additional basil if desired.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c09",
+          "category": "constraint_stress",
+          "inventory": [
+            "spaghetti",
+            "tomato sauce",
+            "basil",
+            "olive oil"
+          ],
+          "user_request": "Classic Italian pasta",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Spaghetti alla Bolognese\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"Classic\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"500g spaghetti\",\n      \"250g tomato sauce\",\n      \"100g basil\",\n      \"50ml olive oil\"\n    ],\n    \"steps\": [\n      \"Bring a large pot of salted water to a boil. Cook the spaghetti according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n      \"In a large skillet, heat 25ml of olive oil over medium heat. Add the tomato sauce and cook, stirring occasionally, for 10-15 minutes until the sauce has thickened slightly.\",\n      \"Stir in the reserved pasta water and cook for an additional 2-3 minutes.\",\n      \"Add the cooked spaghetti to the skillet, tossing to combine with the tomato sauce. Season with salt and pepper to taste.\",\n      \"Garnish with chopped basil and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Classic Spaghetti alla Italiana\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"main_ingredients\": [\n    \"spaghetti (500g)\",\n    \"tomato sauce (250g)\",\n    \"basil (10g)\",\n    \"olive oil (30ml)\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the spaghetti according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat 20ml of olive oil over medium heat. Add the reserved pasta water and bring to a simmer.\",\n    \"Add the tomato sauce to the skillet and stir to combine. Reduce heat to low and let sauce simmer for 5-7 minutes, stirring occasionally.\",\n    \"Add the cooked spaghetti to the skillet, tossing to combine with the tomato sauce. Season with salt and pepper to taste.\",\n    \"Garnish with chopped fresh basil and serve immediately.\"\n  ],\n  \"note\": \"A classic Italian dish that highlights the simplicity and freshness of basil and olive oil.\"\n}",
+          "note": "Contains pasta (forbidden)"
+        },
+        {
+          "test_case_id": "c10",
+          "category": "constraint_stress",
+          "inventory": [
+            "flour",
+            "eggs",
+            "tomato",
+            "cheese"
+          ],
+          "user_request": "Make me Italian food",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Bruschetta Italiano\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"1 cup flour\",\n      \"2 eggs\",\n      \"2 medium tomatoes (diced)\",\n      \"1/2 cup grated cheese (Parmesan)\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C).\",\n      \"Mix flour and eggs to form a dough. Knead for 5 minutes until smooth.\",\n      \"Roll out dough to 1/4 inch thickness. Cut into 8-10 squares.\",\n      \"Brush with olive oil and top with diced tomatoes and grated cheese.\",\n      \"Bake for 10-12 minutes until crust is golden brown.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Spaghetti Aglio e Olio\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"traditional\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"250g spaghetti\",\n    \"12g black peppercorns\",\n    \"3 cloves garlic\",\n    \"120ml extra virgin olive oil\",\n    \"2-3 dried red chili flakes (optional)\",\n    \"Salt\",\n    \"Freshly ground black pepper\",\n    \"Fresh parsley (chopped, for garnish)\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook spaghetti according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat olive oil over medium heat. Add black peppercorns and cook for 1-2 minutes until fragrant.\",\n    \"Add minced garlic and cook for 1-2 minutes until lightly golden. Be careful not to burn.\",\n    \"If using chili flakes, add them to the skillet and cook for an additional 30 seconds.\",\n    \"Add reserved pasta water to the skillet and stir to combine. Add cooked spaghetti to the skillet, tossing everything together to combine.\",\n    \"Season with salt and black pepper to taste. Serve immediately, garnished with chopped parsley.\"\n  ]\n}",
+          "note": "Contains flour (forbidden)"
+        },
+        {
+          "test_case_id": "c11",
+          "category": "constraint_stress",
+          "inventory": [
+            "bread",
+            "olive oil",
+            "tomato",
+            "basil"
+          ],
+          "user_request": "Bruschetta",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Bruschetta\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"bread\",\n        \"quantity\": \"4-6 slices\",\n        \"unit\": \"slices\"\n      },\n      \"tomato\",\n      \"basil\",\n      \"olive oil\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C).\",\n      \"Slice the bread into 1/2-inch thick rounds and place on a baking sheet.\",\n      \"Drizzle olive oil over the bread and toast in the oven for 5-7 minutes or until lightly browned.\",\n      \"Remove from oven and top each bread round with a diced tomato and a few leaves of basil.\",\n      \"Season with salt and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Bruschetta Italiana\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"savory\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"bread (4-6 slices, crusty Italian bread)\",\n      \"olive oil (3 tbsp)\",\n      \"tomato (2 medium, diced)\",\n      \"basil (1/4 cup, chopped)\"\n    ],\n    \"steps\": [\n      \"Preheat the oven to 400°F (200°C). Slice the bread into 1-inch thick rounds and toast until lightly browned.\",\n      \"In a small bowl, mix together olive oil, salt, and minced garlic.\",\n      \"Brush the toasted bread slices with the olive oil mixture, then top each slice with diced tomatoes and chopped basil.\",\n      \"Season with salt and pepper to taste, and serve immediately.\",\n      \"Optional: Drizzle with extra virgin olive oil and serve as a side dish or appetizer.\"\n    ]\n  }\n}",
+          "note": "Contains bread (forbidden)"
+        },
+        {
+          "test_case_id": "c12",
+          "category": "constraint_stress",
+          "inventory": [
+            "pizza dough",
+            "mozzarella",
+            "tomato",
+            "basil"
+          ],
+          "user_request": "Margherita pizza",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Margherita Pizza\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"pizza dough (1 lb)\",\n      \"mozzarella (8 oz)\",\n      \"tomato (2 medium)\",\n      \"basil (1/4 cup)\"\n    ],\n    \"steps\": [\n      \"Preheat the oven to 450°F (230°C). Roll out the pizza dough to a thickness of 1/4 inch (6 mm). Transfer the dough to a baking sheet or pizza stone.\",\n      \"Spread the tomato sauce over the dough, leaving a 1-inch border around the edges. Top with sliced mozzarella cheese.\",\n      \"Arrange the fresh basil leaves on top of the cheese.\",\n      \"Season with salt and pepper to taste.\",\n      \"Bake the pizza in the preheated oven for 15-20 minutes, or until the crust is golden brown and the cheese is melted and bubbly.\"\n    ],\n    \"note\": null\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Margherita Pizza\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"pizza dough (500g)\",\n    \"mozzarella (250g)\",\n    \"tomato (2 medium, diced)\",\n    \"basil (1/4 cup, chopped)\"\n  ],\n  \"steps\": [\n    \"Preheat the oven to 220°C (425°F).\",\n    \"Roll out the pizza dough to a thickness of 3-4 mm and transfer it to a baking sheet.\",\n    \"Spread the tomato sauce over the dough, leaving a 1-inch border around the edges.\",\n    \"Top the tomato sauce with sliced mozzarella cheese.\",\n    \"Sprinkle chopped basil leaves over the mozzarella cheese.\",\n    \"Bake the pizza in the preheated oven for 15-20 minutes, or until the crust is golden brown and the cheese is melted and bubbly.\",\n    \"Remove the pizza from the oven and let it rest for a few minutes before slicing and serving.\"\n  ],\n  \"note\": \"A classic Neapolitan-style pizza, topped with fresh tomato sauce, mozzarella cheese, and basil leaves.\"\n}",
+          "note": "Contains wheat dough (forbidden)"
+        },
+        {
+          "test_case_id": "c13",
+          "category": "constraint_stress",
+          "inventory": [
+            "penne pasta",
+            "pesto",
+            "parmesan"
+          ],
+          "user_request": "Pesto pasta",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Classic Pesto Pasta\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"400g penne pasta\",\n      \"200g pesto\",\n      \"100g parmesan\"\n    ],\n    \"steps\": [\n      \"Bring a large pot of salted water to a boil and cook the penne pasta according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n      \"In a large skillet, heat the pesto over medium heat.\",\n      \"Add the cooked pasta to the skillet with the pesto and toss to coat.\",\n      \"Add the reserved pasta water to the skillet if the pesto seems too thick.\",\n      \"Sprinkle the parmesan cheese over the pasta and toss to combine.\"\n    ],\n    \"note\": \"Serve immediately, garnished with additional parmesan cheese if desired.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Pesto Pasta alla Genovese\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"savory\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"250g penne pasta\",\n    \"120g fresh basil leaves\",\n    \"150g pine nuts\",\n    \"1/3 cup grated Parmesan cheese\",\n    \"2 cloves garlic\",\n    \"1/2 cup extra virgin olive oil\",\n    \"Salt\",\n    \"Freshly ground black pepper\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the penne pasta according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a food processor, combine basil leaves, pine nuts, garlic, and a pinch of salt. Process until well combined and slightly smooth.\",\n    \"With the processor running, slowly pour in the olive oil through the top. Process until the pesto reaches the desired consistency.\",\n    \"Add the cooked penne pasta to the pesto and toss to combine, adding some reserved pasta water if needed to achieve a smooth sauce.\",\n    \"Transfer the pasta to a serving dish and top with grated Parmesan cheese. Season with salt and black pepper to taste.\"\n  ]\n}",
+          "note": "Contains pasta (forbidden)"
+        },
+        {
+          "test_case_id": "c14",
+          "category": "constraint_stress",
+          "inventory": [
+            "couscous",
+            "vegetables",
+            "olive oil"
+          ],
+          "user_request": "Mediterranean couscous salad",
+          "sft_recipe": "{\n  \"name\": \"Mediterranean Couscous Salad\",\n  \"cuisine\": \"Mediterranean\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup couscous\",\n    \"2 cups mixed vegetables (such as cherry tomatoes, bell peppers, cucumber, carrots)\",\n    \"2 tbsp olive oil\",\n    \"1 tsp lemon juice\",\n    \"1 tsp chopped fresh parsley\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Rinse the couscous according to package instructions and set aside. Drain and fluff with a fork.\",\n    \"In a large bowl, whisk together olive oil, lemon juice, salt, and pepper.\",\n    \"Add the mixed vegetables to the bowl and toss to coat with the dressing.\",\n    \"Fluff the couscous with a fork and add to the bowl with the vegetables. Toss to combine.\",\n    \"Sprinkle with chopped parsley and serve immediately.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mediterranean Couscous Salad\",\n    \"cuisine\": \"Mediterranean\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup couscous\",\n      \"2 cups mixed vegetables (bell peppers, zucchini, cherry tomatoes, cucumber)\",\n      \"3 tbsp olive oil\",\n      \"2 tbsp lemon juice\",\n      \"1 tsp dried oregano\",\n      \"1 tsp dried basil\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Cook the couscous according to package instructions. Drain and set aside.\",\n      \"In a large bowl, whisk together olive oil, lemon juice, oregano, and basil.\",\n      \"Add the mixed vegetables to the bowl and toss to coat with the dressing.\",\n      \"Add the cooked couscous to the bowl and toss gently to combine.\",\n      \"Season with salt and pepper to taste.\"\n    ]\n  }\n}",
+          "note": "Contains couscous (forbidden)"
+        },
+        {
+          "test_case_id": "c15",
+          "category": "edge_case",
+          "inventory": [
+            "tomato",
+            "mozzarella",
+            "basil"
+          ],
+          "user_request": "Simple Italian",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Caprese Salad\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"10m\",\n    \"main_ingredients\": [\n      \"1 large tomato (300g)\",\n      \"8 oz fresh mozzarella cheese (225g)\",\n      \"1/4 cup fresh basil leaves (15g)\"\n    ],\n    \"steps\": [\n      \"Cut the tomato into wedges and place on a plate or platter.\",\n      \"Slice the mozzarella cheese into thin rounds.\",\n      \"Arrange the tomato wedges on the plate, then top each with a round of mozzarella cheese.\",\n      \"Sprinkle the fresh basil leaves over the salad.\",\n      \"Drizzle with extra virgin olive oil and season with salt and pepper to taste.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Bruschetta Italiano\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"Simple\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"2 large tomatoes (chopped)\",\n    \"4-6 mozzarella balls (depending on size)\",\n    \"1/4 cup extra-virgin olive oil\",\n    \"1/4 cup fresh basil leaves (chopped)\",\n    \"2 cloves garlic (minced)\",\n    \"1 baguette (cut into 1-inch slices)\",\n    \"Salt and black pepper (to taste)\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C).\",\n    \"Brush the baguette slices with olive oil and toast in the oven for 5-7 minutes or until lightly browned.\",\n    \"In a bowl, mix together chopped tomatoes, mozzarella balls, garlic, and basil.\",\n    \"Season with salt and black pepper to taste.\",\n    \"Assemble the bruschetta by placing the toasted baguette slices on a serving plate and topping with the tomato mixture.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": "Minimal ingredients"
+        },
+        {
+          "test_case_id": "c16",
+          "category": "edge_case",
+          "inventory": [
+            "lots of seafood",
+            "vegetables",
+            "rice",
+            "polenta",
+            "herbs",
+            "cheese"
+          ],
+          "user_request": "Whatever Italian you recommend",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Italian Seafood Polenta Frittata\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Polenta\",\n        \"quantity\": \"250g\",\n        \"unit\": \"g\"\n      },\n      \"seafood\": [\n        {\n          \"name\": \"Shrimp\",\n          \"quantity\": \"200g\",\n          \"unit\": \"g\"\n        },\n        {\n          \"name\": \"Scallops\",\n          \"quantity\": \"150g\",\n          \"unit\": \"g\"\n        }\n      ],\n      \"vegetables\": [\n        {\n          \"name\": \"Spinach\",\n          \"quantity\": \"100g\",\n          \"unit\": \"g\"\n        },\n        {\n          \"name\": \"Bell Pepper\",\n          \"quantity\": \"50g\",\n          \"unit\": \"g\"\n        },\n        {\n          \"name\": \"Onion\",\n          \"quantity\": \"50g\",\n          \"unit\": \"g\"\n        }\n      ],\n      \"herbs\": [\n        {\n          \"name\": \"Basil\",\n          \"quantity\": \"10g\",\n          \"unit\": \"g\"\n        }\n      ],\n      \"cheese\": [\n        {\n          \"name\": \"Parmesan\",\n          \"quantity\": \"50g\",\n          \"unit\": \"g\"\n        }\n      ]\n    ],\n    \"steps\": [\n      \"Preheat the oven to 180°C. Cook the polenta according to package instructions. Set aside to cool.\",\n      \"In a large skillet, heat 2 tablespoons of oil over medium-high heat. Add the onion and cook until translucent.\",\n      \"Add the bell pepper and cook for an additional 2-3 minutes.\",\n      \"Add the shrimp and scallops to the skillet and cook until pink and fully cooked.\",\n      \"In a large bowl, combine the cooked polenta, spinach, basil, and cooked seafood mixture.\",\n      \"In a separate bowl, beat the eggs and Parmesan cheese. Pour the egg mixture over the polenta mixture and stir until combined.\",\n      \"Pour the mixture into a greased 20cm tart pan and bake for 25-30 minutes or until set.\",\n      \"Remove from the oven and let cool for 5 minutes before slicing and serving.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Seafood Risotto alla Mediterranea\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"traditional\",\n    \"time\": \"45m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Risotto rice (500g)\",\n        \"quantity\": \"500g\",\n        \"unit\": \"g\"\n      },\n      \"polenta (200g)\",\n      \"vegetables (bell peppers, zucchini, cherry tomatoes, 1 cup each)\",\n      \"seafood (shrimp, scallops, mussels, 500g)\",\n      \"olive oil (100ml)\",\n      \"white wine (250ml)\",\n      \"chicken broth (500ml)\",\n      \"garlic (3 cloves)\",\n      \"onion (1 medium)\",\n      \"basil (fresh, 1/4 cup)\",\n      \"oregano (fresh, 1 tsp)\",\n      \"salt (to taste)\",\n      \"black pepper (to taste)\",\n      \"mozzarella (100g, grated)\",\n      \"parmesan (100g, grated)\"\n    ],\n    \"steps\": [\n      \"Heat 2 tbsp of olive oil in a large pot over medium heat. Add the chopped onion and cook until translucent (5 minutes).\",\n      \"Add the garlic and cook for another minute.\",\n      \"Add the bell peppers, zucchini, and cherry tomatoes. Cook for 5 minutes.\",\n      \"Add the risotto rice and cook for 1 minute, stirring constantly.\",\n      \"Add the white wine and cook until the liquid is almost completely absorbed. Add the chicken broth, 1/2 cup at a time, stirring constantly and allowing each portion to be absorbed before adding the next. This process should take about 20-25 minutes or until the rice is cooked and creamy.\",\n      \"While the rice is cooking, heat the remaining 1 tbsp of olive oil in a large skillet over medium-high heat. Add the shrimp, scallops, and mussels. Cook until the seafood is pink and cooked through (3-4 minutes).\",\n      \"Stir the cooked seafood into the risotto. Season with salt, black pepper, basil, and oregano. Serve immediately, topped with mozzarella and parmesan cheese.\",\n      \"Serve immediately, garnished with additional basil if desired.\"\n    ]\n  }\n}",
+          "note": "Ambiguous, many ingredients"
+        },
+        {
+          "test_case_id": "c17",
+          "category": "edge_case",
+          "inventory": [
+            "tomato",
+            "olive oil"
+          ],
+          "user_request": "Quick Italian side",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Italian Bruschetta\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"10m\",\n    \"main_ingredients\": [\n      \"1 medium tomato (diced)\",\n      \"2 cloves of garlic (minced)\",\n      \"1/4 cup olive oil\",\n      \"1 baguette (sliced)\",\n      \"Fresh basil leaves (chopped)\",\n      \"Salt and pepper (to taste)\",\n      \"Red pepper flakes (optional)\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C).\",\n      \"Brush baguette slices with olive oil and toast until lightly browned.\",\n      \"In a bowl, mix diced tomato, minced garlic, salt, and pepper.\",\n      \"Spoon the tomato mixture on toasted baguette slices.\",\n      \"Sprinkle chopped basil leaves and red pepper flakes (if using).\",\n      \"Serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Italian Tomato Bruschetta\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"quick\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"2 large tomatoes (250g), diced\",\n    \"1/4 cup olive oil\",\n    \"4-6 baguette slices\",\n    \"2 cloves garlic, minced\",\n    \"1 tsp dried oregano\",\n    \"1 tsp dried basil\",\n    \"Salt and pepper, to taste\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C). Slice baguette into 1/2-inch thick rounds and toast until lightly browned.\",\n    \"In a bowl, mix together diced tomatoes, minced garlic, dried oregano, and dried basil.\",\n    \"Brush toasted baguette slices with olive oil and top each with a spoonful of tomato mixture.\",\n    \"Season with salt and pepper to taste. Serve immediately.\",\n    \"Optional: Drizzle with additional olive oil and serve.\"\n  ]\n}",
+          "note": "Very few ingredients"
+        },
+        {
+          "test_case_id": "c18",
+          "category": "edge_case",
+          "inventory": [
+            "mozzarella",
+            "basil"
+          ],
+          "user_request": "Can you make anything Italian?",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Caprese Salad\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"15m\",\n    \"main_ingredients\": [\n      \"4 oz fresh mozzarella (120g)\",\n      \"1/4 cup fresh basil leaves (15g)\",\n      \"2 large tomatoes (200g)\"\n    ],\n    \"steps\": [\n      \"Cut the tomatoes in half lengthwise and sprinkle with salt. Let it sit for 10 minutes to draw out excess moisture.\",\n      \"Rinse the tomatoes and pat dry with a paper towel.\",\n      \"Slice the mozzarella into 1/4-inch thick rounds.\",\n      \"Arrange the tomato slices on a large plate or platter.\",\n      \"Place a round of mozzarella on top of each tomato slice.\",\n      \"Sprinkle the fresh basil leaves over the mozzarella.\",\n      \"Drizzle with olive oil and season with salt and pepper to taste.\"\n    ],\n    \"note\": \"This classic Italian salad is a simple yet flavorful dish that showcases the sweetness of the tomatoes and the creaminess of the mozzarella.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Bruschetta Italiano\",\n    \"cuisine\": \"Italian\",\n    \"culinary_preference\": \"savory\",\n    \"time\": \"10m\",\n    \"main_ingredients\": [\n      \"1 baguette (4-6 slices, 1/4 inch thick)\",\n      \"1/4 cup extra virgin olive oil\",\n      \"2 cloves garlic, minced\",\n      \"1/4 cup fresh basil leaves, chopped\",\n      \"1/4 cup fresh mozzarella cheese, sliced\",\n      \"Salt and black pepper, to taste\"\n    ],\n    \"steps\": [\n      \"Preheat the oven to 400°F (200°C). Slice the baguette into 1/2 inch thick rounds and toast until lightly browned.\",\n      \"In a small bowl, mix together olive oil, garlic, and basil.\",\n      \"Brush the toasted baguette slices with the olive oil mixture, then top with a slice of mozzarella cheese.\",\n      \"Season with salt and black pepper to taste.\",\n      \"Serve immediately, garnished with additional basil leaves if desired.\"\n    ]\n  }\n}",
+          "note": "Very limited"
+        },
+        {
+          "test_case_id": "c19",
+          "category": "cross_persona",
+          "inventory": [
+            "kimchi",
+            "gochujang",
+            "rice"
+          ],
+          "user_request": "Korean food",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Kimchi Fried Rice\",\n    \"cuisine\": \"Korean\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"2 cups cooked rice\",\n      \"1/2 cup kimchi, chopped\",\n      \"2 tbsp gochujang\",\n      \"1 tsp sesame oil\",\n      \"1 tsp soy sauce\",\n      \"1 tsp Gochugaru (Korean chili flakes)\",\n      \"2 cloves garlic, minced\",\n      \"1 tsp grated ginger\",\n      \"1/4 cup diced green onions, for garnish\",\n      \"1/4 cup toasted sesame seeds, for garnish\"\n    ],\n    \"steps\": [\n      \"Heat sesame oil in a large skillet or wok over medium-high heat. Add garlic and ginger and stir-fry until fragrant, about 1 minute.\",\n      \"Add gochujang and stir-fry for another minute, until fragrant.\",\n      \"Add kimchi and stir-fry for 2-3 minutes, until the kimchi starts to break down.\",\n      \"Add cooked rice to the skillet or wok and stir-fry for 5 minutes, breaking up any clumps with a spatula.\",\n      \"Add soy sauce and Gochugaru, and stir-fry for another minute.\",\n      \"Taste and adjust seasoning as needed. Transfer to a serving platter and garnish with green onions and sesame seeds.\",\n      \"Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Kimchi Fried Rice\",\n  \"cuisine\": \"Korean\",\n  \"culinary_preference\": \"Korean\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"rice (2 cups cooked\",\n    \"gochujang (2 tbsp)\",\n    \"gochugaru (1 tsp)\",\n    \"green onion (chopped, 1/4 cup)\",\n    \"sesame oil (1 tsp)\",\n    \"salt (to taste)\",\n    \"black pepper (to taste)\"\n  ],\n  \"steps\": [\n    \"Heat sesame oil in a large skillet or wok over medium-high heat.\",\n    \"Add gochugaru and cook for 1 minute, until fragrant.\",\n    \"Add cooked rice and stir-fry for 2-3 minutes, until heated through.\",\n    \"Add gochujang and stir-fry for another minute, until combined.\",\n    \"Transfer to a serving platter and garnish with green onion.\",\n    \"Serve immediately.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "c20",
+          "category": "cross_persona",
+          "inventory": [
+            "tortilla",
+            "beans",
+            "avocado"
+          ],
+          "user_request": "Mexican tacos",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Tacos de Frijoles con Aguacate\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"tortilla (4-6)\",\n      \"beans (1 cup, cooked)\",\n      \"avocado (2, sliced)\",\n      \"onion (1/2, diced)\",\n      \"cilantro (1/4 cup, chopped)\",\n      \"lime juice (2 tbsp)\",\n      \"salt (to taste)\",\n      \"pepper (to taste)\"\n    ],\n    \"steps\": [\n      \"Heat a large skillet over medium heat. Add the diced onion and cook until softened, about 5 minutes.\",\n      \"Add the cooked beans to the skillet and stir to combine with the onion. Season with salt and pepper to taste.\",\n      \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble the tacos by spooning the bean mixture onto a tortilla, followed by a slice of avocado, and top with cilantro.\",\n      \"Squeeze a squeeze of lime juice over the top of each taco and serve immediately.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Mexican Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": null,\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"tortilla\",\n    \"beans\",\n    \"avocado\"\n  ],\n  \"steps\": [\n    \"Step 1. Heat a large skillet over medium-high heat and cook tortillas for 30 seconds on each side until pliable.\",\n    \"Step 2. Warm beans in a separate pan over low heat.\",\n    \"Step 3. Cut avocado into small pieces and set aside.\",\n    \"Step 4. Assemble tacos by spooning beans onto a tortilla, followed by a slice of avocado.\",\n    \"Step 5. Serve immediately and enjoy!\"\n  ]\n}",
+          "note": ""
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 20,
+    "dpo_wins": 6,
+    "sft_wins": 12,
+    "ties": 0,
+    "dpo_win_rate": 0.3,
+    "sft_win_rate": 0.6,
+    "tie_rate": 0.0,
+    "per_persona": {
+      "persona_c_italian_gf": {
+        "name": "Italian Food Lover (Gluten-Free)",
+        "dpo_win_rate": 0.3,
+        "dpo_wins": 6,
+        "sft_wins": 12,
+        "ties": 0,
+        "total_tests": 20
+      }
+    }
+  }
+}

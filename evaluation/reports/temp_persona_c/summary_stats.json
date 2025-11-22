@@ -1,0 +1,19 @@
+{
+  "total_tests": 20,
+  "dpo_wins": 6,
+  "sft_wins": 12,
+  "ties": 0,
+  "dpo_win_rate": 0.3,
+  "sft_win_rate": 0.6,
+  "tie_rate": 0.0,
+  "per_persona": {
+    "persona_c_italian_gf": {
+      "name": "Italian Food Lover (Gluten-Free)",
+      "dpo_win_rate": 0.3,
+      "dpo_wins": 6,
+      "sft_wins": 12,
+      "ties": 0,
+      "total_tests": 20
+    }
+  }
+}

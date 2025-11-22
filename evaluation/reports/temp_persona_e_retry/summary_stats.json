@@ -1,0 +1,19 @@
+{
+  "total_tests": 20,
+  "dpo_wins": 17,
+  "sft_wins": 2,
+  "ties": 0,
+  "dpo_win_rate": 0.85,
+  "sft_win_rate": 0.1,
+  "tie_rate": 0.0,
+  "per_persona": {
+    "persona_e_mexican_vegan": {
+      "name": "Mexican Vegan",
+      "dpo_win_rate": 0.85,
+      "dpo_wins": 17,
+      "sft_wins": 2,
+      "ties": 0,
+      "total_tests": 20
+    }
+  }
+}

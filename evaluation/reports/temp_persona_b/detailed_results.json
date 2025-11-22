@@ -1,0 +1,1661 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-21T15:32:38.675201",
+    "project_id": "mlops-compute-lab",
+    "personas_evaluated": [
+      "persona_b_indian_veg"
+    ],
+    "test_count_per_persona": 20,
+    "evaluators_used": [
+      "gemini-flash"
+    ],
+    "total_tests": 20
+  },
+  "persona_results": {
+    "persona_b_indian_veg": {
+      "persona_name": "Indian Vegetarian (No Spicy)",
+      "test_count": 20,
+      "evaluations": {
+        "gemini-flash": [
+          {
+            "test_case_id": "b01",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a clear winner because it aligns better with the persona's preference for mild flavors and uses more preferred ingredients like ghee and cream. Recipe A includes cayenne pepper, which violates the 'no spicy' constraint, and its culinary preference is incorrectly labeled as 'non-veg'.",
+              "violations": {
+                "recipe_a": [
+                  "cayenne pepper"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a clear winner because it aligns better with the persona's preference for mild flavors and uses more preferred ingredients like ghee and cream. Recipe A includes cayenne pepper, which violates the 'no spicy' constraint, and its culinary preference is incorrectly labeled as 'non-veg'.",
+                "violations_found": {
+                  "recipe_a": [
+                    "cayenne pepper"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b02",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it includes more specific ingredient quantities and uses ghee, which aligns with the persona's preference for creamy and aromatic Indian cuisine. It also provides a note about the dish, enhancing the overall experience and demonstrating a better understanding of the persona's culinary interests.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it includes more specific ingredient quantities and uses ghee, which aligns with the persona's preference for creamy and aromatic Indian cuisine. It also provides a note about the dish, enhancing the overall experience and demonstrating a better understanding of the persona's culinary interests.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b03",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.8,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it includes turmeric, a preferred ingredient, and the ingredient list is more structured with quantities and units. While both recipes are good, the slightly more detailed ingredient list and inclusion of turmeric give Recipe B a slight edge in persona alignment and overall fit.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it includes turmeric, a preferred ingredient, and the ingredient list is more structured with quantities and units. While both recipes are good, the slightly more detailed ingredient list and inclusion of turmeric give Recipe B a slight edge in persona alignment and overall fit.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b04",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.2,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 9,
+                "recipe_quality": 7,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is better because it strictly adheres to the 'no spicy' constraint, while Recipe B includes cayenne pepper, violating the persona's preferences. Although Recipe B includes more preferred ingredients, the constraint violation is more significant.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "cayenne pepper"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 7,
+                  "overall_fit": 8
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is better because it strictly adheres to the 'no spicy' constraint, while Recipe B includes cayenne pepper, violating the persona's preferences. Although Recipe B includes more preferred ingredients, the constraint violation is more significant.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "cayenne pepper"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b05",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it includes more preferred ingredients like ghee, cumin, coriander, and turmeric, aligning more closely with the persona's flavor profile. It also provides a more detailed and traditional cooking process, enhancing the overall fit with the persona's preferences.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it includes more preferred ingredients like ghee, cumin, coriander, and turmeric, aligning more closely with the persona's flavor profile. It also provides a more detailed and traditional cooking process, enhancing the overall fit with the persona's preferences.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b06",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 6,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it includes paneer, turmeric, and cumin, which are preferred ingredients. It also provides a more detailed and traditional biryani recipe compared to Recipe A, aligning better with the persona's cooking style.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it includes paneer, turmeric, and cumin, which are preferred ingredients. It also provides a more detailed and traditional biryani recipe compared to Recipe A, aligning better with the persona's cooking style.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b07",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it incorporates more of the preferred ingredients like ghee and paneer, aligning better with the persona's flavor profile and cooking style. It also provides a more detailed and aromatic recipe, enhancing the overall culinary experience.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it incorporates more of the preferred ingredients like ghee and paneer, aligning better with the persona's flavor profile and cooking style. It also provides a more detailed and aromatic recipe, enhancing the overall culinary experience.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b08",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 5,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a clear winner because it aligns better with the persona's preferences for Indian cuisine and includes more preferred ingredients like paneer, ghee, turmeric, and cumin. It also provides a more detailed and traditional cooking process, enhancing the overall fit with the persona.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a clear winner because it aligns better with the persona's preferences for Indian cuisine and includes more preferred ingredients like paneer, ghee, turmeric, and cumin. It also provides a more detailed and traditional cooking process, enhancing the overall fit with the persona.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b09",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 3.0,
+              "dpo_score": 3.0,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the vegetarian constraint. Since both are equally bad in terms of constraint compliance, the choice of winner is arbitrary. The recipe quality is similar for both.",
+              "violations": {
+                "recipe_a": [
+                  "chicken"
+                ],
+                "recipe_b": [
+                  "chicken"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the vegetarian constraint. Since both are equally bad in terms of constraint compliance, the choice of winner is arbitrary. The recipe quality is similar for both.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chicken"
+                  ],
+                  "recipe_b": [
+                    "chicken"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b10",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.6,
+              "dpo_score": 3.2,
+              "sft_scores_detail": {
+                "persona_alignment": 2,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to adhere to the vegetarian constraint due to the inclusion of shrimp. Recipe B is slightly better because it includes ghee, a preferred ingredient, and has a slightly higher alignment score, though both are very low due to the seafood.",
+              "violations": {
+                "recipe_a": [
+                  "shrimp"
+                ],
+                "recipe_b": [
+                  "shrimp"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 2,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "winner": "B",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to adhere to the vegetarian constraint due to the inclusion of shrimp. Recipe B is slightly better because it includes ghee, a preferred ingredient, and has a slightly higher alignment score, though both are very low due to the seafood.",
+                "violations_found": {
+                  "recipe_a": [
+                    "shrimp"
+                  ],
+                  "recipe_b": [
+                    "shrimp"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b11",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.8,
+              "dpo_score": 7.6,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 3,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 3
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B aligns better with the persona's preference for mild flavors, using curry powder and cumin instead of relying heavily on chili and hot spices. While both recipes use 'hot spices', Recipe B uses it more sparingly. Recipe A is too spicy for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "chili",
+                  "hot spices"
+                ],
+                "recipe_b": [
+                  "hot spices"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 3,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 3
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B aligns better with the persona's preference for mild flavors, using curry powder and cumin instead of relying heavily on chili and hot spices. While both recipes use 'hot spices', Recipe B uses it more sparingly. Recipe A is too spicy for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chili",
+                    "hot spices"
+                  ],
+                  "recipe_b": [
+                    "hot spices"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b12",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.6,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 3,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 2,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the persona's vegetarian dietary restrictions and avoids forbidden ingredients. Recipe A contains beef, which is a critical violation. Recipe B also aligns better with the persona's preferred ingredients and overall Indian vegetarian style.",
+              "violations": {
+                "recipe_a": [
+                  "beef"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 3,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 2,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the persona's vegetarian dietary restrictions and avoids forbidden ingredients. Recipe A contains beef, which is a critical violation. Recipe B also aligns better with the persona's preferred ingredients and overall Indian vegetarian style.",
+                "violations_found": {
+                  "recipe_a": [
+                    "beef"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b13",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.2,
+              "dpo_score": 8.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 5,
+                "recipe_quality": 9,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it is simpler and avoids unnecessary ingredients like eggs, which are not typically used in Indian desserts for this persona. While both recipes are vegetarian and use available ingredients, Recipe B's simplicity and directness make it a better fit for the persona's preference for traditional and mild flavors.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 5,
+                  "recipe_quality": 9,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it is simpler and avoids unnecessary ingredients like eggs, which are not typically used in Indian desserts for this persona. While both recipes are vegetarian and use available ingredients, Recipe B's simplicity and directness make it a better fit for the persona's preference for traditional and mild flavors.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b14",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.2,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the vegetarian constraint and avoids spicy ingredients. Recipe A includes fish, which is a critical violation. Recipe B also incorporates preferred ingredients like paneer and aligns better with the persona's mild flavor profile.",
+              "violations": {
+                "recipe_a": [
+                  "fish",
+                  "red chili powder"
+                ],
+                "recipe_b": [
+                  "red chili powder (small amount)"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the vegetarian constraint and avoids spicy ingredients. Recipe A includes fish, which is a critical violation. Recipe B also incorporates preferred ingredients like paneer and aligns better with the persona's mild flavor profile.",
+                "violations_found": {
+                  "recipe_a": [
+                    "fish",
+                    "red chili powder"
+                  ],
+                  "recipe_b": [
+                    "red chili powder (small amount)"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b15",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 6.8,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 5,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 6
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a clear winner because it perfectly aligns with the persona's dietary restrictions and preferred mild flavor profile. Recipe A includes red chili powder, which violates the 'no spicy' constraint, making it unsuitable for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "red chili powder"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 5,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 6
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a clear winner because it perfectly aligns with the persona's dietary restrictions and preferred mild flavor profile. Recipe A includes red chili powder, which violates the 'no spicy' constraint, making it unsuitable for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "red chili powder"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b16",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 8.2,
+              "dpo_score": 6.6,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 7,
+                "recipe_quality": 6,
+                "overall_fit": 6
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is better because it avoids the red chili powder, which could make it spicy, and the recipe is more coherent. Recipe B includes red chili powder, which violates the 'no spicy' constraint. Also, Step 7 in Recipe B is not coherent (blending cooked rice with yogurt to make a paste).",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": [
+                  "red chili powder"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 6,
+                  "overall_fit": 6
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is better because it avoids the red chili powder, which could make it spicy, and the recipe is more coherent. Recipe B includes red chili powder, which violates the 'no spicy' constraint. Also, Step 7 in Recipe B is not coherent (blending cooked rice with yogurt to make a paste).",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": [
+                    "red chili powder"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b17",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 6.4,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 6
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better aligned with the persona. It uses ghee, turmeric, cumin, and optionally paneer, which are preferred ingredients. Recipe A only uses curry powder and cilantro, which are less specific to the persona's preferences.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 6
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better aligned with the persona. It uses ghee, turmeric, cumin, and optionally paneer, which are preferred ingredients. Recipe A only uses curry powder and cilantro, which are less specific to the persona's preferences.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b18",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.4,
+              "dpo_score": 8.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 9,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 6,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it includes more preferred ingredients like paneer, ghee, and turmeric, aligning better with the persona's flavor profile. Recipe A includes cayenne pepper, which violates the 'no spicy' constraint, although it is optional. Recipe B's method of cooking the spices in ghee before adding the other ingredients is also more aligned with traditional Indian cooking.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 9,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 6,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it includes more preferred ingredients like paneer, ghee, and turmeric, aligning better with the persona's flavor profile. Recipe A includes cayenne pepper, which violates the 'no spicy' constraint, although it is optional. Recipe B's method of cooking the spices in ghee before adding the other ingredients is also more aligned with traditional Indian cooking.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b19",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 1.6,
+              "dpo_score": 1.6,
+              "sft_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 0
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 0
+              },
+              "confidence": "low",
+              "reasoning": "Both recipes fail to meet the persona's vegetarian requirement. Since they are equally bad, I arbitrarily chose A as the winner. Neither recipe aligns with the persona's preferences.",
+              "violations": {
+                "recipe_a": [
+                  "chicken"
+                ],
+                "recipe_b": [
+                  "chicken"
+                ]
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 0
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 0
+                },
+                "winner": "A",
+                "confidence": "low",
+                "reasoning": "Both recipes fail to meet the persona's vegetarian requirement. Since they are equally bad, I arbitrarily chose A as the winner. Neither recipe aligns with the persona's preferences.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chicken"
+                  ],
+                  "recipe_b": [
+                    "chicken"
+                  ]
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "b20",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.0,
+              "dpo_score": 6.2,
+              "sft_scores_detail": {
+                "persona_alignment": 2,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 0,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is much better because it adheres to the vegetarian constraint and doesn't include meat. Recipe A includes ground beef, which is a critical violation. While neither recipe uses preferred ingredients, Recipe B is a much better fit for the persona due to the absence of forbidden ingredients.",
+              "violations": {
+                "recipe_a": [
+                  "ground beef"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 2,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is much better because it adheres to the vegetarian constraint and doesn't include meat. Recipe A includes ground beef, which is a critical violation. While neither recipe uses preferred ingredients, Recipe B is a much better fit for the persona due to the absence of forbidden ingredients.",
+                "violations_found": {
+                  "recipe_a": [
+                    "ground beef"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          }
+        ]
+      },
+      "consensus": {
+        "test_results": [
+          {
+            "test_idx": 0,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 1,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 2,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 3,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 4,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 5,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 6,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 7,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 8,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 9,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 10,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 11,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 12,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 13,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 14,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 15,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 16,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 17,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 18,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 19,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          }
+        ],
+        "overall": {
+          "dpo_wins": 16,
+          "sft_wins": 4,
+          "ties": 0,
+          "total_tests": 20,
+          "dpo_win_rate": 0.8,
+          "avg_agreement_rate": 1.0
+        }
+      },
+      "generated_recipes": [
+        {
+          "test_case_id": "b01",
+          "category": "basic_alignment",
+          "inventory": [
+            "paneer",
+            "tomato",
+            "cream",
+            "butter",
+            "mild spices"
+          ],
+          "user_request": "Paneer butter masala",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Paneer Butter Masala\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"200g paneer (Indian cheese, cut into small cubes)\",\n      \"2 medium tomatoes, diced\",\n      \"2 tbsp butter\",\n      \"1 tsp cumin seeds\",\n      \"1 tsp coriander powder\",\n      \"1 tsp garam masala powder\",\n      \"1/2 tsp cayenne pepper (optional)\",\n      \"1/2 tsp salt\",\n      \"2 cloves garlic, minced\",\n      \"1 tsp ginger paste\",\n      \"2 tbsp all-purpose flour\"\n    ],\n    \"steps\": [\n      \"Heat butter in a pan over medium heat. Add cumin seeds and let it sizzle.\",\n      \"Add diced tomatoes, cumin seeds, coriander powder, garam masala powder, cayenne pepper (if using), and salt. Mix well.\",\n      \"Add minced garlic and ginger paste, mix well.\",\n      \"Add paneer cubes and mix gently. Cook for 5 minutes.\",\n      \"Add 2 tbsp of flour and mix well. Cook for another 2 minutes.\",\n      \"Serve hot with basmati rice or roti.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Paneer Butter Masala\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"mild\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"paneer (250g)\",\n      \"tomato (2 medium, diced)\",\n      \"cream (50g)\",\n      \"butter (20g)\",\n      \"mild spices (1 tsp cumin seeds, 1/2 tsp coriander powder, 1/2 tsp garam masala, 1/4 tsp turmeric powder)\",\n      \"ghee or oil (for frying)\",\n      \"salt (to taste)\",\n      \"fresh cilantro (for garnish)\"\n    ],\n    \"steps\": [\n      \"Heat 2 tbsp ghee or oil in a pan over medium heat. Add cumin seeds and let them sizzle for a few seconds.\",\n      \"Add the diced tomatoes and sauté until they start to soften.\",\n      \"Add the mild spices (cumin powder, coriander powder, garam masala, turmeric powder) and sauté for another minute.\",\n      \"Add the paneer cubes and stir well to coat them with the spice mixture.\",\n      \"Pour in the cream and stir gently to avoid breaking the paneer. Reduce heat to low and let it simmer for 5-7 minutes or until the sauce thickens.\",\n      \"Stir in the butter until it melts and well combined. Season with salt to taste.\",\n      \"Garnish with fresh cilantro and serve hot with naan or rice.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b02",
+          "category": "basic_alignment",
+          "inventory": [
+            "lentils",
+            "onion",
+            "tomato",
+            "turmeric",
+            "cumin"
+          ],
+          "user_request": "Dal tadka recipe",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Dal Tadka\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": null,\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"lentils\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cups\"\n      },\n      \"onion\",\n      \"tomato\",\n      \"turmeric\"\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add cumin seeds and let them sizzle for a few seconds.\",\n      \"Add onion and sauté until it becomes translucent.\",\n      \"Add turmeric and sauté for another minute.\",\n      \"Add lentils and 2 cups of water. Bring to a boil, then reduce heat to low and simmer for 15 minutes or until the lentils are cooked.\",\n      \"Season with salt to taste. Serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Dal Tadka\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 cup split red lentils (masoor dal)\",\n    \"1 medium onion, chopped\",\n    \"2 medium tomatoes, diced\",\n    \"1 tsp ground cumin\",\n    \"1 tsp turmeric powder\",\n    \"2 cups water\",\n    \"2 tbsp ghee or oil\",\n    \"Salt, to taste\"\n  ],\n  \"steps\": [\n    \"Heat 1 tbsp of ghee in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n    \"Add chopped onion and sauté until it turns translucent.\",\n    \"Add diced tomatoes and cook until they are soft.\",\n    \"Add turmeric powder and mix well. Cook for 1 minute.\",\n    \"Add split red lentils and 2 cups of water. Bring to a boil.\",\n    \"Reduce heat to low and simmer for 15 minutes or until the lentils are cooked.\",\n    \"Season with salt to taste. Serve hot.\"\n  ],\n  \"note\": \"Dal Tadka is a traditional Indian lentil dish that is often served with rice or roti.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b03",
+          "category": "basic_alignment",
+          "inventory": [
+            "cauliflower",
+            "potatoes",
+            "mild curry",
+            "ghee"
+          ],
+          "user_request": "Aloo gobi",
+          "sft_recipe": "{\n  \"name\": \"Aloo Gobi\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 head of cauliflower (1 medium-sized, broken into florets)\",\n    \"2 medium-sized potatoes (peeled and diced)\",\n    \"2 tablespoons ghee\",\n    \"2 teaspoons mild curry powder\",\n    \"1 teaspoon salt\",\n    \"1/4 teaspoon black pepper\",\n    \"1/4 teaspoon cumin powder\",\n    \"1/4 teaspoon coriander powder\",\n    \"2 cloves garlic (minced)\",\n    \"1 tablespoon lemon juice\"\n  ],\n  \"steps\": [\n    \"Heat 1 tablespoon of ghee in a large pan over medium heat. Add cumin seeds and let them sizzle for a few seconds.\",\n    \"Add the diced potatoes and cook until they start to brown, about 5 minutes.\",\n    \"Add the cauliflower florets, mild curry powder, salt, black pepper, cumin powder, and coriander powder. Mix well.\",\n    \"Add the minced garlic and lemon juice, and stir for another minute.\",\n    \"Reduce heat to low and cover the pan with a lid. Let it cook for 15-20 minutes, or until the potatoes and cauliflower are tender.\",\n    \"Serve hot with additional ghee if desired.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Aloo Gobi Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"cauliflower (1 head, broken into florets)\",\n      \"quantity\": \"250g\",\n      \"units\": \"g\"\n    },\n    {\n      \"name\": \"potatoes (2 medium, peeled and diced)\",\n      \"quantity\": \"150g\",\n      \"units\": \"g\"\n    },\n    \"pantry_ingredients\": [\n      {\n        \"name\": \"mild curry powder\",\n        \"quantity\": \"2 tsp\",\n        \"units\": \"tsp\"\n      },\n      {\n        \"name\": \"ghee (2 tbsp)\",\n        \"quantity\": \"30g\",\n        \"units\": \"g\"\n      },\n      {\n        \"name\": \"salt (to taste)\",\n        \"quantity\": \"to taste\",\n        \"units\": \"g\"\n      },\n      {\n        \"name\": \"turmeric powder (1/2 tsp)\",\n        \"quantity\": \"2g\",\n        \"units\": \"g\"\n      },\n      {\n        \"name\": \"cumin powder (1/4 tsp)\",\n        \"quantity\": \"1g\",\n        \"units\": \"g\"\n      }\n    ]\n  },\n  \"steps\": [\n    \"Heat ghee in a pan over medium heat. Add cumin powder and sauté for 1 minute.\",\n    \"Add turmeric powder and sauté for another minute.\",\n    \"Add diced potatoes and cook until they start to soften.\",\n    \"Add cauliflower florets and cook until they start to soften.\",\n    \"Add mild curry powder and mix well. Cook for 2-3 minutes.\",\n    \"Season with salt to taste. Serve hot.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b04",
+          "category": "basic_alignment",
+          "inventory": [
+            "chickpeas",
+            "tomato",
+            "mild spices",
+            "rice"
+          ],
+          "user_request": "Chana masala, not spicy",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chana Masala\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-spicy\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup chickpeas\",\n      \"2 medium tomatoes\",\n      \"2 tsp mild spices (garam masala, cumin, coriander)\"\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add cumin and coriander seeds. Let them sizzle for a few seconds.\",\n      \"Add the chopped tomatoes and cook until they are soft and mushy.\",\n      \"Add the chickpeas, garam masala, salt, and a pinch of sugar. Mix well.\",\n      \"Simmer for 10-12 minutes or until the flavors have melded together.\",\n      \"Serve hot over steaming hot rice.\"\n    ],\n    \"note\": \"This recipe is a classic North Indian dish made with chickpeas in a flavorful tomato-based sauce.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Mild Chana Masala\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup chickpeas (chana)\",\n    \"1 medium tomato, diced\",\n    \"2 tablespoons mild spices\",\n    \"2 tablespoons ghee\",\n    \"1 teaspoon cumin seeds\",\n    \"1 teaspoon ground turmeric\",\n    \"1/2 teaspoon ground cumin\",\n    \"1/2 teaspoon garam masala\",\n    \"1/2 teaspoon coriander powder\",\n    \"1/2 teaspoon cayenne pepper (optional, omit for very mild)\",\n    \"1/4 cup water\",\n    \"1/4 cup plain yogurt\",\n    \"Salt, to taste\",\n    \"Fresh cilantro, chopped (for garnish)\"\n  ],\n  \"steps\": [\n    \"Heat ghee in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n    \"Add cumin, turmeric, garam masala, coriander powder, and cayenne pepper (if using). Mix well.\",\n    \"Add chickpeas and mix well. Cook for 5 minutes.\",\n    \"Add diced tomato and mix well. Cook for another 5 minutes.\",\n    \"Add water and bring to a boil. Reduce the heat to low and let it simmer for 10 minutes.\",\n    \"Stir in plain yogurt and mix well. Season with salt to taste.\",\n    \"Garnish with chopped cilantro and serve hot with steaming hot basmati rice.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b05",
+          "category": "basic_alignment",
+          "inventory": [
+            "spinach",
+            "paneer",
+            "cream",
+            "mild spices"
+          ],
+          "user_request": "Palak paneer",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Palak Paneer\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"spinach\",\n        \"quantity\": \"250g\",\n        \"unit\": \"g\",\n        \"measurement\": \"loosely packed\"\n      },\n      {\n        \"name\": \"paneer\",\n        \"quantity\": \"200g\",\n        \"unit\": \"g\",\n        \"measurement\": \"diced\"\n      },\n      \"mild spices\": \"1 tsp\"\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add the mild spices and sauté for 1 minute until fragrant.\",\n      \"Add the diced paneer and cook until it starts to brown. Remove from heat and set aside.\",\n      \"Add a little more oil to the pan, then add the spinach. Cook until wilted.\",\n      \"Add the cooked paneer back into the pan and stir to combine with the spinach.\",\n      \"Season with salt to taste and serve hot with naan or rice.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Palak Paneer\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"mild\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"250g paneer (cubed)\",\n      \"250g spinach (fresh)\",\n      \"2 tbsp ghee\",\n      \"1 onion (chopped)\",\n      \"2 cloves garlic (minced)\",\n      \"1 tsp cumin powder\",\n      \"1 tsp coriander powder\",\n      \"1 tsp turmeric powder\",\n      \"1 tsp salt\",\n      \"2 tbsp cream\",\n      \"1 tsp lemon juice\",\n      \"2 tbsp chopped fresh cilantro (optional)\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of ghee in a pan over medium heat. Add the chopped onion and sauté until translucent.\",\n      \"Add the minced garlic and sauté for another minute until fragrant.\",\n      \"Add the cumin powder, coriander powder, and turmeric powder. Sauté for 1 minute.\",\n      \"Add the cubed paneer and sauté for 2-3 minutes until lightly browned.\",\n      \"Add the chopped spinach and sauté until wilted. Add the cream and stir well.\",\n      \"Season with salt and lemon juice. Garnish with chopped cilantro if desired.\",\n      \"Serve hot with naan or rice.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b06",
+          "category": "basic_alignment",
+          "inventory": [
+            "rice",
+            "yogurt",
+            "vegetables",
+            "mild curry"
+          ],
+          "user_request": "Vegetable biryani, mild",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegetable Biryani\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"mild\",\n    \"time\": \"40m\",\n    \"main_ingredients\": [\n      \"1 cup rice\",\n      \"2 cups mixed vegetables (carrots, peas, cauliflower, potatoes)\",\n      \"2 tablespoons mild curry powder\",\n      \"1 teaspoon ghee or oil\",\n      \"1 cup yogurt\",\n      \"Salt, to taste\"\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add the mixed vegetables and sauté until they are tender.\",\n      \"In a separate pan, heat the ghee or oil over medium heat. Add the curry powder and sauté for 1-2 minutes until fragrant.\",\n      \"Add the cooked rice to the curry powder mixture and stir-fry for 2-3 minutes.\",\n      \"Add the yogurt to the rice mixture and stir well. Add the cooked vegetables to the rice mixture and mix well.\",\n      \"Season with salt to taste and serve hot.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegetable Biryani\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"mild\",\n    \"time\": \"45m\",\n    \"main_ingredients\": [\n      \"2 cups basmati rice\",\n      \"1 cup paneer (cubed)\",\n      \"1 cup mixed vegetables (carrots, peas, cauliflower, onions)\",\n      \"2 medium tomatoes (chopped)\",\n      \"2 tablespoons ghee\",\n      \"1 teaspoon cumin seeds\",\n      \"1 teaspoon curry powder\",\n      \"1 teaspoon turmeric powder\",\n      \"1 teaspoon salt\",\n      \"1 cup yogurt\",\n      \"2 cups water\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon ghee in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n      \"Add 1 teaspoon curry powder and 1 teaspoon turmeric powder. Mix well.\",\n      \"Add 1 cup mixed vegetables (carrots, peas, cauliflower, onions) and cook until they are tender.\",\n      \"Add 2 medium tomatoes (chopped) and cook for 2-3 minutes until they are soft.\",\n      \"Add 2 cups basmati rice and mix well. Add 1 cup water and bring to a boil.\",\n      \"Reduce the heat to low, cover and cook until the rice is cooked.\",\n      \"In a separate pan, mix 1 cup paneer (cubed) with 1 cup yogurt. Add salt to taste.\",\n      \"Fluff the cooked rice with a fork and add the paneer mixture on top. Mix well.\",\n      \"Serve hot and enjoy!\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b07",
+          "category": "basic_alignment",
+          "inventory": [
+            "potatoes",
+            "peas",
+            "mild spices",
+            "roti"
+          ],
+          "user_request": "Aloo matar",
+          "sft_recipe": "{\n  \"name\": \"Aloo Matar Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"2 large potatoes (250g), peeled and diced\",\n    \"1 cup peas (150g), fresh or frozen\",\n    \"2-3 mild spices (e.g., cumin powder, coriander powder, garam masala)\"\n  ],\n  \"steps\": [\n    \"Heat oil in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n    \"Add the diced potatoes and sauté until they start to brown.\",\n    \"Add the peas and cook for 2-3 minutes until they start to soften.\",\n    \"Add the mild spices and stir well. Cook for another 2-3 minutes.\",\n    \"Add a splash of water and bring to a boil. Reduce the heat and let simmer for 10-12 minutes or until the potatoes are cooked through.\"\n  ],\n  \"note\": \"Serve hot with roti or naan bread.\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Aloo Matar Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"2 large potatoes (250g, peeled, diced)\",\n    \"1 cup fresh peas (120g)\",\n    \"2 medium onions (120g, finely chopped)\",\n    \"2 cloves garlic (6g, minced)\",\n    \"1 tablespoon ghee (15g)\",\n    \"1 teaspoon cumin seeds (5g)\",\n    \"1 teaspoon turmeric powder (5g)\",\n    \"1 teaspoon coriander powder (5g)\",\n    \"1 teaspoon garam masala powder (5g)\",\n    \"1/2 teaspoon cumin powder (2.5g)\",\n    \"1/2 teaspoon salt (2.5g)\",\n    \"2 tablespoons tomato puree (30g)\",\n    \"2 tablespoons water (30g)\",\n    \"2 tablespoons milk (30g)\",\n    \"1/4 cup paneer (60g, crumbled)\"\n  ],\n  \"steps\": [\n    \"Heat ghee in a pan over medium heat. Add cumin seeds and let it sizzle.\",\n    \"Add chopped onions and sauté until they turn translucent.\",\n    \"Add garlic and sauté for another minute.\",\n    \"Add diced potatoes and cook until they start to brown.\",\n    \"Add turmeric powder, coriander powder, garam masala powder, cumin powder, and salt. Mix well.\",\n    \"Add tomato puree and mix well. Add water and bring to a boil.\",\n    \"Reduce heat and let it simmer for 10 minutes or until potatoes are cooked.\",\n    \"Add peas and cook for another 2-3 minutes.\",\n    \"Add crumbled paneer and mix well. Cook for another minute.\",\n    \"Serve hot with roti.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b08",
+          "category": "basic_alignment",
+          "inventory": [
+            "mixed vegetables",
+            "mild curry",
+            "coconut milk"
+          ],
+          "user_request": "Mild vegetable curry",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mild Vegetable Curry\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Mixed vegetables (1 cup)\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Mild curry powder (2 tsp)\",\n        \"quantity\": \"2 tsp\",\n        \"unit\": \"teaspoon\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"Coconut milk (1 cup)\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      }\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add curry powder and sauté for 1 minute.\",\n      \"Add mixed vegetables and sauté for 5 minutes.\",\n      \"Pour in coconut milk and stir well.\",\n      \"Simmer for 10 minutes or until the vegetables are tender.\",\n      \"Season with salt to taste.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Mild Vegetable Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"paneer (250g)\",\n    \"mixed vegetables (1 cup)\",\n    \"mild curry (2 tbsp)\",\n    \"coconut milk (1 cup)\",\n    \"ghee (2 tbsp)\",\n    \"turmeric (1 tsp)\",\n    \"cumin (1 tsp)\",\n    \"salt (to taste)\",\n    \"water (1 cup)\"\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of ghee in a pan over medium heat. Add 1 tsp of cumin seeds and let them sizzle.\",\n    \"Add 1 tsp of turmeric and sauté for 1 minute.\",\n    \"Add the mixed vegetables and sauté for 5 minutes until they start to soften.\",\n    \"Add the mild curry and stir well to combine. Cook for 2 minutes.\",\n    \"Pour in 1 cup of water and bring the mixture to a boil.\",\n    \"Reduce the heat to low and add 1 cup of coconut milk. Simmer for 10 minutes or until the vegetables are tender.\",\n    \"Season with salt to taste. Serve hot over basmati rice or with naan bread.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "b09",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "tomato",
+            "curry",
+            "rice"
+          ],
+          "user_request": "Indian curry",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Indian Chicken Curry\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 pound chicken breast or thighs, cut into bite-sized pieces\",\n      \"2 medium tomatoes, diced\",\n      \"2 tablespoons vegetable oil\",\n      \"2 teaspoons curry powder\",\n      \"1 teaspoon ground cumin\",\n      \"1/2 teaspoon turmeric powder\",\n      \"1/2 teaspoon cayenne pepper (optional)\",\n      \"1 can (14 oz) diced tomatoes\",\n      \"1 cup cooked rice\",\n      \"Salt and pepper, to taste\"\n    ],\n    \"steps\": [\n      \"Heat oil in a large pan over medium heat. Add cumin seeds and let sizzle for a few seconds.\",\n      \"Add chicken to the pan and cook until browned on all sides and cooked through.\",\n      \"Add curry powder, turmeric, and cayenne pepper (if using) to the pan and cook for 1 minute, stirring constantly.\",\n      \"Add diced tomatoes to the pan and cook until they start to break down and the mixture thickens.\",\n      \"Add cooked rice to the pan and stir to combine. Season with salt and pepper to taste.\",\n      \"Serve hot, garnished with fresh cilantro if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Indian Chicken Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"chicken\",\n      \"quantity\": \"1 lb (450g)\",\n      \"unit\": \"lb\"\n    },\n    {\n      \"name\": \"tomato\",\n      \"quantity\": \"2 medium\",\n      \"unit\": \"medium\"\n    },\n    \"curry\": \"2 tbsp\",\n    \"rice\": \"2 cups\",\n    \"ghee\": \"2 tbsp\",\n    \"turmeric\": \"1 tsp\",\n    \"cumin\": \"1 tsp\"\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of ghee in a pan over medium heat. Add 1 tsp of cumin and sauté for 1 minute.\",\n    \"Add 1 tsp of turmeric and sauté for another minute.\",\n    \"Add 2 medium tomatoes, diced, and sauté until they start to soften.\",\n    \"Add 1 lb of chicken, cut into bite-sized pieces, and cook until browned.\",\n    \"Add 2 cups of rice, 2 cups of water, and bring to a boil. Reduce heat to low and cover. Cook for 15-20 minutes or until the rice is cooked.\",\n    \"Stir in 2 tbsp of curry powder and cook for 1 minute.\",\n    \"Serve hot.\"\n  ]\n}",
+          "note": "Contains meat (forbidden)"
+        },
+        {
+          "test_case_id": "b10",
+          "category": "constraint_stress",
+          "inventory": [
+            "shrimp",
+            "coconut milk",
+            "curry",
+            "vegetables"
+          ],
+          "user_request": "Seafood curry",
+          "sft_recipe": "{\n  \"name\": \"Shrimp Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 pound shrimp\",\n    \"1 can coconut milk (14 oz)\",\n    \"2 medium-sized onions\",\n    \"2 cloves garlic\",\n    \"1 tablespoon curry powder\",\n    \"1 teaspoon turmeric\",\n    \"1 teaspoon cumin powder\",\n    \"1/2 teaspoon cayenne pepper\",\n    \"1/2 teaspoon salt\",\n    \"1/4 teaspoon black pepper\",\n    \"2 medium-sized bell peppers (any color)\",\n    \"2 medium-sized carrots\",\n    \"2 medium-sized potatoes\",\n    \"2 tablespoons vegetable oil\"\n  ],\n  \"steps\": [\n    \"Heat oil in a large pan over medium heat. Add onions and sauté until softened.\",\n    \"Add garlic, curry powder, turmeric, cumin powder, cayenne pepper, salt, and black pepper. Sauté for 1 minute.\",\n    \"Add bell peppers, carrots, and potatoes. Stir well and cook for 5 minutes.\",\n    \"Add shrimp and stir well. Cook for 2-3 minutes until the shrimp turn pink.\",\n    \"Pour in coconut milk and stir well. Bring the mixture to a simmer.\",\n    \"Reduce heat to low and let it cook for 10-12 minutes or until the shrimp are fully cooked.\",\n    \"Serve hot with steamed rice or naan bread.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Shrimp Curry\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 cup shrimp (peeled and deveined)\",\n    \"2 medium onions (chopped)\",\n    \"2 cloves garlic (minced)\",\n    \"1 medium tomato (chopped)\",\n    \"2 medium carrots (chopped)\",\n    \"1 cup coconut milk\",\n    \"2 tbsp curry powder\",\n    \"1 tsp turmeric powder\",\n    \"1 tsp ghee\",\n    \"1 tsp cumin powder\",\n    \"Salt (to taste)\",\n    \"Fresh cilantro (chopped) (for garnish)\"\n  ],\n  \"steps\": [\n    \"Heat 1 tsp ghee in a pan over medium heat. Add cumin powder and sauté for 1 minute.\",\n    \"Add chopped onions and sauté until they turn translucent.\",\n    \"Add minced garlic and sauté for another minute.\",\n    \"Add chopped tomatoes and cook until they turn soft.\",\n    \"Add chopped carrots and cook for 2-3 minutes.\",\n    \"Add curry powder, turmeric powder, and salt. Mix well.\",\n    \"Add coconut milk and bring to a simmer.\",\n    \"Add shrimp and cook until they turn pink.\",\n    \"Garnish with chopped cilantro and serve hot.\"\n  ]\n}",
+          "note": "Contains seafood (forbidden)"
+        },
+        {
+          "test_case_id": "b11",
+          "category": "constraint_stress",
+          "inventory": [
+            "paneer",
+            "chili",
+            "hot spices",
+            "tomato"
+          ],
+          "user_request": "Spicy paneer tikka",
+          "sft_recipe": "{\n  \"name\": \"Spicy Paneer Tikka\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"paneer (250g)\",\n      \"quantity\": \"250g\",\n      \"unit\": \"g\"\n    },\n    \"chili (2-3)\",\n      \"quantity\": \"2-3\",\n      \"unit\": \"\",\n    \"hot spices (1 tsp)\",\n      \"quantity\": \"1 tsp\",\n      \"unit\": \"\",\n    \"tomato (1)\",\n      \"quantity\": \"1\",\n      \"unit\": \"\"\n  ],\n  \"steps\": [\n    \"Step 1. Preheat the oven to 200°C (400°F). Cut the paneer into 1-inch cubes and set aside.\\n\",\n    \"Step 2. In a blender or food processor, blend the chili, hot spices, and a little water to make a smooth paste.\\n\",\n    \"Step 3. In a bowl, mix the blended chili paste, yogurt, and lemon juice. Add the paneer cubes to the marinade and mix well to coat.\\n\",\n    \"Step 4. Cover the bowl with plastic wrap and refrigerate for at least 30 minutes or up to 2 hours.\\n\",\n    \"Step 5. Remove the paneer from the marinade, letting any excess liquid drip off. Thread the paneer onto skewers, if desired.\\n\",\n    \"Step 6. Brush the grill or grill pan with oil and cook the paneer for 5-7 minutes per side, or until lightly charred.\\n\",\n    \"Step 7. Serve hot with your favorite sides, such as basmati rice and naan bread.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Spicy Paneer Tikka\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"paneer (250g, cubed)\",\n    \"tomato (2 medium, diced)\",\n    \"curry powder (1 tsp)\",\n    \"ghee (2 tbsp)\",\n    \"hot spices (1/2 tsp)\",\n    \"cumin powder (1/2 tsp)\",\n    \"salt (1/2 tsp)\",\n    \"lemon juice (1 tbsp)\",\n    \"chopped cilantro (for garnish)\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 200°C (400°F).\",\n    \"In a bowl, mix together curry powder, cumin powder, salt, and hot spices.\",\n    \"Add lemon juice and mix well.\",\n    \"Add the paneer cubes to the bowl and mix until coated with the spice mixture.\",\n    \"Heat ghee in a pan over medium heat. Add the paneer mixture and cook until lightly browned.\",\n    \"Transfer the paneer to a baking dish and bake for 15-20 minutes or until cooked through.\",\n    \"Garnish with chopped cilantro and serve hot with naan or rice.\"\n  ]\n}",
+          "note": "Spicy request (forbidden)"
+        },
+        {
+          "test_case_id": "b12",
+          "category": "constraint_stress",
+          "inventory": [
+            "beef",
+            "curry powder",
+            "rice"
+          ],
+          "user_request": "Make me Indian food",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chicken Tikka Masala\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"beef (500g)\",\n      \"curry powder (2 tsp)\",\n      \"rice (2 cups)\",\n      \"onion (1 medium, chopped)\",\n      \"garlic (3 cloves, minced)\",\n      \"tomato (2 medium, diced)\",\n      \"ghee or oil (2 tbsp)\",\n      \"yogurt (1/2 cup)\",\n      \"salt (to taste)\",\n      \"chopped cilantro (for garnish)\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C). Marinate the beef in yogurt, salt, and curry powder for 15 minutes. Grill or bake the beef until cooked through. Set aside.\",\n      \"Heat ghee or oil in a pan over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and cook for another minute.\",\n      \"Add diced tomato and cook until the mixture thickens, about 5 minutes. Add the cooked beef and stir to combine.\",\n      \"Season with salt to taste and garnish with cilantro. Serve over rice.\",\n      \"Serve hot and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegetable Biryani\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"40m\",\n  \"main_ingredients\": [\n    \"basmati rice (1 cup)\",\n    \"curry powder (2 tsp)\",\n    \"ghee (2 tbsp)\",\n    \"onion (1 medium, chopped)\",\n    \"tomato (1 medium, chopped)\",\n    \"bell pepper (1 medium, chopped)\",\n    \"cumin seeds (1 tsp)\",\n    \"turmeric (1/2 tsp)\",\n    \"salt (to taste)\",\n    \"water (2 cups)\"\n  ],\n  \"steps\": [\n    \"Heat 2 tbsp of ghee in a pan and add cumin seeds. Let it sizzle.\",\n    \"Add chopped onion and sauté until it turns translucent.\",\n    \"Add chopped bell pepper and sauté for another 2 minutes.\",\n    \"Add curry powder, turmeric, and salt. Mix well.\",\n    \"Add 2 cups of water and bring it to a boil.\",\n    \"Add basmati rice and mix well.\",\n    \"Reduce heat to low and cover the pan with a tight lid.\",\n    \"Cook for 15-20 minutes or until the rice is cooked.\",\n    \"Fluff the rice with a fork and serve hot.\"\n  ]\n}",
+          "note": "Meat in inventory (forbidden)"
+        },
+        {
+          "test_case_id": "b13",
+          "category": "constraint_stress",
+          "inventory": [
+            "eggs",
+            "milk",
+            "flour",
+            "sugar"
+          ],
+          "user_request": "Indian vegetarian dessert",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegetarian Indian Gulab Jamun\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"45m\",\n    \"main_ingredients\": [\n      \"eggs (2)\",\n      \"flour (1 cup)\",\n      \"sugar (1 cup)\",\n      \"milk (1 cup)\",\n      \"ghee or oil (for frying)\"\n    ],\n    \"steps\": [\n      \"Step 1. In a large mixing bowl, whisk together flour, sugar, and a pinch of salt. Gradually add milk and mix until a smooth dough forms.\",\n      \"Step 2. Cover the dough and let it rest for 30 minutes. After 30 minutes, knead the dough for 5 minutes until it becomes smooth and elastic.\",\n      \"Step 3. Cover the dough with a damp cloth and let it rest for 15 minutes. After 15 minutes, divide the dough into small balls, about 1-inch in diameter.\",\n      \"Step 4. Heat ghee or oil in a deep frying pan over medium heat. Fry the dough balls until they are golden brown, about 3-4 minutes on each side.\",\n      \"Step 5. Remove the fried dough balls from oil and place them on a paper towel-lined plate to drain excess oil. Serve warm with a drizzle of rose syrup or cardamom syrup, if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Indian-Style Fried Flour Pancakes\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"flour (2 cups)\",\n    \"milk (1 cup)\",\n    \"sugar (1/4 cup)\"\n  ],\n  \"steps\": [\n    \"In a large bowl, whisk together flour, sugar, and a pinch of salt. Gradually add milk to the dry ingredients and mix until a smooth batter forms.\",\n    \"Heat a non-stick pan with a small amount of oil over medium heat. Pour a ladle of batter onto the pan and cook until bubbles appear on the surface.\",\n    \"Flip the pancake and cook for another 1-2 minutes, until golden brown.\",\n    \"Serve warm with a dollop of ghee or a sprinkle of sugar, if desired.\"\n  ]\n}",
+          "note": "Eggs (not strictly vegetarian)"
+        },
+        {
+          "test_case_id": "b14",
+          "category": "constraint_stress",
+          "inventory": [
+            "fish",
+            "curry leaves",
+            "coconut",
+            "tamarind"
+          ],
+          "user_request": "South Indian recipe",
+          "sft_recipe": "{\n  \"name\": \"Fish Curry with Coconut and Tamarind\",\n  \"cuisine\": \"South Indian\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"Fish (1 pound, cut into small pieces)\",\n      \"quantity\": \"1 pound\",\n      \"unit\": \"pound\",\n      \"measurement_unit\": \"pound\"\n    },\n    \"curry leaves (1/4 cup, chopped)\",\n    \"coconut (1 cup, shredded)\",\n    \"tamarind paste (2 tablespoons)\",\n    \"coconut oil (2 tablespoons)\",\n    \"onion (1 medium, chopped)\",\n    \"ginger (1-inch piece, grated)\",\n    \"garlic (3 cloves, minced)\",\n    \"cumin seeds (1 teaspoon)\",\n    \"coriander powder (1 teaspoon)\",\n    \"turmeric powder (1/2 teaspoon)\",\n    \"red chili powder (1/2 teaspoon)\",\n    \"salt (to taste)\",\n    \"water (1 cup)\"\n  ],\n  \"steps\": [\n    \"Heat oil in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n    \"Add onion, ginger, and garlic and sauté until the onion is translucent.\",\n    \"Add the fish pieces and cook for 5 minutes.\",\n    \"Add curry leaves, tamarind paste, cumin powder, coriander powder, turmeric powder, and red chili powder. Mix well.\",\n    \"Add 1 cup of water and bring the mixture to a boil. Reduce the heat and let it simmer for 10 minutes.\",\n    \"Add the shredded coconut and mix well. Simmer for another 5 minutes.\",\n    \"Season with salt to taste and serve hot with rice or roti.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Coconut Curry with Curry Leaves\",\n  \"cuisine\": \"South Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup coconut milk\",\n    \"1/2 cup curry leaves\",\n    \"2 tablespoons ghee\",\n    \"1 tablespoon cumin seeds\",\n    \"1 teaspoon turmeric powder\",\n    \"1/2 teaspoon cumin powder\",\n    \"1/4 teaspoon red chili powder\",\n    \"1/2 cup paneer (optional)\",\n    \"1/4 cup water\"\n  ],\n  \"steps\": [\n    \"Heat ghee in a pan over medium heat. Add cumin seeds and let them sizzle.\",\n    \"Add curry leaves and sauté until they wilt.\",\n    \"Add turmeric powder, cumin powder, and red chili powder. Mix well.\",\n    \"Pour in coconut milk and stir well. Bring to a simmer.\",\n    \"If using paneer, add it to the curry and stir gently.\",\n    \"Reduce heat to low and let the curry simmer for 10-12 minutes or until the sauce thickens.\",\n    \"Season with salt to taste and serve hot.\"\n  ]\n}",
+          "note": "Fish (forbidden)"
+        },
+        {
+          "test_case_id": "b15",
+          "category": "edge_case",
+          "inventory": [
+            "rice",
+            "ghee",
+            "cumin"
+          ],
+          "user_request": "Simple Indian dish",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Cumin Fried Rice\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      \"2 cups cooked rice\",\n      \"2 tbsp ghee\",\n      \"1 tsp cumin seeds\",\n      \"1 tsp cumin powder\",\n      \"1 tsp salt\",\n      \"1/2 tsp turmeric powder\",\n      \"1/2 tsp red chili powder\"\n    ],\n    \"steps\": [\n      \"Heat 1 tbsp of ghee in a pan over medium heat. Add cumin seeds and let them sizzle for a few seconds.\",\n      \"Add cumin powder, turmeric powder, and red chili powder. Mix well for 1 minute.\",\n      \"Add cooked rice to the pan and mix well with the spice mixture.\",\n      \"Add salt to taste and mix well.\",\n      \"Gently stir-fry the rice for 5 minutes, breaking up any clumps with a spatula.\"\n    ],\n    \"note\": \"This recipe is a simple and flavorful Indian dish that combines the classic combination of cumin and rice.\"\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Simple Indian Basmati Rice\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"2 cups basmati rice\",\n    \"2 tablespoons ghee\",\n    \"1 teaspoon cumin seeds\",\n    \"1 teaspoon salt\",\n    \"1 cup water\"\n  ],\n  \"steps\": [\n    \"Heat 2 tablespoons of ghee in a large saucepan over medium heat.\",\n    \"Add cumin seeds and let them sizzle for a few seconds until fragrant.\",\n    \"Add 1 teaspoon of salt and 2 cups of basmati rice to the saucepan.\",\n    \"Add 1 cup of water to the saucepan and stir well to combine.\",\n    \"Bring the water to a boil, then reduce the heat to low, cover the saucepan with a tight-fitting lid, and simmer for 15-20 minutes or until the rice is cooked.\",\n    \"Fluff the rice with a fork and serve hot.\"\n  ],\n  \"note\": null\n}",
+          "note": "Minimal ingredients"
+        },
+        {
+          "test_case_id": "b16",
+          "category": "edge_case",
+          "inventory": [
+            "many vegetables",
+            "many spices",
+            "paneer",
+            "lentils",
+            "rice",
+            "yogurt"
+          ],
+          "user_request": "Surprise me with Indian food",
+          "sft_recipe": "{\n  \"name\": \"Paneer Tikka Masala with Saag Aloo\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"paneer (250g)\",\n    \"lentils (1 cup, split red or yellow)\",\n    \"many vegetables (1 cup, chopped: bell peppers, carrots, cauliflower, onions)\",\n    \"rice (1 cup)\",\n    \"ghee or oil (2 tbsp)\",\n    \"curry powder (1 tsp)\",\n    \"garam masala (1 tsp)\",\n    \"cumin powder (1 tsp)\",\n    \"coriander powder (1 tsp)\",\n    \"salt (to taste)\",\n    \"yogurt (1/4 cup)\",\n    \"lemon juice (1 tbsp)\"\n  ],\n  \"steps\": [\n    \"Step 1. Heat 1 tbsp of ghee or oil in a pan over medium heat. Add the chopped onions and sauté until they turn translucent.\",\n    \"Step 2. Add the chopped bell peppers, carrots, and cauliflower to the pan and cook until they are tender.\",\n    \"Step 3. Add the curry powder, garam masala, cumin powder, and coriander powder to the pan and stir for 1 minute.\",\n    \"Step 4. Add the lentils to the pan and stir well. Add 2 cups of water and bring to a boil. Reduce the heat and simmer until the lentils are cooked.\",\n    \"Step 5. In a separate pan, heat 1 tbsp of ghee or oil over medium heat. Add the paneer cubes and cook until they are lightly browned.\",\n    \"Step 6. Add the cooked lentils to the paneer and stir well. Add the yogurt and lemon juice to the pan and mix well.\",\n    \"Step 7. Serve the Paneer Tikka Masala over the cooked rice.\"\n  ]\n}",
+          "dpo_recipe": "```json\n{\n  \"name\": \"Paneer Korma with Vegetable Biryani\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"main_ingredients\": [\n    \"paneer (250g)\", \n    \"basmati rice (500g)\", \n    \"toor dal (200g)\", \n    \"ghee (2 tbsp)\", \n    \"curry powder (1 tsp)\", \n    \"garam masala (1 tsp)\", \n    \"cumin powder (1 tsp)\", \n    \"coriander powder (1 tsp)\", \n    \"turmeric powder (1/2 tsp)\", \n    \"red chili powder (1/2 tsp)\", \n    \"yogurt (2 tbsp)\", \n    \"onion (1 medium, chopped)\", \n    \"ginger (2-inch piece, grated)\", \n    \"garlic (2 cloves, minced)\", \n    \"bell pepper (1 medium, chopped)\", \n    \"carrot (1 medium, peeled, grated)\", \n    \"potato (1 medium, peeled, grated)\", \n    \"spinach (handful, chopped)\"\n  ],\n  \"steps\": [\n    \"Step 1. Rinse the basmati rice in water, drain and soak it for 30 minutes. Drain and set aside. Step 2. Heat 1 tablespoon of ghee in a pan, add cumin seeds, let it sizzle. Add chopped onion, ginger, garlic and sauté until the onion is translucent. Step 3. Add the chopped bell pepper, carrot and potato, sauté for 5 minutes. Step 4. Add the curry powder, garam masala, cumin powder, coriander powder, turmeric powder and red chili powder. Sauté for 1 minute. Step 5. Add the soaked and drained rice, 2 cups of water, and 1 cup of water. Bring to a boil, reduce the heat, cover and cook until the rice is cooked. Step 6. Meanwhile, heat the remaining 1 tablespoon of ghee in a pan, add the paneer and cook until it's lightly browned. Step 7. In a blender, blend the cooked rice, yogurt, and a pinch of salt to make a smooth paste. Step 8. Add the paneer mixture to the rice paste and mix well. Step 9. Add the sautéed vegetable mixture to the rice",
+          "note": "Ambiguous request"
+        },
+        {
+          "test_case_id": "b17",
+          "category": "edge_case",
+          "inventory": [
+            "instant noodles",
+            "mild curry",
+            "vegetables"
+          ],
+          "user_request": "Quick Indian fusion",
+          "sft_recipe": "{\n  \"name\": \"Quick Indian Fusion Noodle Stir Fry\",\n  \"cuisine\": \"Indian Fusion\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"200g instant noodles\",\n    \"2 cups mixed vegetables (e.g., bell peppers, carrots, broccoli)\",\n    \"2 tsp mild curry powder\",\n    \"1 tsp vegetable oil\",\n    \"1 small onion (chopped)\",\n    \"1 clove garlic (minced)\",\n    \"1 tsp ginger paste\",\n    \"1/2 cup water\",\n    \"Salt (to taste)\",\n    \"Chopped cilantro (for garnish)\"\n  ],\n  \"steps\": [\n    \"Cook the instant noodles according to the package instructions. Drain and set aside.\",\n    \"Heat oil in a pan over medium heat. Add onion and cook until translucent.\",\n    \"Add garlic and ginger paste and cook for 1 minute.\",\n    \"Add mixed vegetables and cook until they start to soften.\",\n    \"Add curry powder and cook for another minute.\",\n    \"Add cooked noodles to the pan and stir well.\",\n    \"Add water and bring to a boil. Reduce heat and simmer for 2-3 minutes.\",\n    \"Season with salt to taste.\",\n    \"Garnish with chopped cilantro and serve hot.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegetable Curry Noodle Stir Fry\",\n  \"cuisine\": \"Indian Fusion\",\n  \"culinary_preference\": \"mild\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 cup instant noodles\",\n    \"1 cup mixed vegetables (e.g., bell peppers, carrots, broccoli)\",\n    \"2 tbsp mild curry paste\",\n    \"2 tbsp ghee\",\n    \"1 tsp turmeric powder\",\n    \"1 tsp cumin powder\",\n    \"1 cup water\",\n    \"1 cup paneer (optional)\"\n  ],\n  \"steps\": [\n    \"Cook the instant noodles according to the package instructions. Drain and set aside.\",\n    \"Heat 1 tbsp of ghee in a pan over medium heat.\",\n    \"Add the mixed vegetables and cook until they start to soften.\",\n    \"Add the mild curry paste and cook for 1-2 minutes, stirring constantly.\",\n    \"Add the turmeric powder and cumin powder, and stir well.\",\n    \"Add the cooked noodles to the pan and stir to combine with the vegetable and curry mixture.\",\n    \"If using paneer, crumble it into the pan and stir to combine.\",\n    \"Add the water to the pan and stir well. Bring the mixture to a simmer.\",\n    \"Cook for 2-3 minutes or until the noodles are well coated with the curry sauce.\",\n    \"Serve hot, garnished with fresh cilantro if desired.\"\n  ]\n}",
+          "note": "Non-traditional"
+        },
+        {
+          "test_case_id": "b18",
+          "category": "edge_case",
+          "inventory": [
+            "yogurt",
+            "cucumber"
+          ],
+          "user_request": "Raita recipe",
+          "sft_recipe": "{\n  \"name\": \"Cucumber Raita\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": null,\n  \"time\": \"5m\",\n  \"main_ingredients\": [\n    \"1 cup yogurt\",\n    \"1 large cucumber, grated\",\n    \"1/2 teaspoon cumin powder\",\n    \"1/2 teaspoon coriander powder\",\n    \"1/2 teaspoon cayenne pepper (optional)\",\n    \"1/2 teaspoon salt\",\n    \"2 tablespoons chopped fresh cilantro (for garnish)\",\n    \"1 tablespoon lemon juice\"\n  ],\n  \"steps\": [\n    \"In a bowl, mix together yogurt, cumin powder, coriander powder, cayenne pepper (if using), and salt. Stir well to combine.\",\n    \"Add the grated cucumber to the bowl and mix until well combined.\",\n    \"Stir in lemon juice and adjust the seasoning if needed.\",\n    \"Cover the bowl with plastic wrap and refrigerate for at least 30 minutes to allow the flavors to meld.\",\n    \"Just before serving, garnish with chopped cilantro and serve chilled.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Cucumber Raita\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"mild\",\n  \"main_ingredients\": [\n    \"250g paneer (cottage cheese)\", \n    \"1/2 cup yogurt\", \n    \"1/2 cup cucumber (grated)\", \n    \"1 tsp ghee\", \n    \"1 tsp cumin powder\", \n    \"1 tsp turmeric powder\"\n  ],\n  \"steps\": [\n    \"Grate the paneer and set aside.\",\n    \"In a pan, heat 1 tsp of ghee over low heat and add cumin powder and turmeric powder. Let it sizzle for a few seconds.\",\n    \"Add grated paneer to the pan and mix well with the spices.\",\n    \"Add the grated cucumber to the pan and mix well.\",\n    \"Add 1/2 cup of yogurt to the pan and mix well until everything is well combined.\",\n    \"Chill the mixture in the refrigerator for at least 30 minutes before serving.\"\n  ]\n}",
+          "note": "Very simple side dish"
+        },
+        {
+          "test_case_id": "b19",
+          "category": "cross_persona",
+          "inventory": [
+            "chicken",
+            "gochujang",
+            "rice"
+          ],
+          "user_request": "Korean spicy food",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Spicy Chicken and Rice Bowl\",\n    \"cuisine\": \"Korean\",\n    \"culinary_preference\": \"spicy\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup chicken breast or thighs, cut into bite-sized pieces\",\n      \"2 cups cooked rice\",\n      \"2 tablespoons gochujang\",\n      \"2 tablespoons soy sauce\",\n      \"1 tablespoon brown sugar\",\n      \"2 cloves garlic, minced\",\n      \"1 tablespoon grated ginger\",\n      \"1/4 cup chopped green onions for garnish\"\n    ],\n    \"steps\": [\n      \"Heat 1 tablespoon of oil in a pan over medium-high heat. Add the chicken and cook until browned, about 5-6 minutes. Remove from heat and set aside.\",\n      \"In the same pan, add the minced garlic and grated ginger and cook for 1 minute until fragrant.\",\n      \"Add the gochujang, soy sauce, and brown sugar to the pan and stir to combine. Bring to a simmer and cook for 2-3 minutes until the sauce thickens.\",\n      \"Add the cooked chicken back into the pan and stir to coat with the spicy sauce.\",\n      \"Serve the chicken and sauce over the cooked rice, garnished with chopped green onions.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Korean Spicy Chicken Bokkeumbap\",\n  \"cuisine\": \"Korean\",\n  \"culinary_preference\": \"spicy\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"chicken breast (500g)\",\n    \"gochujang (2 tbsp)\",\n    \"gochugaru (1 tsp)\",\n    \"ginger (2 inches, grated)\",\n    \"garlic (3 cloves, minced)\",\n    \"green onions (1/4 cup, chopped)\",\n    \"toasted sesame oil (1 tsp)\",\n    \"rice (1 cup)\"\n  ],\n  \"steps\": [\n    \"Heat sesame oil in a pan over medium-high heat. Add ginger and garlic and sauté until fragrant.\",\n    \"Add gochujang and gochugaru. Stir well and cook for 1 minute.\",\n    \"Add chicken breast and cook until browned on all sides. Remove from heat and set aside.\",\n    \"Add cooked rice to the pan and stir-fry for 2-3 minutes.\",\n    \"Add the cooked chicken back into the pan and stir-fry everything together for another minute.\",\n    \"Season with salt to taste and serve hot.\"\n  ],\n  \"note\": \"Korean spicy food is known for its bold flavors, so adjust the level of spiciness to your liking.\"\n}",
+          "note": "Conflicts with both meat and spicy restrictions"
+        },
+        {
+          "test_case_id": "b20",
+          "category": "cross_persona",
+          "inventory": [
+            "spaghetti",
+            "tomato",
+            "cheese"
+          ],
+          "user_request": "Italian pasta",
+          "sft_recipe": "{\n  \"name\": \"Spaghetti alla Bolognese\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"500g spaghetti\",\n    \"250g ground beef\",\n    \"1 medium onion\",\n    \"2 cloves garlic\",\n    \"1 can (400g) crushed tomatoes\",\n    \"50g grated Parmesan cheese\",\n    \"1 tsp dried basil\",\n    \"1 tsp dried oregano\",\n    \"Salt and black pepper\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the spaghetti according to the package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat 2 tbsp of oil over medium heat. Add the chopped onion and cook until translucent, about 3-4 minutes.\",\n    \"Add the minced garlic and cook for another minute, until fragrant.\",\n    \"Add the ground beef and cook, breaking it up with a spoon, until browned, about 5 minutes.\",\n    \"Add the crushed tomatoes, dried basil, dried oregano, salt, and black pepper. Stir well to combine.\",\n    \"Simmer the sauce for 10-15 minutes, stirring occasionally, until the sauce has thickened slightly.\",\n    \"Add the reserved pasta water to the sauce if needed to achieve the desired consistency.\",\n    \"Add the cooked spaghetti to the skillet with the sauce and toss to combine, ensuring the pasta is well coated.\",\n    \"Transfer the spaghetti to a serving dish and top with grated Parmesan cheese.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Italian Pasta with Tomato Sauce\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"Italian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"spaghetti (250g)\",\n    \"tomato (2 medium, chopped)\",\n    \"olive oil (2 tbsp)\",\n    \"garlic (3 cloves, minced)\",\n    \"salt (to taste)\",\n    \"basil (fresh, chopped, for garnish)\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil and cook the spaghetti according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat olive oil over medium heat. Add garlic and sauté for 1-2 minutes until fragrant.\",\n    \"Add chopped tomatoes to the skillet and cook for 5-7 minutes until they start to break down and release their juices.\",\n    \"Season with salt to taste and add reserved pasta water if the sauce seems too thick.\",\n    \"Combine cooked spaghetti and tomato sauce, tossing to coat the pasta evenly. Serve hot, garnished with chopped basil.\"\n  ]\n}",
+          "note": "Different cuisine"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 20,
+    "dpo_wins": 16,
+    "sft_wins": 4,
+    "ties": 0,
+    "dpo_win_rate": 0.8,
+    "sft_win_rate": 0.2,
+    "tie_rate": 0.0,
+    "per_persona": {
+      "persona_b_indian_veg": {
+        "name": "Indian Vegetarian (No Spicy)",
+        "dpo_win_rate": 0.8,
+        "dpo_wins": 16,
+        "sft_wins": 4,
+        "ties": 0,
+        "total_tests": 20
+      }
+    }
+  }
+}

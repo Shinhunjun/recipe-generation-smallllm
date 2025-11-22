@@ -1,0 +1,1592 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-21T18:20:40.461194",
+    "project_id": "mlops-compute-lab",
+    "personas_evaluated": [
+      "persona_e_mexican_vegan"
+    ],
+    "test_count_per_persona": 20,
+    "evaluators_used": [
+      "gemini-flash"
+    ],
+    "total_tests": 20
+  },
+  "persona_results": {
+    "persona_e_mexican_vegan": {
+      "persona_name": "Mexican Vegan",
+      "test_count": 20,
+      "evaluations": {
+        "gemini-flash": [
+          {
+            "test_case_id": "e01",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.8,
+              "dpo_score": 9.4,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better aligned with the persona's flavor profile (spicy, bold, savory) due to the addition of cumin, chili powder, paprika, and cayenne pepper. It also uses more preferred ingredients and provides a more complete and flavorful recipe overall, while still adhering to the vegan constraints.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better aligned with the persona's flavor profile (spicy, bold, savory) due to the addition of cumin, chili powder, paprika, and cayenne pepper. It also uses more preferred ingredients and provides a more complete and flavorful recipe overall, while still adhering to the vegan constraints.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e02",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better because it includes more of the persona's preferred ingredients like avocado, cilantro, and lime. It also provides a more complete and flavorful experience, aligning better with the persona's preference for bold and savory flavors. The addition of a note further enhances the persona alignment.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better because it includes more of the persona's preferred ingredients like avocado, cilantro, and lime. It also provides a more complete and flavorful experience, aligning better with the persona's preference for bold and savory flavors. The addition of a note further enhances the persona alignment.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e03",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.8,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better aligned with the persona because it includes black beans, salsa, and spices like cumin and chili powder, which are more representative of Mexican cuisine and the persona's preferred bold and savory flavor profile. Recipe B also includes a 'note' which adds to the overall quality and persona alignment.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better aligned with the persona because it includes black beans, salsa, and spices like cumin and chili powder, which are more representative of Mexican cuisine and the persona's preferred bold and savory flavor profile. Recipe B also includes a 'note' which adds to the overall quality and persona alignment.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e04",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.8,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like zucchini, avocado, and cilantro. It also provides a more complete and flavorful experience by including tortillas and a more detailed preparation method, aligning better with the 'comfort' cooking style.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like zucchini, avocado, and cilantro. It also provides a more complete and flavorful experience by including tortillas and a more detailed preparation method, aligning better with the 'comfort' cooking style.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e05",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.6,
+              "dpo_score": 9.4,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it incorporates the salsa into a sauce for the beans and sweet potatoes, adding a layer of flavor complexity that aligns well with the persona's preference for bold and spicy flavors. It also explicitly states 'vegan' as a culinary preference, further demonstrating persona alignment.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it incorporates the salsa into a sauce for the beans and sweet potatoes, adding a layer of flavor complexity that aligns well with the persona's preference for bold and spicy flavors. It also explicitly states 'vegan' as a culinary preference, further demonstrating persona alignment.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e06",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better aligned with the persona because it includes avocado and lime juice, which are preferred ingredients. It also provides a more complete and flavorful experience, enhancing the overall fit with the 'Mexican Vegan' persona.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better aligned with the persona because it includes avocado and lime juice, which are preferred ingredients. It also provides a more complete and flavorful experience, enhancing the overall fit with the 'Mexican Vegan' persona.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e07",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 9.2,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 10,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it includes \"Pico de Gallo\" in the name, which is more aligned with the user request. Both recipes adhere to the persona's constraints and preferences, but the addition of sautéing the mixture in Recipe B adds a unique touch, although it might slightly reduce the \"freshness\" aspect of salsa.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 10,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it includes \"Pico de Gallo\" in the name, which is more aligned with the user request. Both recipes adhere to the persona's constraints and preferences, but the addition of sautéing the mixture in Recipe B adds a unique touch, although it might slightly reduce the \"freshness\" aspect of salsa.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e08",
+            "category": "basic_alignment",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.8,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is better aligned with the persona. It includes more specific ingredients like cilantro, lime juice, and smoked paprika, which align with the persona's flavor profile. The inclusion of vegan enchilada sauce also adds to the overall quality and persona fit.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is better aligned with the persona. It includes more specific ingredients like cilantro, lime juice, and smoked paprika, which align with the persona's flavor profile. The inclusion of vegan enchilada sauce also adds to the overall quality and persona fit.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e09",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.6,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restriction, unlike Recipe A which includes chicken. Recipe B also includes more preferred ingredients and aligns better with the persona's overall preferences for a vegan Mexican dish.",
+              "violations": {
+                "recipe_a": [
+                  "chicken"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restriction, unlike Recipe A which includes chicken. Recipe B also includes more preferred ingredients and aligns better with the persona's overall preferences for a vegan Mexican dish.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chicken"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e10",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.6,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 4,
+                "recipe_quality": 7,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is significantly better because it adheres to the vegan dietary restrictions and incorporates preferred ingredients like black beans, avocado, and cilantro. Recipe A contains beef and cheese, which are forbidden ingredients for the persona.",
+              "violations": {
+                "recipe_a": [
+                  "beef",
+                  "cheese"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 7,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is significantly better because it adheres to the vegan dietary restrictions and incorporates preferred ingredients like black beans, avocado, and cilantro. Recipe A contains beef and cheese, which are forbidden ingredients for the persona.",
+                "violations_found": {
+                  "recipe_a": [
+                    "beef",
+                    "cheese"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e11",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.2,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 6,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the vegan constraint, while Recipe A includes fish, which is a forbidden ingredient. Recipe B also incorporates more of the preferred ingredients and aligns better with the persona's culinary preferences by offering a vegan Mexican dish.",
+              "violations": {
+                "recipe_a": [
+                  "fish"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 6,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the vegan constraint, while Recipe A includes fish, which is a forbidden ingredient. Recipe B also incorporates more of the preferred ingredients and aligns better with the persona's culinary preferences by offering a vegan Mexican dish.",
+                "violations_found": {
+                  "recipe_a": [
+                    "fish"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e12",
+            "category": "constraint_stress",
+            "evaluation": {
+              "error": "429 Quota exceeded for aiplatform.googleapis.com/generate_content_requests_per_minute_per_project_per_base_model with base model: gemini-experimental. Please submit a quota increase request. https://cloud.google.com/vertex-ai/docs/generative-ai/quotas-genai.",
+              "winner": "unknown",
+              "sft_score": 0,
+              "dpo_score": 0,
+              "confidence": "none",
+              "reasoning": "Evaluation failed: 429 Quota exceeded for aiplatform.googleapis.com/generate_content_requests_per_minute_per_project_per_base_model with base model: gemini-experimental. Please submit a quota increase request. https://cloud.google.com/vertex-ai/docs/generative-ai/quotas-genai.",
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e13",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 3.2,
+              "dpo_score": 8.8,
+              "sft_scores_detail": {
+                "persona_alignment": 5,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 3,
+                "recipe_quality": 7,
+                "overall_fit": 1
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restrictions of the persona, while recipe A contains multiple forbidden ingredients. Recipe B also incorporates more preferred ingredients like beans, avocado, and cilantro, making it a much better fit for the persona's preferences.",
+              "violations": {
+                "recipe_a": [
+                  "chicken",
+                  "sour cream",
+                  "cheese"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 5,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 3,
+                  "recipe_quality": 7,
+                  "overall_fit": 1
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restrictions of the persona, while recipe A contains multiple forbidden ingredients. Recipe B also incorporates more preferred ingredients like beans, avocado, and cilantro, making it a much better fit for the persona's preferences.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chicken",
+                    "sour cream",
+                    "cheese"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e14",
+            "category": "constraint_stress",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 4.6,
+              "dpo_score": 9.4,
+              "sft_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 2
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 10
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restrictions of the persona, unlike Recipe A which contains pork and cheese. Recipe B also utilizes jackfruit as a substitute, which aligns with the persona's preferred cuisine and style.",
+              "violations": {
+                "recipe_a": [
+                  "pork",
+                  "cheese"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 2
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 10
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restrictions of the persona, unlike Recipe A which contains pork and cheese. Recipe B also utilizes jackfruit as a substitute, which aligns with the persona's preferred cuisine and style.",
+                "violations_found": {
+                  "recipe_a": [
+                    "pork",
+                    "cheese"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e15",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 8.2,
+              "dpo_score": 9.0,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe B is slightly better because it uses more preferred ingredients like cilantro and focuses on a simpler preparation, aligning better with the 'simple' request. The title in Spanish also adds to the persona alignment. Both recipes are vegan and use available inventory.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "medium",
+                "reasoning": "Recipe B is slightly better because it uses more preferred ingredients like cilantro and focuses on a simpler preparation, aligning better with the 'simple' request. The title in Spanish also adds to the persona alignment. Both recipes are vegan and use available inventory.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e16",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 7.8,
+              "dpo_score": 9.2,
+              "sft_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 7,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like salsa, cilantro, lime juice, cumin, and smoked paprika, aligning better with the 'spicy, bold, savory' flavor profile. It also specifies corn tortillas, which are more authentic to Mexican cuisine, and the inclusion of cumin and smoked paprika adds depth of flavor.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 7,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is a better fit for the persona because it includes more preferred ingredients like salsa, cilantro, lime juice, cumin, and smoked paprika, aligning better with the 'spicy, bold, savory' flavor profile. It also specifies corn tortillas, which are more authentic to Mexican cuisine, and the inclusion of cumin and smoked paprika adds depth of flavor.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e17",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.2,
+              "dpo_score": 8.4,
+              "sft_scores_detail": {
+                "persona_alignment": 9,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 8
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is slightly better because it aligns more closely with the persona's preferred flavor profile (spicy, bold) by including jalapeño and specifying the amount of lime juice. Both recipes are vegan and use preferred ingredients, but the slight difference in flavor profile gives Recipe A the edge.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 9,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 8
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is slightly better because it aligns more closely with the persona's preferred flavor profile (spicy, bold) by including jalapeño and specifying the amount of lime juice. Both recipes are vegan and use preferred ingredients, but the slight difference in flavor profile gives Recipe A the edge.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e18",
+            "category": "edge_case",
+            "evaluation": {
+              "winner": "sft",
+              "sft_score": 9.0,
+              "dpo_score": 8.0,
+              "sft_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 9,
+                "recipe_quality": 9,
+                "overall_fit": 9
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 7,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 8,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "medium",
+              "reasoning": "Recipe A is slightly better because it uses fewer ingredients outside of the persona's preferred list and is a bit more straightforward. Recipe B is also good, but the inclusion of olive oil and onion, while not bad, are less aligned with the core persona preferences than the simpler spice blend in Recipe A.",
+              "violations": {
+                "recipe_a": [],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 9,
+                  "recipe_quality": 9,
+                  "overall_fit": 9
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 7,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "A",
+                "confidence": "medium",
+                "reasoning": "Recipe A is slightly better because it uses fewer ingredients outside of the persona's preferred list and is a bit more straightforward. Recipe B is also good, but the inclusion of olive oil and onion, while not bad, are less aligned with the core persona preferences than the simpler spice blend in Recipe A.",
+                "violations_found": {
+                  "recipe_a": [],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e19",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 2.0,
+              "dpo_score": 7.8,
+              "sft_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 1,
+                "recipe_quality": 8,
+                "overall_fit": 0
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 8,
+                "constraint_compliance": 8,
+                "preferred_ingredients": 8,
+                "recipe_quality": 7,
+                "overall_fit": 8
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B aligns much better with the persona's Mexican cuisine preference and uses preferred ingredients like black beans, avocado, salsa, and lime. Recipe A includes Parmesan cheese, which violates the vegan dietary restriction. Recipe B also attempts to incorporate a Mexican flavor profile into the pasta dish.",
+              "violations": {
+                "recipe_a": [
+                  "Parmesan cheese"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 1,
+                  "recipe_quality": 8,
+                  "overall_fit": 0
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 8,
+                  "constraint_compliance": 8,
+                  "preferred_ingredients": 8,
+                  "recipe_quality": 7,
+                  "overall_fit": 8
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B aligns much better with the persona's Mexican cuisine preference and uses preferred ingredients like black beans, avocado, salsa, and lime. Recipe A includes Parmesan cheese, which violates the vegan dietary restriction. Recipe B also attempts to incorporate a Mexican flavor profile into the pasta dish.",
+                "violations_found": {
+                  "recipe_a": [
+                    "Parmesan cheese"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          },
+          {
+            "test_case_id": "e20",
+            "category": "cross_persona",
+            "evaluation": {
+              "winner": "dpo",
+              "sft_score": 1.6,
+              "dpo_score": 7.0,
+              "sft_scores_detail": {
+                "persona_alignment": 1,
+                "constraint_compliance": 0,
+                "preferred_ingredients": 0,
+                "recipe_quality": 7,
+                "overall_fit": 0
+              },
+              "dpo_scores_detail": {
+                "persona_alignment": 6,
+                "constraint_compliance": 10,
+                "preferred_ingredients": 4,
+                "recipe_quality": 8,
+                "overall_fit": 7
+              },
+              "confidence": "high",
+              "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restriction, unlike Recipe A which contains chicken. While Recipe B doesn't perfectly align with the persona's preferred cuisines (Mexican/Latin), it is a reasonable adaptation given the user's request for Indian curry and the available inventory.",
+              "violations": {
+                "recipe_a": [
+                  "chicken"
+                ],
+                "recipe_b": []
+              },
+              "raw_evaluation": {
+                "recipe_a_scores": {
+                  "persona_alignment": 1,
+                  "constraint_compliance": 0,
+                  "preferred_ingredients": 0,
+                  "recipe_quality": 7,
+                  "overall_fit": 0
+                },
+                "recipe_b_scores": {
+                  "persona_alignment": 6,
+                  "constraint_compliance": 10,
+                  "preferred_ingredients": 4,
+                  "recipe_quality": 8,
+                  "overall_fit": 7
+                },
+                "winner": "B",
+                "confidence": "high",
+                "reasoning": "Recipe B is the clear winner because it adheres to the vegan dietary restriction, unlike Recipe A which contains chicken. While Recipe B doesn't perfectly align with the persona's preferred cuisines (Mexican/Latin), it is a reasonable adaptation given the user's request for Indian curry and the available inventory.",
+                "violations_found": {
+                  "recipe_a": [
+                    "chicken"
+                  ],
+                  "recipe_b": []
+                }
+              },
+              "evaluator": "gemini-flash"
+            }
+          }
+        ]
+      },
+      "consensus": {
+        "test_results": [
+          {
+            "test_idx": 0,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 1,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 2,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 3,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 4,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 5,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 6,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 7,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 8,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 9,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 10,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 11,
+            "winner": "unknown",
+            "confidence": "none",
+            "votes": {
+              "sft": 0,
+              "dpo": 0
+            },
+            "agreement_rate": 0
+          },
+          {
+            "test_idx": 12,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 13,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 14,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 15,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 16,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 17,
+            "winner": "sft",
+            "confidence": "high",
+            "votes": {
+              "sft": 1,
+              "dpo": 0
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 18,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          },
+          {
+            "test_idx": 19,
+            "winner": "dpo",
+            "confidence": "high",
+            "votes": {
+              "sft": 0,
+              "dpo": 1
+            },
+            "agreement_rate": 1.0
+          }
+        ],
+        "overall": {
+          "dpo_wins": 17,
+          "sft_wins": 2,
+          "ties": 0,
+          "total_tests": 20,
+          "dpo_win_rate": 0.85,
+          "avg_agreement_rate": 0.95
+        }
+      },
+      "generated_recipes": [
+        {
+          "test_case_id": "e01",
+          "category": "basic_alignment",
+          "inventory": [
+            "black beans",
+            "avocado",
+            "lime",
+            "cilantro",
+            "tortilla"
+          ],
+          "user_request": "Vegan tacos",
+          "sft_recipe": "{\n  \"name\": \"Vegan Black Bean Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup black beans, cooked\",\n    \"2 ripe avocados, diced\",\n    \"1/4 cup chopped cilantro\",\n    \"2 lime, juiced\",\n    \"1 tortilla\"\n  ],\n  \"steps\": [\n    \"Preheat a non-stick pan over medium heat. Add a small amount of oil and sauté the chopped cilantro for 1-2 minutes until fragrant.\",\n    \"Add the cooked black beans to the pan and stir to combine with the cilantro. Cook for 2-3 minutes until heated through.\",\n    \"Cut the tortilla into quarters and warm them on a dry pan for 30 seconds to make them pliable.\",\n    \"Assemble the tacos by spooning the black bean mixture onto a tortilla, followed by a slice of avocado and a squeeze of lime juice.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Black Bean Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"main_ingredients\": [\n    \"1 cup black beans, cooked\",\n    \"2 ripe avocados, diced\",\n    \"1/4 cup fresh cilantro, chopped\",\n    \"2 tablespoons lime juice\",\n    \"1 tablespoon olive oil\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/2 teaspoon paprika\",\n    \"1/4 teaspoon cayenne pepper\",\n    \"Salt and pepper, to taste\",\n    \"4 corn tortillas\"\n  ],\n  \"steps\": [\n    \"Heat the olive oil in a pan over medium heat. Add cumin, chili powder, paprika, and cayenne pepper. Cook for 1 minute, until fragrant.\",\n    \"Add the cooked black beans to the pan and stir to combine with the spice mixture. Cook for 2-3 minutes.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the tacos by spooning the black bean mixture onto a tortilla and topping with diced avocado, chopped cilantro, and a squeeze of lime juice.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e02",
+          "category": "basic_alignment",
+          "inventory": [
+            "pinto beans",
+            "rice",
+            "salsa",
+            "tortilla"
+          ],
+          "user_request": "Burrito bowl, vegan",
+          "sft_recipe": "{\n  \"name\": \"Vegan Burrito Bowl\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"25m\",\n  \"main_ingredients\": [\n    \"1 cup pinto beans (cooked)\",\n    \"2 cups cooked rice\",\n    \"1/2 cup salsa\",\n    \"1 tortilla\",\n    \"1/4 cup chopped onion\",\n    \"1/4 cup chopped bell pepper\",\n    \"1 tablespoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/4 teaspoon paprika\",\n    \"1/4 teaspoon cayenne pepper (optional)\",\n    \"Salt and pepper to taste\",\n    \"Fresh cilantro leaves for garnish\"\n  ],\n  \"steps\": [\n    \"Preheat a large pan over medium heat. Add the chopped onion and bell pepper and sauté until softened, about 5 minutes.\",\n    \"Add the cumin, chili powder, paprika, and cayenne pepper (if using) and cook for 1 minute, stirring constantly.\",\n    \"Add the cooked pinto beans and stir to combine. Cook for an additional 2-3 minutes.\",\n    \"Warm the tortilla by wrapping it in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the burrito bowl by spooning the bean and salsa mixture onto the tortilla, topping with cooked rice, and garnishing with fresh cilantro.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Pinto Bean Burrito Bowl\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup pinto beans, cooked\",\n    \"2 cups cooked rice\",\n    \"1/2 cup salsa\",\n    \"4 tortilla, whole wheat or corn\",\n    \"1/2 avocado, diced\",\n    \"1/4 cup chopped cilantro\",\n    \"1 lime, juiced\",\n    \"1 tsp cumin\",\n    \"1 tsp chili powder\",\n    \"1/2 tsp paprika\",\n    \"Salt, to taste\"\n  ],\n  \"steps\": [\n    \"Heat a large pan over medium-high heat. Add 1 tsp of oil and sauté 1 minced onion until translucent. Add the cumin, chili powder, and paprika. Cook for 1 minute.\",\n    \"Add the cooked pinto beans, cooked rice, and diced avocado to the pan. Stir to combine.\",\n    \"Add 1/2 cup of salsa to the pan and stir to combine. Cook for 2-3 minutes.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the burrito bowls by placing the bean and rice mixture onto a tortilla, topping with diced avocado, chopped cilantro, and a squeeze of lime juice. Serve immediately.\"\n  ],\n  \"note\": \"This recipe is a vegan twist on a classic burrito bowl. The addition of avocado adds creaminess and healthy fats, while the salsa provides a burst of flavor.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e03",
+          "category": "basic_alignment",
+          "inventory": [
+            "corn",
+            "lime",
+            "avocado",
+            "cilantro",
+            "tortilla chips"
+          ],
+          "user_request": "Vegan nachos",
+          "sft_recipe": "{\n  \"name\": \"Vegan Nachos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup corn (fresh or frozen, thawed)\",\n    \"2 ripe avocados, diced\",\n    \"1/4 cup cilantro, chopped\",\n    \"1/2 cup tortilla chips\",\n    \"1 tablespoon lime juice\"\n  ],\n  \"steps\": [\n    \"Preheat the oven to 400°F (200°C). Arrange the tortilla chips in a single layer on a baking sheet. Bake for 5-7 minutes or until crispy.\",\n    \"In a large bowl, mash the avocado using a fork until it's mostly smooth. Stir in the chopped cilantro, lime juice, and a pinch of salt.\",\n    \"Spoon the mashed avocado mixture over the tortilla chips. Top with the corn.\",\n    \"Return the baking sheet to the oven and bake for an additional 2-3 minutes or until the avocado is heated through.\",\n    \"Remove from the oven and let cool for a few minutes. Serve immediately and enjoy!\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Nachos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans (canned or cooked from scratch)\",\n    \"1 ripe avocado, sliced\",\n    \"1/4 cup vegan salsa\",\n    \"1/4 cup chopped cilantro\",\n    \"1/2 cup tortilla chips\",\n    \"1 lime, juiced\",\n    \"1 tsp cumin\",\n    \"1 tsp chili powder\",\n    \"1/2 tsp paprika\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 375°F (190°C). Arrange tortilla chips in a single layer on a baking sheet.\",\n    \"In a bowl, mix together cooked black beans, vegan salsa, cumin, chili powder, and paprika.\",\n    \"Spread the bean mixture evenly over the tortilla chips.\",\n    \"Top with sliced avocado and chopped cilantro.\",\n    \"Squeeze lime juice over the top and serve immediately.\",\n    \"Optional: Add additional toppings such as diced onions, bell peppers, or sliced jalapeños.\"\n  ],\n  \"note\": \"A vegan twist on the classic nachos, this dish is perfect for a quick and easy snack or light meal.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e04",
+          "category": "basic_alignment",
+          "inventory": [
+            "beans",
+            "vegetables",
+            "salsa",
+            "guacamole"
+          ],
+          "user_request": "Vegan Mexican platter",
+          "sft_recipe": "{\n  \"name\": \"Vegan Mexican Platter\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans\",\n    \"1 cup mixed vegetables (bell peppers, onions, tomatoes)\",\n    \"1/4 cup guacamole\",\n    \"2 tablespoons salsa\",\n    \"2 tablespoons olive oil\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C).\",\n    \"Rinse the mixed vegetables and chop them into bite-sized pieces. Place them on a baking sheet and drizzle with olive oil, sprinkle with cumin and chili powder. Roast in the oven for 20 minutes or until tender.\",\n    \"In a large bowl, mash the cooked black beans with a fork. Add the roasted vegetables, guacamole, and salsa. Mix well.\",\n    \"Season with salt and pepper to taste. Serve warm or at room temperature.\",\n    \"Garnish with additional guacamole and salsa if desired.\"\n  ],\n  \"note\": \"This vegan Mexican platter is perfect for a quick and flavorful meal or as a snack. You can customize it to your taste by adding other vegan toppings such as sliced avocado, diced tomatoes, or chopped cilantro.\"\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Mexican Fiesta Platter\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans, drained and rinsed\",\n    \"2 medium-sized bell peppers, diced\",\n    \"1 medium-sized onion, diced\",\n    \"1 medium-sized zucchini, diced\",\n    \"1 avocado, diced\",\n    \"1/2 cup guacamole\",\n    \"1/4 cup salsa\",\n    \"2 tablespoons lime juice\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/4 teaspoon paprika\",\n    \"Salt and pepper to taste\",\n    \"Fresh cilantro leaves for garnish\"\n  ],\n  \"steps\": [\n    \"Preheat the oven to 375°F (190°C). Line a baking sheet with parchment paper.\",\n    \"In a large bowl, toss the bell peppers and onion with 1 tablespoon of lime juice, 1/2 teaspoon cumin, 1/4 teaspoon chili powder, and salt and pepper to taste. Spread on the prepared baking sheet and roast for 20 minutes or until tender.\",\n    \"In a separate pan, heat 1 tablespoon of oil over medium heat. Add the zucchini and cook for 3-4 minutes per side or until tender. Set aside.\",\n    \"In a large bowl, combine the cooked black beans, roasted peppers and onion, cooked zucchini, diced avocado, and guacamole. Toss to combine.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the platter by placing a portion of the bean and vegetable mixture onto a warmed tortilla, followed by a spoonful of salsa and a sprinkle of cilantro. Serve immediately.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e05",
+          "category": "basic_alignment",
+          "inventory": [
+            "sweet potato",
+            "black beans",
+            "salsa",
+            "avocado"
+          ],
+          "user_request": "Sweet potato tacos",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Sweet Potato Tacos\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": null,\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"2 large sweet potatoes (peeled, diced)\",\n      \"1 can black beans, drained and rinsed (15 oz)\",\n      \"1/4 cup salsa\",\n      \"2 ripe avocados, sliced\",\n      \"1/4 cup chopped cilantro\",\n      \"1 lime, juiced\",\n      \"1 tsp cumin\",\n      \"1 tsp chili powder\",\n      \"Salt and pepper, to taste\",\n      \"6 corn tortillas\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 400°F (200°C). Toss sweet potatoes with 1 tsp cumin, 1 tsp chili powder, and a pinch of salt. Spread on a baking sheet and roast for 20-25 minutes, or until tender. Let cool.\",\n      \"While sweet potatoes are roasting, heat 1 tbsp of oil in a pan over medium heat. Add black beans and cook until warmed through.\",\n      \"Warm tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble tacos by spooning roasted sweet potatoes onto a tortilla, topping with black beans, salsa, avocado, and cilantro. Squeeze lime juice over the top and serve immediately.\",\n      \"Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Sweet Potato Tacos con Salsa Roja\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"2 large sweet potatoes, peeled and diced\",\n    \"1 cup cooked black beans, warmed\",\n    \"1/4 cup salsa\",\n    \"2 ripe avocados, sliced\",\n    \"2 tablespoons lime juice\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/4 teaspoon cayenne pepper\",\n    \"1/4 cup chopped cilantro\",\n    \"6 corn tortillas\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 400°F (200°C). Toss sweet potatoes with 1 tablespoon of lime juice and a pinch of salt. Spread on a baking sheet and roast for 20 minutes, or until tender.\",\n    \"While sweet potatoes are roasting, warm tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"In a blender or food processor, combine salsa, cumin, chili powder, and cayenne pepper. Blend until smooth.\",\n    \"In a large pan, heat the salsa mixture over medium heat. Add cooked black beans and stir to combine.\",\n    \"Once sweet potatoes are done, let cool slightly. Slice them into wedges and add to the salsa and bean mixture. Stir to combine.\",\n    \"Warm tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds. Assemble tacos with sweet potato and bean mixture, sliced avocado, and a sprinkle of cilantro.\",\n    \"Serve immediately, with additional salsa and lime wedges on the side.\"\n  ]\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e06",
+          "category": "basic_alignment",
+          "inventory": [
+            "beans",
+            "rice",
+            "vegetables",
+            "tortilla"
+          ],
+          "user_request": "Vegan burrito",
+          "sft_recipe": "{\n  \"name\": \"Vegan Burrito Recipe\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked beans (black beans, kidney beans, or pinto beans)\",\n    \"2 medium-sized tortilla\",\n    \"1 cup cooked rice\",\n    \"1/2 cup diced bell pepper\",\n    \"1/2 cup diced onion\",\n    \"1/4 cup chopped cilantro\",\n    \"2 tablespoons olive oil\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/2 teaspoon paprika\",\n    \"1/4 teaspoon cayenne pepper (optional)\",\n    \"1/4 teaspoon salt\",\n    \"1/4 teaspoon black pepper\"\n  ],\n  \"steps\": [\n    \"Heat the olive oil in a large skillet over medium-high heat. Add the diced onion and bell pepper and cook until tender, about 5 minutes.\",\n    \"Add the cumin, chili powder, paprika, cayenne pepper (if using), salt, and black pepper to the skillet and cook for 1 minute, stirring constantly.\",\n    \"Add the cooked beans to the skillet and stir to combine with the spice mixture.\",\n    \"Warm the tortilla by wrapping it in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the burrito by spooning the bean and spice mixture onto the tortilla, followed by a scoop of cooked rice. Top with chopped cilantro and serve immediately.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegan Burrito\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegan\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup cooked beans (black beans or pinto beans)\",\n      \"2 medium-sized tortilla (corn or flour)\",\n      \"1/2 cup cooked rice\",\n      \"1/2 cup diced onion\",\n      \"1/2 cup diced bell pepper\",\n      \"1/4 cup diced tomatoes\",\n      \"1 tablespoon olive oil\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon chili powder\",\n      \"1 teaspoon paprika\",\n      \"1/2 teaspoon salt\",\n      \"1/4 teaspoon black pepper\",\n      \"1/4 cup chopped cilantro\",\n      \"2 tablespoons lime juice\",\n      \"1 avocado (sliced)\"\n    ],\n    \"steps\": [\n      \"Heat the olive oil in a pan over medium heat. Add the diced onion, bell pepper, and cook until softened (5 minutes).\",\n      \"Add the cooked beans, cumin, chili powder, paprika, salt, and black pepper. Stir well (2 minutes).\",\n      \"Warm the tortilla in a dry pan for 30 seconds on each side.\",\n      \"Assemble the burrito by placing the bean mixture onto the tortilla, followed by cooked rice, diced tomatoes, and chopped cilantro.\",\n      \"Squeeze the lime juice over the top and serve with sliced avocado on the side.\"\n    ]\n  }\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e07",
+          "category": "basic_alignment",
+          "inventory": [
+            "tomato",
+            "onion",
+            "cilantro",
+            "lime",
+            "jalapeño"
+          ],
+          "user_request": "Salsa and pico de gallo",
+          "sft_recipe": "{\n  \"name\": \"Spicy Fresh Salsa\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 cup diced fresh tomatoes (2 medium)\",\n    \"1/2 cup diced red onion\",\n    \"1/4 cup chopped fresh cilantro\",\n    \"1 jalapeño pepper, seeded and finely chopped\",\n    \"2 tablespoons fresh lime juice\"\n  ],\n  \"steps\": [\n    \"In a medium bowl, combine diced tomatoes, red onion, cilantro, and jalapeño pepper in a bowl.\",\n    \"Squeeze lime juice over the mixture and toss to coat.\",\n    \"Season with salt to taste.\",\n    \"Cover and refrigerate for at least 30 minutes to allow flavors to meld.\",\n    \"Serve chilled or at room temperature with tortilla chips or use as a topping for tacos or grilled meats.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Salsa Fresca con Pico de Gallo\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"Spicy\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 cup diced fresh tomatoes (2 medium)\",\n    \"1/2 cup diced red onion (1 medium)\",\n    \"1/4 cup chopped fresh cilantro (1/4 cup)\",\n    \"2-3 diced jalapeños (depending on desired heat level)\",\n    \"2 tablespoons lime juice\",\n    \"1 teaspoon salt\"\n  ],\n  \"steps\": [\n    \"In a blender or food processor, combine diced tomatoes, red onion, and jalapeños. Blend until coarsely chopped.\",\n    \"Heat a small pan over medium heat and sauté the mixture for 5 minutes, stirring occasionally.\",\n    \"Add lime juice, salt, and chopped cilantro to the pan and stir to combine.\",\n    \"Taste and adjust seasoning as needed. Transfer the mixture to a serving bowl.\",\n    \"Serve immediately, garnished with additional cilantro if desired.\"\n  ],\n  \"note\": null\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e08",
+          "category": "basic_alignment",
+          "inventory": [
+            "corn tortillas",
+            "beans",
+            "vegetables",
+            "salsa"
+          ],
+          "user_request": "Enchiladas, vegan",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegan Enchiladas\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegan\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"2 cups cooked beans (black beans, cooked and mashed)\",\n      \"1 cup corn tortillas (6-8 tortillas)\",\n      \"1 cup sliced vegetables (bell peppers, onions, zucchini, etc.)\",\n      \"1/4 cup salsa (homemade or store-bought)\",\n      \"1 tsp cumin\",\n      \"1 tsp paprika\",\n      \"1 tsp chili powder\",\n      \"1/2 tsp salt\",\n      \"1/4 tsp black pepper\"\n    ],\n    \"steps\": [\n      \"Preheat the oven to 375°F (190°C).\",\n      \"In a pan, sauté the sliced vegetables in a little bit of oil until tender.\",\n      \"In a separate pan, warm the tortillas over medium heat for a few seconds on each side.\",\n      \"Spread a layer of beans on each tortilla, followed by a spoonful of sautéed vegetables, and a sprinkle of cumin, paprika, chili powder, salt, and black pepper.\",\n      \"Roll up the tortillas and place seam-side down in a baking dish. Pour the salsa over the top.\",\n      \"Bake in the preheated oven for 20-25 minutes or until the tortillas are crispy and the filling is heated through.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Enchiladas Rojas\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"4 corn tortillas\",\n    \"1 cup cooked black beans, warmed\",\n    \"1 cup sautéed vegetables (onion, bell pepper, tomato)\",\n    \"1/2 cup vegan enchilada sauce (see below for recipe)\",\n    \"1/4 cup chopped fresh cilantro\",\n    \"2 tbsp lime juice\",\n    \"1 tsp ground cumin\",\n    \"1 tsp smoked paprika\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 375°F (190°C).\",\n    \"In a pan, heat a couple of tablespoons of oil over medium heat. Add the sautéed vegetables and cook for 5 minutes.\",\n    \"In a separate pan, warm the tortillas over medium heat for 30 seconds on each side. This will make them pliable and easier to roll.\",\n    \"Dip each tortilla in the enchilada sauce, coating both sides evenly.\",\n    \"Place a spoonful of the sautéed vegetables onto the center of each tortilla, followed by a spoonful of warmed black beans. Roll the tortilla tightly and place seam-side down in a baking dish. Repeat with the remaining tortillas.\",\n    \"Pour the remaining enchilada sauce over the rolled tortillas and top with chopped cilantro, lime juice, cumin, and smoked paprika.\",\n    \"Cover the dish with aluminum foil and bake for 20 minutes. Remove the foil and bake for an additional 10 minutes, or until the tortillas are crispy and the filling is hot and bubbly.\"\n  ],\n  \"note\": \"This recipe is a vegan twist on traditional enchiladas, using sautéed vegetables and black beans as the filling.\"\n}",
+          "note": ""
+        },
+        {
+          "test_case_id": "e09",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "beans",
+            "tortilla",
+            "salsa"
+          ],
+          "user_request": "Mexican tacos",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mexican Chicken Tacos\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 lb boneless, skinless chicken breast or thighs, cut into small pieces\",\n      \"1 cup cooked beans (black beans or pinto beans work well)\",\n      \"8-10 corn tortillas\",\n      \"1/2 cup salsa\",\n      \"1 tablespoon olive oil\",\n      \"1 small onion, diced\",\n      \"1 clove garlic, minced\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon chili powder\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Heat the olive oil in a large skillet over medium-high heat. Add the chicken and cook until browned, about 5-6 minutes. Remove the chicken from the skillet and set aside.\",\n      \"In the same skillet, add the diced onion and cook until translucent, about 3-4 minutes. Add the garlic and cook for an additional minute.\",\n      \"Add the cumin and chili powder to the skillet and cook for 1 minute, stirring constantly.\",\n      \"Add the cooked beans to the skillet and stir to combine with the onion and spice mixture. Cook for 2-3 minutes.\",\n      \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble the tacos by spooning the chicken and bean mixture onto a tortilla and topping with salsa.\",\n      \"Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Mexican Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans\",\n    \"4 corn tortillas\",\n    \"1/4 cup salsa\",\n    \"1/4 cup diced onion\",\n    \"1/4 cup diced bell pepper\",\n    \"2 cloves garlic, minced\",\n    \"1 tablespoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/4 teaspoon paprika\",\n    \"Salt and pepper to taste\",\n    \"Chopped cilantro for garnish\"\n  ],\n  \"steps\": [\n    \"Heat a large skillet over medium-high heat. Add the diced onion and bell pepper, cooking until softened. Add the garlic, cumin, chili powder, and paprika. Cook for 1 minute.\",\n    \"Add the cooked black beans to the skillet and stir to combine. Cook for 2-3 minutes.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the tacos by spooning the bean mixture onto a tortilla and topping with salsa, cilantro, and any desired additional toppings.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": "Contains chicken (forbidden)"
+        },
+        {
+          "test_case_id": "e10",
+          "category": "constraint_stress",
+          "inventory": [
+            "beef",
+            "cheese",
+            "tortilla",
+            "salsa"
+          ],
+          "user_request": "Quesadilla",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Classic Beef Quesadilla\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"1 lb ground beef\",\n        \"quantity\": \"1 lb\",\n        \"unit\": \"lb\"\n      },\n      \"1/2 cup shredded cheese\",\n      \"4 large tortilla\",\n      \"1/2 cup salsa\",\n      \"1/4 cup chopped onion\",\n      \"1/4 cup chopped bell pepper\"\n    ],\n    \"steps\": [\n      \"Step 1. Heat a large skillet over medium-high heat. Add the chopped onion and bell pepper. Cook until the vegetables are softened, about 3-4 minutes.\",\n      \"Step 2. Add the ground beef to the skillet, breaking it up with a spoon as it cooks. Cook until the beef is browned, about 5-6 minutes.\",\n      \"Step 3. Add the salsa to the skillet and stir to combine. Bring the mixture to a simmer and cook for 2-3 minutes.\",\n      \"Step 4. Meanwhile, warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Step 5. Place a tortilla in the skillet and sprinkle shredded cheese on half of the tortilla. Spoon the beef and salsa mixture on top of the cheese. Fold the tortilla in half to enclose the filling. Cook until the tortilla is crispy and the cheese is melted, about 2-3 minutes. Flip and cook the other side until crispy and golden brown. Repeat with the remaining tortillas and filling.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Quesadilla\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans, warmed\",\n    \"2 medium avocado, sliced\",\n    \"1/4 cup salsa\",\n    \"2 corn tortillas\",\n    \"1/4 cup chopped cilantro\",\n    \"1 tablespoon lime juice\"\n  ],\n  \"steps\": [\n    \"Preheat a large skillet over medium heat. Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"In a bowl, mash the black beans using a fork. Add the sliced avocado, salsa, and chopped cilantro. Mix well.\",\n    \"Place a tortilla in the skillet and sprinkle half of the bean-avocado mixture on half of the tortilla.\",\n    \"Fold the tortilla in half to enclose the filling. Cook for 2-3 minutes or until the tortilla is crispy and the filling is heated through.\",\n    \"Flip the quesadilla and cook for an additional 2-3 minutes or until the other side is crispy and the filling is heated through.\",\n    \"Repeat with the remaining tortilla and filling. Serve hot with lime wedges on the side.\"\n  ]\n}",
+          "note": "Contains beef and cheese (forbidden)"
+        },
+        {
+          "test_case_id": "e11",
+          "category": "constraint_stress",
+          "inventory": [
+            "fish",
+            "lime",
+            "cilantro",
+            "tortilla"
+          ],
+          "user_request": "Fish tacos",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Fish Tacos\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"Fish\",\n        \"quantity\": \"1 lb (450g)\",\n        \"unit\": \"lb\",\n        \"measurement_unit\": \"lb\"\n      },\n      \"lime\": {\n        \"quantity\": \"2\",\n        \"unit\": \"pieces\",\n        \"measurement_unit\": \"pieces\"\n      },\n      \"tortilla\": {\n        \"quantity\": \"8\",\n        \"unit\": \"pieces\",\n        \"measurement_unit\": \"pieces\"\n      },\n      \"cilantro\": {\n        \"quantity\": \"1/4 cup\",\n        \"unit\": \"cup\",\n        \"measurement_unit\": \"cup\"\n      }\n    ],\n    \"steps\": [\n      \"Step 1. Cut the fish into small pieces and season with salt and pepper to taste. Heat a non-stick pan with a small amount of oil over medium heat. Add the fish and cook until it's golden brown and cooked through. Set aside.\",\n      \"Step 2. Cut the lime into wedges and set aside. Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Step 3. In a small bowl, mix together chopped cilantro and a squeeze of lime juice. Set aside.\",\n      \"Step 4. Assemble the tacos by placing a piece of fish onto a warmed tortilla, followed by a spoonful of the cilantro mixture, and a squeeze of lime juice.\",\n      \"Step 5. Serve immediately and enjoy!\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Fish Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans, warmed\",\n    \"1/4 cup diced onion\",\n    \"1/4 cup diced bell pepper\",\n    \"2 cloves garlic, minced\",\n    \"1 tablespoon olive oil\",\n    \"1 teaspoon cumin\",\n    \"1 teaspoon chili powder\",\n    \"1/2 teaspoon paprika\",\n    \"1/4 teaspoon cayenne pepper\",\n    \"2 tablespoons lime juice\",\n    \"2 tablespoons chopped cilantro\",\n    \"4 corn tortillas\",\n    \"Salsa (homemade or store-bought)\"\n  ],\n  \"steps\": [\n    \"Heat the olive oil in a pan over medium heat. Add the onion and bell pepper, cooking until softened. Add the garlic and cook for 1 minute.\",\n    \"Add the cumin, chili powder, paprika, and cayenne pepper to the pan and cook for 1 minute.\",\n    \"Add the cooked black beans to the pan and stir to combine. Season with salt and pepper to taste.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the tacos by spooning the bean mixture onto a tortilla, topping with a spoonful of salsa, and garnishing with cilantro and a squeeze of lime juice.\"\n  ]\n}",
+          "note": "Contains fish (forbidden)"
+        },
+        {
+          "test_case_id": "e12",
+          "category": "constraint_stress",
+          "inventory": [
+            "eggs",
+            "cheese",
+            "tortilla",
+            "salsa"
+          ],
+          "user_request": "Breakfast burrito",
+          "sft_recipe": "{\n  \"name\": \"Breakfast Burrito\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"2 large eggs\",\n    \"1/2 cup shredded cheese\",\n    \"1 large tortilla\",\n    \"1/4 cup salsa\"\n  ],\n  \"steps\": [\n    \"Crack 2 large eggs into a bowl and whisk them together. Add a pinch of salt and pepper to taste.\",\n    \"Heat a non-stick pan over medium heat and add a small amount of oil. Pour in the eggs and scramble them until they are cooked through.\",\n    \"Warm the tortilla by wrapping it in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the burrito by placing the scrambled eggs down the center of the tortilla, followed by a sprinkle of shredded cheese and a spoonful of salsa.\",\n    \"Fold the bottom half of the tortilla up over the filling, then fold in the sides and roll the burrito up tightly.\"\n  ],\n  \"note\": null\n}",
+          "dpo_recipe": "{\n  \"name\": \"Breakfast Burrito\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"20m\",\n  \"main_ingredients\": [\n    \"2 large eggs\",\n    \"1 cup shredded cheese (Monterey Jack or Cheddar work well)\",\n    \"1/2 cup salsa\",\n    \"2 large tortillas\",\n    \"1/4 cup diced onion\",\n    \"1/4 cup diced bell pepper\",\n    \"1/4 cup diced fresh cilantro\"\n  ],\n  \"steps\": [\n    \"Crack the eggs into a bowl and whisk them together. Add a pinch of salt and pepper to taste.\",\n    \"Heat a large skillet over medium heat and add the diced onion and bell pepper. Cook until they're softened.\",\n    \"Add the cooked onion and bell pepper mixture to the eggs and stir well.\",\n    \"Add the shredded cheese to the egg mixture and stir until melted and well combined.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the burritos by spooning the egg and cheese mixture onto the tortillas and topping with salsa, cilantro, and any other desired toppings.\",\n    \"Serve immediately and enjoy!\"\n  ],\n  \"note\": \"This recipe makes 2 burritos. You can customize with your favorite toppings, such as diced tomatoes, shredded lettuce, or diced avocado.\"\n}",
+          "note": "Contains eggs and cheese (forbidden)"
+        },
+        {
+          "test_case_id": "e13",
+          "category": "constraint_stress",
+          "inventory": [
+            "chicken",
+            "sour cream",
+            "cheese",
+            "tortilla"
+          ],
+          "user_request": "Chicken enchiladas",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Chicken Enchiladas\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"45m\",\n    \"main_ingredients\": [\n      \"1 pound boneless, skinless chicken breast or thighs, cut into small pieces\",\n      \"8-10 corn tortillas\",\n      \"1 cup sour cream\",\n      \"1 cup shredded cheese (Monterey Jack or Cheddar work well)\",\n      \"1/2 cup diced onion\",\n      \"1/2 cup diced bell pepper\",\n      \"1 jalapeño pepper, diced\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon chili powder\",\n      \"1/2 teaspoon paprika\",\n      \"1/4 teaspoon cayenne pepper (optional)\",\n      \"Salt and pepper to taste\",\n      \"2 tablespoons vegetable oil\"\n    ],\n    \"steps\": [\n      \"Preheat oven to 375°F (190°C).\",\n      \"In a large skillet, heat 1 tablespoon of oil over medium-high heat. Add the chicken and cook until browned, about 5-6 minutes. Remove from heat and set aside.\",\n      \"In the same skillet, add the remaining 1 tablespoon of oil. Add the onion, bell pepper, and jalapeño. Cook until the vegetables are softened, about 5 minutes.\",\n      \"In a large bowl, combine the cooked chicken, cooked vegetables, cumin, chili powder, paprika, and cayenne pepper (if using). Stir to combine.\",\n      \"In a separate pan or griddle, warm the tortillas over medium heat for about 30 seconds on each side. This will make them more pliable and easier to roll.\",\n      \"To assemble the enchiladas, lay a tortilla flat and spoon some of the chicken and vegetable mixture onto the center of the tortilla. Roll the tortilla up and place seam-side down in a baking dish. Repeat with the remaining tortillas and filling.\",\n      \"Pour the sour cream over the top of the rolled tortillas and sprinkle with shredded cheese.\",\n      \"Cover the dish with aluminum foil and bake for 20 minutes. Remove the foil and continue baking for an additional 10-15 minutes, or until the cheese is melted and bubbly.\",\n      \"Remove from the oven and let rest for 5 minutes before serving.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Enchiladas\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"45m\",\n  \"main_ingredients\": [\n    \"1 cup cooked black beans, drained and rinsed\",\n    \"1/2 cup diced onion\",\n    \"1/2 cup diced bell pepper\",\n    \"1/4 cup diced tomato\",\n    \"2 cloves garlic, minced\",\n    \"1 tablespoon cumin\",\n    \"1 teaspoon paprika\",\n    \"1/4 teaspoon cayenne pepper\",\n    \"1/4 cup chopped cilantro\",\n    \"2 tablespoons lime juice\",\n    \"1 can enchilada sauce\",\n    \"4 corn tortillas\",\n    \"1 avocado, sliced\"\n  ],\n  \"steps\": [\n    \"Preheat oven to 375°F (190°C).\",\n    \"In a pan, sauté the onion, bell pepper, and garlic until softened.\",\n    \"Add the cooked black beans, cumin, paprika, and cayenne pepper. Stir well.\",\n    \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Assemble the enchiladas by spooning the bean mixture onto a tortilla, rolling it up, and placing it seam-side down in a baking dish. Repeat with the remaining tortillas.\",\n    \"Pour the enchilada sauce over the rolled tortillas and top with sliced avocado.\",\n    \"Bake for 20-25 minutes or until the tortillas are crispy and the filling is hot and bubbly.\",\n    \"Garnish with chopped cilantro and serve hot.\"\n  ],\n  \"note\": \"This recipe is a vegan twist on traditional enchiladas, using black beans as a protein substitute.\"\n}",
+          "note": "Contains multiple forbidden items"
+        },
+        {
+          "test_case_id": "e14",
+          "category": "constraint_stress",
+          "inventory": [
+            "pork",
+            "cheese",
+            "beans",
+            "tortilla"
+          ],
+          "user_request": "Carnitas tacos",
+          "sft_recipe": "{\n  \"name\": \"Carnitas Tacos\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"non-veg\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    {\n      \"name\": \"pork (1 pound, boneless pork shoulder, cut into small pieces\",\n      \"quantity\": \"1 pound\",\n      \"unit\": \"pound\"\n    },\n    \"cheese (1/2 cup, shredded\",\n      \"quantity\": \"1/2 cup\",\n      \"unit\": \"cup\"\n    },\n    \"beans (1 cup, cooked, drained\",\n      \"quantity\": \"1 cup\",\n      \"unit\": \"cup\"\n    },\n    \"tortilla (4-6 corn tortillas\",\n      \"quantity\": \"4-6\",\n      \"unit\": \"tortilla\"\n    }\n  ],\n  \"steps\": [\n    \"Step 1. In a large Dutch oven or heavy pot, heat 2 tablespoons of oil over medium heat. Add the pork pieces and cook until browned on all sides, about 5 minutes. Remove the pork from the pot and set aside.\",\n    \"Step 2. In the same pot, add another 2 tablespoons of oil if needed. Add the onion, garlic, and cook until softened, about 3-4 minutes.\",\n    \"Step 3. Add the cumin, chili powder, and oregano to the pot and cook for 1 minute, stirring constantly.\",\n    \"Step 4. Add the cooked pork back into the pot, along with 1/4 cup of water and bring to a simmer. Reduce the heat to low and cook for 20-25 minutes, or until the pork is tender and shreds easily with a fork.\",\n    \"Step 5. Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds. Assemble the tacos by spooning the carnitas onto a tortilla, topping with cheese, beans, and any desired toppings.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegan Carnitas Tacos\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegan\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup jackfruit (canned or fresh, drained and chopped)\",\n      \"1/4 cup chopped onion\",\n      \"1 minced garlic clove\",\n      \"1 tablespoon olive oil\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon chili powder\",\n      \"1/2 teaspoon paprika\",\n      \"1/2 teaspoon salt\",\n      \"1/4 teaspoon black pepper\",\n      \"4 corn tortillas\",\n      \"Salsa (homemade or store-bought)\",\n      \"Chopped cilantro (for garnish)\",\n      \"Lime wedges (for serving)\"\n    ],\n    \"steps\": [\n      \"Preheat a large skillet over medium-high heat. Add the olive oil and sauté the chopped onion until translucent.\",\n      \"Add the minced garlic and cook for 1 minute, until fragrant.\",\n      \"Add the chopped jackfruit and cook for 5 minutes, until slightly caramelized.\",\n      \"Add the cumin, chili powder, paprika, salt, and black pepper. Stir well to combine.\",\n      \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble the tacos by spooning the jackfruit mixture onto a tortilla and topping with salsa, cilantro, and a squeeze of lime juice.\"\n    ]\n  }\n}",
+          "note": "Contains pork and cheese (forbidden)"
+        },
+        {
+          "test_case_id": "e15",
+          "category": "edge_case",
+          "inventory": [
+            "beans",
+            "tortilla",
+            "lime"
+          ],
+          "user_request": "Simple Mexican",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Simple Bean Tacos\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"1 cup cooked beans (black beans or pinto beans work well)\",\n      \"2 tortillas\",\n      \"1 lime (juice and wedges for serving)\",\n      \"1 tablespoon olive oil\",\n      \"1 small onion (diced)\",\n      \"1 clove garlic (minced)\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon chili powder\",\n      \"Salt and pepper to taste\"\n    ],\n    \"steps\": [\n      \"Heat the olive oil in a large skillet over medium-high heat. Add the diced onion and cook until translucent, about 3-4 minutes.\",\n      \"Add the minced garlic and cook for another minute, until fragrant.\",\n      \"Add the cooked beans, cumin, and chili powder to the skillet. Stir to combine and cook for 2-3 minutes.\",\n      \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble the tacos by spooning the bean mixture onto a tortilla and serving with a squeeze of lime juice and a wedge on the side.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Sencillo Frijoles con Tortilla\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"Simple\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked pinto beans (canned or cooked from scratch)\",\n    \"2 large tortillas\",\n    \"2 tablespoons lime juice\",\n    \"1/4 cup chopped fresh cilantro\",\n    \"1 tablespoon olive oil\"\n  ],\n  \"steps\": [\n    \"Step 1. Heat the olive oil in a large skillet over medium heat. Add the cooked pinto beans and stir to warm through.\",\n    \"Step 2. Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Step 3. Assemble the tacos by spooning the beans onto a warmed tortilla and topping with a squeeze of lime juice, a sprinkle of cilantro, and a dash of salt.\",\n    \"Step 4. Serve immediately and enjoy!\",\n    \"Step 5. Repeat as needed, using all the tortillas and serving the beans in a communal manner.\"\n  ],\n  \"note\": null\n}",
+          "note": "Minimal ingredients"
+        },
+        {
+          "test_case_id": "e16",
+          "category": "edge_case",
+          "inventory": [
+            "many beans",
+            "vegetables",
+            "tortillas",
+            "salsa",
+            "guacamole",
+            "rice"
+          ],
+          "user_request": "Full Mexican feast, vegan",
+          "sft_recipe": "{\n  \"name\": \"Vegan Mexican Fiesta\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"1 cup cooked beans (black beans or pinto beans work well)\",\n    \"2 medium bell peppers, diced\",\n    \"1 medium onion, diced\",\n    \"2 cloves garlic, minced\",\n    \"1 jalapeño pepper, diced\",\n    \"1 avocado, diced\",\n    \"1 cup cooked rice\",\n    \"2 tortillas\"\n  ],\n  \"steps\": [\n    \"Step 1. Heat 1 tablespoon of oil in a large skillet over medium heat. Add the diced onion and cook until translucent, about 5 minutes. Add the diced bell peppers and cook for an additional 5 minutes, until the vegetables are tender.\",\n    \"Step 2. Add the cooked beans, garlic, and jalapeño to the skillet and stir to combine. Cook for 2 minutes, until the flavors are combined.\",\n    \"Step 3. Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n    \"Step 4. Assemble the tacos by spooning the bean and vegetable mixture onto a tortilla, followed by a dollop of guacamole and a sprinkle of rice.\",\n    \"Step 5. Serve immediately and enjoy!\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Vegan Fajita Fiesta\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegan\",\n    \"time\": \"45m\",\n    \"main_ingredients\": [\n      \"1 cup black beans, cooked\",\n      \"1 cup mixed bell peppers (any color), sliced\",\n      \"1 small onion, diced\",\n      \"2 cloves garlic, minced\",\n      \"1/4 cup salsa\",\n      \"1 ripe avocado, diced\",\n      \"4 corn tortillas\",\n      \"1/4 cup chopped fresh cilantro\",\n      \"2 tablespoons lime juice\",\n      \"1 teaspoon cumin\",\n      \"1 teaspoon smoked paprika\",\n      \"Salt and pepper, to taste\"\n    ],\n    \"steps\": [\n      \"Heat a large skillet over medium-high heat. Add 1 tablespoon of oil and sauté the onion and bell peppers until tender. Add the garlic and cook for 1 minute.\",\n      \"Add the cooked black beans, cumin, smoked paprika, salt, and pepper to the skillet. Stir to combine.\",\n      \"Warm the tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds.\",\n      \"Assemble the fajitas by spooning the bean and vegetable mixture onto a tortilla, followed by a dollop of guacamole and a sprinkle of cilantro.\",\n      \"Serve immediately, with salsa on the side and a squeeze of lime juice.\"\n    ],\n    \"note\": \"This recipe is a hearty and flavorful vegan fajita dish that combines the best of Mexican cuisine with plant-based ingredients.\"\n  }\n}",
+          "note": "Many ingredients"
+        },
+        {
+          "test_case_id": "e17",
+          "category": "edge_case",
+          "inventory": [
+            "avocado",
+            "lime"
+          ],
+          "user_request": "Quick Mexican",
+          "sft_recipe": "{\n  \"name\": \"Avocado Salsa Fresca\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"15m\",\n  \"main_ingredients\": [\n    \"1 ripe avocado, diced\",\n    \"2 limes, juiced\",\n    \"1/2 red onion, diced\",\n    \"1 jalapeño pepper, seeded and finely chopped\",\n    \"1/4 cup fresh cilantro, chopped\",\n    \"1 tsp salt\",\n    \"1/2 tsp black pepper\"\n  ],\n  \"steps\": [\n    \"In a large bowl, combine diced avocado, red onion, jalapeño pepper, and cilantro.\",\n    \"Squeeze lime juice over the mixture and toss to coat.\",\n    \"Season with salt and black pepper to taste.\",\n    \"Cover and refrigerate for at least 30 minutes to allow flavors to meld.\",\n    \"Serve chilled or at room temperature with tortilla chips or use as a topping for tacos.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Avocado Salsa Fresca\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"Quick\",\n  \"time\": \"10m\",\n  \"main_ingredients\": [\n    \"2 ripe avocados, diced\",\n    \"1/4 cup fresh cilantro, chopped\",\n    \"1 lime, juiced\",\n    \"1/2 teaspoon salt\",\n    \"1/4 teaspoon black pepper\",\n    \"1 jalapeño pepper, seeded and finely chopped\",\n    \"1 medium tomato, diced\"\n  ],\n  \"steps\": [\n    \"Cut the avocados in half and remove the pit. Scoop the flesh into a large mixing bowl.\",\n    \"Add the chopped cilantro, lime juice, salt, black pepper, and jalapeño to the bowl with the avocado.\",\n    \"Stir well to combine. Add the diced tomato and stir gently.\",\n    \"Taste and adjust the seasoning as needed.\",\n    \"Cover and refrigerate for at least 10 minutes to allow the flavors to meld.\"\n  ],\n  \"note\": \"Serve with tortilla chips or use as a topping for tacos or grilled meats.\"\n}",
+          "note": "Very limited"
+        },
+        {
+          "test_case_id": "e18",
+          "category": "edge_case",
+          "inventory": [
+            "corn",
+            "salsa"
+          ],
+          "user_request": "Anything Mexican",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Mexican Street Corn Salad\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"vegetarian\",\n    \"time\": \"20m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"corn (1 cup, fresh or frozen)\",\n        \"quantity\": \"1 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"salsa (1/2 cup)\",\n        \"quantity\": \"1/2 cup\",\n        \"unit\": \"cup\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"lime juice (2 tablespoons)\",\n        \"quantity\": \"2 tablespoons\",\n        \"unit\": \"tablespoon\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"cumin (1 teaspoon)\",\n        \"quantity\": \"1 teaspoon\",\n        \"unit\": \"teaspoon\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"chili powder (1/2 teaspoon)\",\n        \"quantity\": \"1/2 teaspoon\",\n        \"unit\": \"teaspoon\",\n        \"note\": \"\"\n      },\n      {\n        \"name\": \"salt (to taste)\",\n        \"quantity\": \"to taste\",\n        \"unit\": \"\",\n        \"note\": \"\"\n      }\n    ],\n    \"steps\": [\n      \"Preheat the grill or grill pan to medium-high heat. Grill the corn until slightly charred.\",\n      \"In a large bowl, whisk together lime juice, cumin, chili powder, and salt.\",\n      \"Add the grilled corn to the bowl and toss to coat with the spice mixture.\",\n      \"Stir in the salsa and toss to combine.\",\n      \"Serve warm, garnished with additional salsa and lime wedges if desired.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"recipe\": {\n    \"name\": \"Salsa con Elote\",\n    \"cuisine\": \"Mexican\",\n    \"culinary_preference\": \"spicy\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      \"2 cups corn kernels\",\n      \"1/2 cup salsa\",\n      \"2 tablespoons olive oil\",\n      \"1 small onion, diced\",\n      \"1 jalapeño pepper, seeded and finely chopped\",\n      \"1/4 cup fresh cilantro, chopped\",\n      \"1 lime, juiced\",\n      \"Salt, to taste\"\n    ],\n    \"steps\": [\n      \"Preheat a grill or grill pan to medium-high heat. Grill the corn kernels for 5-7 minutes, turning frequently, until slightly charred.\",\n      \"In a large bowl, combine the grilled corn, diced onion, chopped jalapeño, and chopped cilantro.\",\n      \"Squeeze the lime juice over the mixture and toss to combine. Season with salt to taste.\",\n      \"Warm the salsa in a small saucepan over low heat. Add the cooked corn mixture to the salsa and stir to combine.\",\n      \"Serve the salsa with tortilla chips or use as a topping for tacos or grilled meats.\"\n    ]\n  }\n}",
+          "note": "Minimal"
+        },
+        {
+          "test_case_id": "e19",
+          "category": "cross_persona",
+          "inventory": [
+            "pasta",
+            "tomato",
+            "basil",
+            "cheese"
+          ],
+          "user_request": "Italian food",
+          "sft_recipe": "{\n  \"name\": \"Italian Pasta Primavera\",\n  \"cuisine\": \"Italian\",\n  \"culinary_preference\": \"vegetarian\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"500g pasta (penne or fusilli)\",\n    \"250g fresh tomato (chopped)\",\n    \"50g fresh basil (chopped)\",\n    \"50g grated Parmesan cheese (vegetarian)\",\n    \"2 cloves garlic (minced)\",\n    \"2 tbsp olive oil\",\n    \"Salt and pepper to taste\"\n  ],\n  \"steps\": [\n    \"Bring a large pot of salted water to a boil. Cook pasta according to package instructions until al dente. Reserve 1 cup of pasta water before draining.\",\n    \"In a large skillet, heat olive oil over medium heat. Add minced garlic and cook for 1 minute until fragrant.\",\n    \"Add chopped tomatoes to the skillet and cook for 3-4 minutes until they start to break down.\",\n    \"Stir in chopped basil and cook for another minute. Season with salt and pepper to taste.\",\n    \"Add cooked pasta to the skillet, tossing to combine with the tomato and basil mixture. If the sauce seems dry, add some reserved pasta water.\",\n    \"Transfer pasta to a serving dish and top with grated Parmesan cheese.\"\n  ]\n}",
+          "dpo_recipe": "{\n  \"name\": \"Mexican Pasta Fajita Bowl\",\n  \"cuisine\": \"Mexican\",\n  \"culinary_preference\": \"non-vegan\",\n  \"time\": \"30m\",\n  \"main_ingredients\": [\n    \"8 oz pasta (use Mexican-inspired flavor by substituting with rice or cauliflower rice)\",\n    \"1 cup cooked black beans\",\n    \"1 avocado, diced\",\n    \"1/4 cup salsa\",\n    \"1/4 cup shredded cheese (use vegan alternative for a non-vegan option)\",\n    \"1/4 cup chopped cilantro\",\n    \"1 lime, juiced\",\n    \"1 tsp cumin\",\n    \"1 tsp chili powder\",\n    \"1/2 tsp smoked paprika\",\n    \"1/4 tsp cayenne pepper\"\n  ],\n  \"steps\": [\n    \"Cook pasta according to package instructions and set aside. Heat a large skillet over medium-high heat. Add cumin, chili powder, smoked paprika, and cayenne pepper. Cook for 1 minute.\",\n    \"Add diced avocado and cook for an additional 2-3 minutes, until slightly softened.\",\n    \"Add cooked black beans, salsa, and cooked pasta to the skillet. Stir to combine.\",\n    \"Season with lime juice and stir well. Serve hot, garnished with chopped cilantro and shredded cheese.\",\n    \"Serve immediately and enjoy!\"\n  ]\n}",
+          "note": "Contains cheese"
+        },
+        {
+          "test_case_id": "e20",
+          "category": "cross_persona",
+          "inventory": [
+            "chicken",
+            "rice",
+            "curry"
+          ],
+          "user_request": "Indian curry",
+          "sft_recipe": "{\n  \"recipe\": {\n    \"name\": \"Indian Chicken Curry\",\n    \"cuisine\": \"Indian\",\n    \"culinary_preference\": \"non-veg\",\n    \"time\": \"30m\",\n    \"main_ingredients\": [\n      {\n        \"name\": \"chicken (500g)\",\n        \"quantity\": \"500g\",\n        \"unit\": \"g\"\n      },\n      \"rice (250g)\",\n      \"curry powder (2 tsp)\",\n      \"curry paste (2 tsp)\",\n      \"coconut oil (2 tbsp)\",\n      \"onion (1 medium)\",\n      \"ginger (1-inch piece)\",\n      \"garlic (3 cloves)\",\n      \"tomato (1 medium)\",\n      \"lemon juice (2 tbsp)\",\n      \"salt (to taste)\",\n      \"chili powder (1 tsp)\",\n      \"cumin powder (1 tsp)\",\n      \"coriander powder (1 tsp)\",\n      \"turmeric powder (1/2 tsp)\",\n      \"cayenne pepper (optional, 1/4 tsp)\"\n    ],\n    \"steps\": [\n      \"Heat oil in a pan over medium heat. Add onion, ginger, and garlic. Saute until onion turns golden brown.\",\n      \"Add chicken and cook until it is browned on all sides.\",\n      \"Add curry powder, curry paste, cumin powder, coriander powder, turmeric powder, and chili powder. Mix well.\",\n      \"Add tomato and mix well. Add lemon juice and salt to taste.\",\n      \"Add 2 cups of water and bring to a boil. Reduce heat and let it simmer for 15 minutes.\",\n      \"Serve with steaming hot rice.\"\n    ]\n  }\n}",
+          "dpo_recipe": "{\n  \"name\": \"Vegan Chana Masala\",\n  \"cuisine\": \"Indian\",\n  \"culinary_preference\": \"vegan\",\n  \"main_ingredients\": [\n    \"1 cup chickpeas (canned or cooked)\",\n    \"2 medium onions\",\n    \"3 cloves garlic\",\n    \"1 medium tomato\",\n    \"1 tablespoon curry powder\",\n    \"1 teaspoon ground cumin\",\n    \"1 teaspoon garam masala\",\n    \"1/2 teaspoon turmeric\",\n    \"1/2 teaspoon cayenne pepper\",\n    \"1 can diced tomatoes\",\n    \"1 cup vegetable broth\",\n    \"2 tablespoons olive oil\",\n    \"Fresh cilantro (for garnish)\"\n  ],\n  \"steps\": [\n    \"Heat oil in a pan over medium heat. Add onions and cook until softened, about 5 minutes.\",\n    \"Add garlic and cook for another minute.\",\n    \"Add curry powder, cumin, garam masala, turmeric, and cayenne pepper. Cook for 1 minute, until fragrant.\",\n    \"Add chickpeas, diced tomatoes, and vegetable broth. Bring to a simmer.\",\n    \"Reduce heat to low and cook for 20-25 minutes, until the sauce thickens.\",\n    \"Taste and adjust seasoning as needed. Garnish with cilantro and serve over rice.\"\n  ],\n  \"note\": \"This recipe is a vegan adaptation of a popular Indian dish, Chana Masala. It's a flavorful and comforting stew made with chickpeas, spices, and tomatoes.\"\n}",
+          "note": "Contains chicken"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 20,
+    "dpo_wins": 17,
+    "sft_wins": 2,
+    "ties": 0,
+    "dpo_win_rate": 0.85,
+    "sft_win_rate": 0.1,
+    "tie_rate": 0.0,
+    "per_persona": {
+      "persona_e_mexican_vegan": {
+        "name": "Mexican Vegan",
+        "dpo_win_rate": 0.85,
+        "dpo_wins": 17,
+        "sft_wins": 2,
+        "ties": 0,
+        "total_tests": 20
+      }
+    }
+  }
+}
